@@ -1,0 +1,1 @@
+# RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards
