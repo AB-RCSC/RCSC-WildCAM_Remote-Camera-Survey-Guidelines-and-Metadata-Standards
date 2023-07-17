@@ -1,0 +1,49 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Remote Camera Survey Guidelines
+    chapters:
+    - file: 1_survey-guidelines/1.1_Citation-and-Info.md
+    - file: 1_survey-guidelines/1.2_Acknowledgments.md
+    - file: 1_survey-guidelines/1.3_TOC.md
+    - file: 1_survey-guidelines/1.4_List-Tables-Figures.md
+    - file: 1_survey-guidelines/1.5_Background.md
+    - file: 1_survey-guidelines/1.6_Intended-Audience-and-How-to-use-this-document.md
+    - file: 1_survey-guidelines/1.7_Design-hierarchy.md
+    - file: 1_survey-guidelines/1.8_Objectives.md
+    - file: 1_survey-guidelines/1.9_Detection-probability2.md
+    - file: 1_survey-guidelines/1.10_Study-design.md
+    - file: 1_survey-guidelines/1.10_Study-design/Study area.md
+    - file: 1_survey-guidelines/1.11_Camera-deployment.md
+    - file: 1_survey-guidelines/1.12_Data-management-and-processing.md
+    - file: 1_survey-guidelines/1.13_References.md
+    - file: 1_survey-guidelines/1.14_AppendixA-Tables.md
+    - file: 1_survey-guidelines/1.15_AppendixA-Field-Datasheets.md
+    - file: 1_survey-guidelines/notebooks
+    - file: 1_survey-guidelines/1.16_AppendixB-FigureB1.md
+  - caption: AB Remote Camera Metadata Standards
+    chapters:    
+    - file: 2_metadata-standards/2.1_Citation-and-Info.md
+    - file: 2_metadata-standards/2.2_Preface.md
+    - file: 2_metadata-standards/2.3_Acknowledgments.md
+    - file: 2_metadata-standards/2.4_TOC.md
+    - file: 2_metadata-standards/2.5_List-Tables-Figures.md 
+    - file: 2_metadata-standards/2.6_Purpose.md
+    - file: 2_metadata-standards/2.7_Background.md
+    - file: 2_metadata-standards/2.8_Metadata-Standards.md
+    - file: 2_metadata-standards/2.9_Project.md
+    - file: 2_metadata-standards/2.10_Study-Area.md
+    - file: 2_metadata-standards/2.11_Survey.md
+    - file: 2_metadata-standards/2.12_Sample-Station_Camera-Location.md
+    - file: 2_metadata-standards/2.13_Deployment.md
+    - file: 2_metadata-standards/2.14_Image_Sequence.md
+    - file: 2_metadata-standards/2.15_Data-Management.md
+    - file: 2_metadata-standards/2.16_Conclusion.md
+    - file: 2_metadata-standards/2.17_References.md
+    - file: 2_metadata-standards/2.18_AppendixA.md
+  - caption: Glossary
+    chapters:
+    - file: 3_glossary/3.0_Glossary
