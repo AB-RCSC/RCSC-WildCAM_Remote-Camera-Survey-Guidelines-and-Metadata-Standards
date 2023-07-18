@@ -253,7 +253,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/CassStevenson/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -270,7 +270,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_metadata-standards/2.15_Data-Management.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/CassStevenson/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/issues/new?title=Issue%20on%20page%20%2F2_metadata-standards/2.15_Data-Management.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -424,7 +424,7 @@ software platforms and tools to help camera users enter metadata as well as stor
 <li><p>Image ID</p></li>
 <li><p>Sequence ID</p></li>
 </ul>
-<p>Refer to <a class="reference internal" href="2.18_AppendixA.html#metadata-standards-appendix-a-table-a-2"><span class="std std-ref">Appendix A - Table A2</span></a> for examples of
+<p>Refer to <a class="reference internal" href="../docs/jupyter_execute/2_metadata-standards/2.18_AppendixA.html#metadata-standards-appendix-a-table-a-2"><span class="std std-ref">Appendix A - Table A2</span></a> for examples of
 recommended naming conventions. If you wish to rename your images, it is highly recommended that renamed images reflect the associated Image ID. IDs or file names should not have spaces or leading zeros. Alternative naming conventions may be used, but the goal should be to minimize duplication of
 IDs (and/or file names).</p>
 <p>Data entry software can be used for batch processing of image names, which can significantly reduce data processing time compared to renaming images manually (e.g., <a class="reference external" href="http://saul.cpsc.ucalgary.ca/timelapse/">Timelapse</a>2 [Greenberg, 2018], <a class="reference external" href="http://www.reconyx.com/software/mapview;">Reconyx MapView</a>
@@ -433,8 +433,8 @@ IDs (and/or file names).</p>
 </section>
 <section id="file-structure">
 <span id="toc-metadata-standards-file-structure"></span><h2>10.2 File structure<a class="headerlink" href="#file-structure" title="Permalink to this headline">#</a></h2>
-<p>Image data ideally should be stored in a hierarchical structure as shown in (<a class="reference internal" href="2.8_Metadata-Standards.html#metadata-standards-figure-1"><span class="std std-ref">Figure 1</span></a>). Each level would typically comprise a series of file subfolders containing data from the level below it (e.g., a project folder with study area subfolders, with each study area with survey subfolders
-etc.). For example, <a class="reference internal" href="#metadata-standards-figure-2"><span class="std std-ref">Figure 2</span></a> shows the file structure for a project that consisted of two study areas, each with one survey and each survey with two camera locations with one deployment period and 2 sequences per camera location.</p>
+<p>Image data ideally should be stored in a hierarchical structure as shown in (<a class="reference internal" href="../docs/jupyter_execute/2_metadata-standards/2.8_Metadata-Standards.html#metadata-standards-figure-1"><span class="std std-ref">Figure 1</span></a>). Each level would typically comprise a series of file subfolders containing data from the level below it (e.g., a project folder with study area subfolders, with each study area with survey subfolders
+etc.). For example, <a class="reference internal" href="../docs/jupyter_execute/2_metadata-standards/2.15_Data-Management.html#metadata-standards-figure-2"><span class="std std-ref">Figure 2</span></a> shows the file structure for a project that consisted of two study areas, each with one survey and each survey with two camera locations with one deployment period and 2 sequences per camera location.</p>
 <p>However, this is often not the way we store this information in the form of CSVs (e.g., if there are only one or two study areas, it might not make sense to store this information in a separate CSV file). These metadata standards suggest a CSV structure similar to that of other metadata/data
 repositories (e.g., <a class="reference external" href="https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/wcmp_v1.pdf">B.C. Metadata Standards</a> [RISC, 2019], <a class="reference external" href="https://docs.google.com/spreadsheets/d/1Jg-WybmVeGlWGrbPpwuwJCgranOV1r3M_LrzELttfK0/edit#gid=412365965">Wildlife Insights Minimum Metadata
 Standards</a> (Ahumada et al., 2019), WildTrax) that consists of four CSVs associated with these metadata standards:</p>
@@ -444,8 +444,8 @@ Standards</a> (Ahumada et al., 2019), WildTrax) that consists of four CSVs assoc
 <li><p>Deployment CSV</p></li>
 <li><p>Image/Sequence CSV (includes Event Type = “Tag”)</p></li>
 </ul>
-<p>The information from each CSV can be linked using identifiers for each of the levels in the folder structure/ hierarchy (refer to <a class="reference internal" href="#metadata-standards-figure-3"><span class="std std-ref">Figure 3</span></a>) so that redundant information does not need to be repeated, and the chance of error is reduced. The connections between the levels and CSVs
-are also outlined in <a class="reference internal" href="2.18_AppendixA.html#metadata-standards-appendix-a-table-a-2"><span class="std std-ref">Appendix A - Table A2</span></a>.</p>
+<p>The information from each CSV can be linked using identifiers for each of the levels in the folder structure/ hierarchy (refer to <a class="reference internal" href="../docs/jupyter_execute/2_metadata-standards/2.15_Data-Management.html#metadata-standards-figure-3"><span class="std std-ref">Figure 3</span></a>) so that redundant information does not need to be repeated, and the chance of error is reduced. The connections between the levels and CSVs
+are also outlined in <a class="reference internal" href="../docs/jupyter_execute/2_metadata-standards/2.18_AppendixA.html#metadata-standards-appendix-a-table-a-2"><span class="std std-ref">Appendix A - Table A2</span></a>.</p>
 <p>Refer to the Remote Camera Metadata Standards: Metadata Template (RCSC et al., 2023) for the template CSVs and additional information.</p>
 <figure class="align-center" id="metadata-standards-figure-2">
 <img alt="../_images/Metadata_FolderStructure_2023-07-13_trimmed.jpg" src="../_images/Metadata_FolderStructure_2023-07-13_trimmed.jpg" />
@@ -467,7 +467,7 @@ further information.</p>
 al., [2018] for a comparison of 12 available programs for the management of camera data).</p>
 <p>All data, including the images, deployment area photos and complete metadata, can be uploaded and stored in the <a class="reference external" href="http://www.wildtrax.ca">WildTrax repository</a>. WildTrax has multiple privacy options and can accommodate all categories of images that users may prefer to manage separately, including
 “false fires” and images of humans.</p>
-<p><a class="reference internal" href="2.18_AppendixA.html#metadata-standards-appendix-a-table-a-1"><span class="std std-ref">Appendix 1 - Table A1</span></a> contains a
+<p><a class="reference internal" href="../docs/jupyter_execute/2_metadata-standards/2.18_AppendixA.html#metadata-standards-appendix-a-table-a-1"><span class="std std-ref">Appendix 1 - Table A1</span></a> contains a
 crosswalk table linking the data fields from these Alberta Metadata Standards with those from the <a class="reference external" href="https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/wcmp_v1.pdf">B.C. Metadata Standards</a> (RISC, 2019), FWMIS, WildTrax and <a class="reference external" href="https://www.wildlifeinsights.org/">Wildlife
 Insights</a> (Ahumada et al., 2019) data repositories.</p>
 <p>Refer to the Remote Camera Survey Guidelines (RCSC et al., 2023) for more information on data storage.</p>

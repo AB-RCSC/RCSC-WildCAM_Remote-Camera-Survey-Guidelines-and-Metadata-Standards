@@ -253,7 +253,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/CassStevenson/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -270,7 +270,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_metadata-standards/2.14_Image_Sequence.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/CassStevenson/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/issues/new?title=Issue%20on%20page%20%2F2_metadata-standards/2.14_Image_Sequence.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -423,8 +423,8 @@ document.write(`
 <p>The <strong>image/sequence level</strong> provides information on the data for an image (individual photo) or sequence of related images (e.g., images that are grouped as part of the same trigger “event”).</p>
 <p>An <strong>image</strong> may be part of a multi-image sequence.</p>
 <p>A <strong>sequence</strong> refers to a user-defined group of images or video clips that denote a single “detection event”. Often camera users choose a certain time threshold (“sequence definition”) to define independent detection events; (e.g., 30 minutes (O’Brien et al., 2003; Gerber et al., 2010; Kitamura et al., 2010; Samejima et al., 2012) or 1 hour (e.g., Tobler et al., 2008; Rovero and Marshall, 2009)). This threshold should be recorded in the Survey Design Description field, if applicable.</p>
-<p>When a sequence <a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event_Type</span></a> is used, only enter data once for the sequence of images (not for each unique image) and use the first image of the sequence as the Sequence ID, as this is the time of the first detection.</p>
-<p>Refer to the <a class="reference internal" href="2.15_Data-Management.html#toc-metadata-standards-data-management"><span class="std std-ref">Data Management section</span></a> for information on image processing software, and recommendations on data file structure and naming conventions.</p>
+<p>When a sequence <a class="reference internal" href="../docs/jupyter_execute/3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event_Type</span></a> is used, only enter data once for the sequence of images (not for each unique image) and use the first image of the sequence as the Sequence ID, as this is the time of the first detection.</p>
+<p>Refer to the <a class="reference internal" href="../docs/jupyter_execute/2_metadata-standards/2.15_Data-Management.html#toc-metadata-standards-data-management"><span class="std std-ref">Data Management section</span></a> for information on image processing software, and recommendations on data file structure and naming conventions.</p>
 <section id="image-id">
 <span id="toc-metadata-standards-image-id"></span><h2>9.1 Image ID<a class="headerlink" href="#image-id" title="Permalink to this headline">#</a></h2>
 <p>A unique alphanumeric file name for the image. It is highly recommended that users develop a photo naming convention prior to entering data. It is important to include (at a minimum) the camera location, date, time, and image number when generating an Image ID to avoid duplicate file names. For example, the Deployment ID and image number would not be unique for the same deployment within Reconynx overflow file subfolders (i.e., when the number of images exceeds 9,999, another folder is created [e.g., 101MEDIA] and the numbers in the image file names begin again at IMG_001).</p>
@@ -444,7 +444,7 @@ document.write(`
 </section>
 <section id="image-sequence-date-time-dd-mmm-yyyy-hh-mm-ss">
 <span id="toc-metadata-standards-imagesequence-date-time-dd-mmm-yyyy-hhmmss"></span><h2>9.3 Image/Sequence Date Time (DD-MMM-YYYY HH:MM:SS)<a class="headerlink" href="#image-sequence-date-time-dd-mmm-yyyy-hh-mm-ss" title="Permalink to this headline">#</a></h2>
-<p>The date and time of an image, or the image chosen to represent the sequence. Depending on the <a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a>, Image/Sequence Date Time may be reported for an individual image, or the first or representative image (i.e., the image with the most information). For example, if three images were included in a sequence, but the Sex Class could only be discerned in the second image [all else remaining equal], the second image would be the best representative image of the sequence.</p>
+<p>The date and time of an image, or the image chosen to represent the sequence. Depending on the <a class="reference internal" href="../docs/jupyter_execute/3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a>, Image/Sequence Date Time may be reported for an individual image, or the first or representative image (i.e., the image with the most information). For example, if three images were included in a sequence, but the Sex Class could only be discerned in the second image [all else remaining equal], the second image would be the best representative image of the sequence.</p>
 <p>Record the Image/Sequence Date Time as “DD-MMM-YYYY HH:MM:SS” (e.g., 22-JUL-2018 11:02:02).</p>
 <p>The Image/Sequence Date Time differs from the Image Set Start Date Time which refers to the first image or video collected during a deployment.</p>
 </section>
@@ -454,7 +454,7 @@ document.write(`
 </section>
 <section id="species">
 <span id="toc-metadata-standards-species"></span><h2>9.5 Species<a class="headerlink" href="#species" title="Permalink to this headline">#</a></h2>
-<p>The capitalized common name of the Species being categorized (“tagged”) in the Tag, Image or Sequence (e.g., “COYOTE” or “COMMON GOLDENEYE”). If there is more than one wildlife Species present in an image/sequence, data for each Species should be entered on a unique row but with the same Image ID or Sequence ID (reporting as <a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a> = “Tag”).</p>
+<p>The capitalized common name of the Species being categorized (“tagged”) in the Tag, Image or Sequence (e.g., “COYOTE” or “COMMON GOLDENEYE”). If there is more than one wildlife Species present in an image/sequence, data for each Species should be entered on a unique row but with the same Image ID or Sequence ID (reporting as <a class="reference internal" href="../docs/jupyter_execute/3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a> = “Tag”).</p>
 <p>For detections where you are unsure of the specific Species, report the level of lowest taxonomic ranking known (e.g., “CLASS,” “ORDER,” “FAMILY,” “GENUS”), followed by the scientific name of the taxa.</p>
 <p>For example, for a detection of an individual that is in the Canidae family, but for which the Genus or Species or unclear, report “FAMILY CANIDAE.” Refer to the Species_Crosswalk table for ease of reference.</p>
 <p>If no Species is present (i.e. blank or empty image), enter “NONE.”</p>
@@ -483,8 +483,8 @@ document.write(`
 </ul>
 <p>If there is more than one Age Class or Sex Class in an image/sequence, users can enter either:</p>
 <ol class="arabic simple">
-<li><p>each unique Age/Sex Class combination as a unique row (<a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a> = “Image” or “Sequence” or</p></li>
-<li><p>each unique combination within the same row under an appropriate field (<a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a> = “Tag”)</p></li>
+<li><p>each unique Age/Sex Class combination as a unique row (<a class="reference internal" href="../docs/jupyter_execute/3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a> = “Image” or “Sequence” or</p></li>
+<li><p>each unique combination within the same row under an appropriate field (<a class="reference internal" href="../docs/jupyter_execute/3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a> = “Tag”)</p></li>
 </ol>
 <p>For example, if an image/sequence contains 6 elk, 2 of which are adult females, 3 of which are juveniles of unknown sex and one of which is an adult male, the data could be entered as 3 unique rows, each with the same Image/Sequence Date Time and unique identifier (Image ID or Sequence ID), where:</p>
 <ul class="simple">
@@ -519,7 +519,7 @@ document.write(`
 <li><p><strong>“Multiple§”</strong> (describe in Image/Sequence Comments field; e.g., “Behaviour[Standing,Vigilant]”)</p></li>
 <li><p><strong>“NULL”</strong> (not applicable or did not collect)</p></li>
 </ul>
-<p>If observing a group of individuals, record the Behaviour of all the individuals in the group or enter the Behaviour of each animal as a unique row (see example in the <a class="reference internal" href="#toc-metadata-standards-age-class-and-sex-class"><span class="std std-ref">Age Class and Sex Class section</span></a> above).</p>
+<p>If observing a group of individuals, record the Behaviour of all the individuals in the group or enter the Behaviour of each animal as a unique row (see example in the <a class="reference internal" href="../docs/jupyter_execute/2_metadata-standards/2.14_Image_Sequence.html#toc-metadata-standards-age-class-and-sex-class"><span class="std std-ref">Age Class and Sex Class section</span></a> above).</p>
 <p>If an animal is performing multiple Behaviours, select “Multiple§,” and include all the Behaviours in the Image/Sequence Comments as a comma delimited list. To help parse out this information later most easily, we recommend using a format that includes a header followed by the behaviour(s), e.g., “Behaviour[Inspecting Camera,Travelling].”</p>
 </section>
 <section id="animal-id-optional">
