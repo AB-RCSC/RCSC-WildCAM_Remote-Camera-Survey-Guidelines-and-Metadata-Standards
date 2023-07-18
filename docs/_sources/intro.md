@@ -1,21 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.11.5
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
-  
-editor_options: 
-  markdown: 
-    wrap: 300
----
-
 # Remote Camera Survey Guidelines & AB Metadata Standards
 
 ## Download the files & Access the templates  
@@ -62,7 +44,6 @@ editor_options:
 ::: {dropdown} **Remote Camera Metadata Standards: Standards for Alberta**  
 
 (#ab-metadata-standards)=
-
 
 ```{figure} ./2_metadata-standards/files-2_metadata-standards/downloadable/AB-Remote-Camera-Metadata-Standards-v2-(RCSC,-2023)_2023-07-13.pdf
 :alt: Remote Camera Metadata Standards: Standards for Alberta v2 (RCSC, 2023)
