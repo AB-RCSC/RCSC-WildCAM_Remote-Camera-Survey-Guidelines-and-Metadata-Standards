@@ -166,13 +166,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.6_Intended-Audience-and-How-to-use-this-document.html">2.0 Intended Audience and How to use this document</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.7_Design-hierarchy.html">3.0 Design hierarchy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.8_Objectives.html">4.0 Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.9_Detection-probability.html">5.0 Detection probability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.10_Study-design.html">6.0 Study design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.11_Camera-deployment.html">7.0 Camera deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.12_Data-management-and-processing.html">8.0 Data management and processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.13_References.html">9.0 References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.14_AppendixA-Tables.html">Appendix A - Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.15_AppendixA-Field-Datasheets.html">Appendix A - Field Datasheets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/notebooks.html">Appendix A - Field datasheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.16_AppendixB-FigureB1.html">Appendix B</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">AB Remote Camera Metadata Standards</span></p>
@@ -451,7 +451,7 @@ document.write(`
 <span id="toc-metadata-standards-deployment"></span><h1>8.0 Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">#</a></h1>
 <p>A <strong>deployment</strong> is a unique placement of a camera in space and time. There may be multiple deployments for one camera location. Deployments are often considered as the time between visits to a camera location (i.e., deployment to service, service to service, and service to retrieval). Any change to
 camera location, sampling period, camera equipment (e.g., Trigger Sensitivity setting, becomes non-functioning), and/or conditions (e.g., not baited then baited later; camera SD card replaced) should be documented as a unique deployment.</p>
-<p>Metadata information associated with the deployment level of the hierarchy (<span class="xref myst">Figure 1</span>) can be grouped into the following subsections:</p>
+<p>Metadata information associated with the deployment level of the hierarchy (<a class="reference internal" href="2.8_Metadata-Standards.html#metadata-standards-figure-1"><span class="std std-ref">Figure 1</span></a>) can be grouped into the following subsections:</p>
 <ul class="simple">
 <li><p><strong>Visit Metadata</strong> (collected at deployment and service/retrieval)</p></li>
 <li><p><strong>Equipment Information</strong> (collected at both deployment and service/retrieval; fields vary by visit type)</p></li>
@@ -542,7 +542,7 @@ be difficult to determine a failure date for a camera that is only occasionally 
 <section id="trigger-sensitivity">
 <span id="toc-metadata-standards-trigger-sensitivity"></span><h3>8.3.3 Trigger Sensitivity<a class="headerlink" href="#trigger-sensitivity" title="Permalink to this headline">#</a></h3>
 <p>The camera setting responsible for how sensitive a camera is to activation (to “triggering”) via the infrared and/or heat detectors (if applicable). Select one of the following Trigger Sensitivity settings common to most cameras (e.g., Reconyx HyperFire): “Low,” “Low/Med,” “Med,” “Med/High,” “High,”
-“Very high”. Enter “NULL” if the trigger is set to a timer (see the <span class="xref myst">Motion Image Interval (seconds) section</span>) or if the camera does not have a sensitivity setting option.</p>
+“Very high”. Enter “NULL” if the trigger is set to a timer (see the <a class="reference internal" href="#toc-metadata-standards-motion-image-interval-seconds"><span class="std std-ref">Motion Image Interval (seconds) section</span></a>) or if the camera does not have a sensitivity setting option.</p>
 </section>
 <section id="photos-per-trigger">
 <span id="toc-metadata-standards-photos-per-trigger"></span><h3>8.3.4 Photos Per Trigger<a class="headerlink" href="#photos-per-trigger" title="Permalink to this headline">#</a></h3>

@@ -166,13 +166,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.6_Intended-Audience-and-How-to-use-this-document.html">2.0 Intended Audience and How to use this document</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.7_Design-hierarchy.html">3.0 Design hierarchy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.8_Objectives.html">4.0 Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.9_Detection-probability.html">5.0 Detection probability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.10_Study-design.html">6.0 Study design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.11_Camera-deployment.html">7.0 Camera deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.12_Data-management-and-processing.html">8.0 Data management and processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.13_References.html">9.0 References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.14_AppendixA-Tables.html">Appendix A - Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.15_AppendixA-Field-Datasheets.html">Appendix A - Field Datasheets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/notebooks.html">Appendix A - Field datasheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_survey-guidelines/1.16_AppendixB-FigureB1.html">Appendix B</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">AB Remote Camera Metadata Standards</span></p>
@@ -444,7 +444,7 @@ document.write(`
 </section>
 <section id="image-sequence-date-time-dd-mmm-yyyy-hh-mm-ss">
 <span id="toc-metadata-standards-imagesequence-date-time-dd-mmm-yyyy-hhmmss"></span><h2>9.3 Image/Sequence Date Time (DD-MMM-YYYY HH:MM:SS)<a class="headerlink" href="#image-sequence-date-time-dd-mmm-yyyy-hh-mm-ss" title="Permalink to this headline">#</a></h2>
-<p>The date and time of an image, or the image chosen to represent the sequence. Depending on the <a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event_Type</span></a>, Image/Sequence Date Time may be reported for an individual image, or the first or representative image (i.e., the image with the most information). For example, if three images were included in a sequence, but the Sex Class could only be discerned in the second image [all else remaining equal], the second image would be the best representative image of the sequence.</p>
+<p>The date and time of an image, or the image chosen to represent the sequence. Depending on the <a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a>, Image/Sequence Date Time may be reported for an individual image, or the first or representative image (i.e., the image with the most information). For example, if three images were included in a sequence, but the Sex Class could only be discerned in the second image [all else remaining equal], the second image would be the best representative image of the sequence.</p>
 <p>Record the Image/Sequence Date Time as “DD-MMM-YYYY HH:MM:SS” (e.g., 22-JUL-2018 11:02:02).</p>
 <p>The Image/Sequence Date Time differs from the Image Set Start Date Time which refers to the first image or video collected during a deployment.</p>
 </section>
@@ -454,7 +454,7 @@ document.write(`
 </section>
 <section id="species">
 <span id="toc-metadata-standards-species"></span><h2>9.5 Species<a class="headerlink" href="#species" title="Permalink to this headline">#</a></h2>
-<p>The capitalized common name of the Species being categorized (“tagged”) in the Tag, Image or Sequence (e.g., “COYOTE” or “COMMON GOLDENEYE”). If there is more than one wildlife Species present in an image/sequence, data for each Species should be entered on a unique row but with the same Image ID or Sequence ID (reporting as <a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event_Type</span></a> = “Tag”).</p>
+<p>The capitalized common name of the Species being categorized (“tagged”) in the Tag, Image or Sequence (e.g., “COYOTE” or “COMMON GOLDENEYE”). If there is more than one wildlife Species present in an image/sequence, data for each Species should be entered on a unique row but with the same Image ID or Sequence ID (reporting as <a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a> = “Tag”).</p>
 <p>For detections where you are unsure of the specific Species, report the level of lowest taxonomic ranking known (e.g., “CLASS,” “ORDER,” “FAMILY,” “GENUS”), followed by the scientific name of the taxa.</p>
 <p>For example, for a detection of an individual that is in the Canidae family, but for which the Genus or Species or unclear, report “FAMILY CANIDAE.” Refer to the Species_Crosswalk table for ease of reference.</p>
 <p>If no Species is present (i.e. blank or empty image), enter “NONE.”</p>
@@ -483,8 +483,8 @@ document.write(`
 </ul>
 <p>If there is more than one Age Class or Sex Class in an image/sequence, users can enter either:</p>
 <ol class="arabic simple">
-<li><p>each unique Age/Sex Class combination as a unique row (<a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event_Type</span></a> = “Image” or “Sequence” or</p></li>
-<li><p>each unique combination within the same row under an appropriate field (<a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event_Type</span></a> = “Tag”)</p></li>
+<li><p>each unique Age/Sex Class combination as a unique row (<a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a> = “Image” or “Sequence” or</p></li>
+<li><p>each unique combination within the same row under an appropriate field (<a class="reference internal" href="../3_glossary/3.0_Glossary.html#event-type"><span class="std std-ref">Event Type</span></a> = “Tag”)</p></li>
 </ol>
 <p>For example, if an image/sequence contains 6 elk, 2 of which are adult females, 3 of which are juveniles of unknown sex and one of which is an adult male, the data could be entered as 3 unique rows, each with the same Image/Sequence Date Time and unique identifier (Image ID or Sequence ID), where:</p>
 <ul class="simple">

@@ -166,13 +166,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="1.6_Intended-Audience-and-How-to-use-this-document.html">2.0 Intended Audience and How to use this document</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1.7_Design-hierarchy.html">3.0 Design hierarchy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1.8_Objectives.html">4.0 Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1.9_Detection-probability.html">5.0 Detection probability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1.10_Study-design.html">6.0 Study design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1.11_Camera-deployment.html">7.0 Camera deployment</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">8.0 Data management and processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1.13_References.html">9.0 References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1.14_AppendixA-Tables.html">Appendix A - Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1.15_AppendixA-Field-Datasheets.html">Appendix A - Field Datasheets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Appendix A - Field datasheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1.16_AppendixB-FigureB1.html">Appendix B</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">AB Remote Camera Metadata Standards</span></p>
@@ -418,7 +418,7 @@ document.write(`
 <span id="toc-survey-guidelines-data-management-and-processing"></span><h1>8.0 Data management and processing<a class="headerlink" href="#data-management-and-processing" title="Permalink to this headline">#</a></h1>
 <section id="software-and-tools">
 <span id="toc-survey-guidelines-software-tools"></span><h2>8.1 Software and tools<a class="headerlink" href="#software-and-tools" title="Permalink to this headline">#</a></h2>
-<p>There are several software platforms and tools available to help camera users enter metadata as well as store, <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-processing"><span class="std std-ref">process</span></a>, and analyze their image data (refer to <a class="reference internal" href="1.14_AppendixA-Tables.html#survey-guidelines-appendix-a-tables-a1"><span class="std std-ref">Table
+<p>There are several software platforms and tools available to help camera users enter metadata as well as store, <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-processing"><span class="std std-ref">process</span></a>, and analyze their image data (refer to <a class="reference internal" href="1.14_AppendixA-Tables.html#survey-guidelines-appendix-a-table-a-1"><span class="std std-ref">Table
 1</span></a></p>
 <p>Commonly used platforms include <a class="reference external" href="https://www.wildtrax.ca/home.html">WildTrax,</a> <a class="reference external" href="http://saul.cpsc.ucalgary.ca/timelapse/">Timelapse2</a> (Greenberg, 2018), and <a class="reference external" href="https://emammal.si.edu/">eMammal</a> (McShea et al., 2015). <a class="reference external" href="http://www.reconyx.com/software/mapview">Reconyx MapView</a> (Reconyx, Holmen, WI, USA)
 may be especially useful for batch renaming (see <a class="reference internal" href="#toc-survey-guidelines-useful-websites"><span class="std std-ref">section 8.4</span></a>).</p>
@@ -443,8 +443,8 @@ the <a class="reference internal" href="../3_glossary/3.0_Glossary.html#heirarch
 </section>
 <section id="image-processing">
 <span id="toc-survey-guidelines-image-processing"></span><h2>8.3 Image processing<a class="headerlink" href="#image-processing" title="Permalink to this headline">#</a></h2>
-<p><a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-processing"><span class="std std-ref">Image processing</span></a> is the series of operations taken to extract information from images. In the case of remote camera data, it can include loading the images into a processing platform (see <span class="xref myst">section 8.4</span>), extracting information from the image
-<a class="reference internal" href="../3_glossary/3.0_Glossary.html#metadata"><span class="std std-ref">metadata</span></a> (e.g., the date and time the image was taken), running an artificial intelligence (AI) algorithm to identify empty images, or <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-classification"><span class="std std-ref">classifying</span></a> animals or other entities within the image (see <span class="xref myst">section 8.2.4</span>).</p>
+<p><a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-processing"><span class="std std-ref">Image processing</span></a> is the series of operations taken to extract information from images. In the case of remote camera data, it can include loading the images into a processing platform (see <a class="reference internal" href="#toc-survey-guidelines-useful-websites"><span class="std std-ref">section 8.4</span></a>), extracting information from the image
+<a class="reference internal" href="../3_glossary/3.0_Glossary.html#metadata"><span class="std std-ref">metadata</span></a> (e.g., the date and time the image was taken), running an artificial intelligence (AI) algorithm to identify empty images, or <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-classification"><span class="std std-ref">classifying</span></a> animals or other entities within the image (see <a class="reference internal" href="#toc-survey-guidelines-use-of-artificial-intelligence-megadetector"><span class="std std-ref">section 8.2.4</span></a>).</p>
 <section id="image-names">
 <span id="toc-survey-guidelines-image-names"></span><h3>8.3.1 Image names<a class="headerlink" href="#image-names" title="Permalink to this headline">#</a></h3>
 <p>If you wish to rename your images, it is highly recommended that users develop a photo naming convention prior to entering data. Using naming conventions will minimize the risk of having images from different <a class="reference internal" href="../3_glossary/3.0_Glossary.html#heirch-deployment"><span class="std std-ref">deployments</span></a>, <a class="reference internal" href="../3_glossary/3.0_Glossary.html#hierarch-study-area"><span class="std std-ref">study areas</span></a>,
@@ -460,7 +460,7 @@ Renamer</a> [WildCo Lab, 2021b]).</p>
 <section id="image-classification-and-tagging">
 <span id="toc-survey-guidelines-image-classification-and-tagging"></span><h3>8.3.2 Image classification and tagging<a class="headerlink" href="#image-classification-and-tagging" title="Permalink to this headline">#</a></h3>
 <p><a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-classification"><span class="std std-ref">Image classification</span></a> refers to the process of <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-classification"><span class="std std-ref">assigning class labels</span></a> to an image according to the wildlife species, other entity (e.g., human, vehicle, empty, etc.), or conditions within the image (e.g., snow presence or depth [Sirén et al., 2018]).
-<a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-classification"><span class="std std-ref">Image classification</span></a> can be performed manually or automatically by an artificial intelligence (AI) algorithm (<span class="xref myst">see section 8.2.4</span>. <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-classification"><span class="std std-ref">Classifying images</span></a> with AI is commonly used to filter images into
+<a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-classification"><span class="std std-ref">Image classification</span></a> can be performed manually or automatically by an artificial intelligence (AI) algorithm (<a class="reference internal" href="#toc-survey-guidelines-use-of-artificial-intelligence-megadetector"><span class="std std-ref">see section 8.2.4</span></a>). <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-classification"><span class="std std-ref">Classifying images</span></a> with AI is commonly used to filter images into
 relevant categories prior to <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-tagging"><span class="std std-ref">image tagging</span></a> (Fennell et al., 2022). <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-classification"><span class="std std-ref">Image classification</span></a> is sometimes used interchangeably with “image tagging.”</p>
 <p><a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-tagging"><span class="std std-ref">Image tagging</span></a> is the process of characterizing wildlife species, other entities (e.g., human, vehicle), or conditions within an image. <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-tagging"><span class="std std-ref">Image tagging</span></a> may follow <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-classification"><span class="std std-ref">image classification</span></a> to further describe characteristics of individuals (e.g.,
 <a class="reference internal" href="../3_glossary/3.0_Glossary.html#tags-age-class"><span class="std std-ref">Age Class</span></a>, <a class="reference internal" href="../3_glossary/3.0_Glossary.html#tags-sex-class"><span class="std std-ref">Sex Class</span></a>, <a class="reference internal" href="../3_glossary/3.0_Glossary.html#behaviour"><span class="std std-ref">Behaviour</span></a>), entities within the image, or information about the conditions of the <a class="reference internal" href="../3_glossary/3.0_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a> (e.g., the <a class="reference internal" href="../3_glossary/3.0_Glossary.html#field-of-view"><span class="std std-ref">FOV</span></a>, presence of <a class="reference internal" href="../3_glossary/3.0_Glossary.html#baitlure-bait"><span class="std std-ref">bait</span></a> or <a class="reference internal" href="../3_glossary/3.0_Glossary.html#baitlure-scent-lure"><span class="std std-ref">lure</span></a>)
@@ -503,19 +503,23 @@ Protection Act (PIPA) and Federal Personal Information Protection and Electronic
 and tips. New camera users may also find Sollman’s (2018) introduction to the analysis of remote camera data useful.</p>
 <p>As well, Wearn and Glover-Kapfer (2017) contains a detailed summary of analytical software (including R packages) for camera users (see pg. 160–162 in Wearn &amp; Glover-Kapfer, 2017). Some software packages (e.g., <a class="reference external" href="https://emammal.si.edu/">eMammal</a> [McShea et al., 2015], <a class="reference external" href="https://www.wildlifeinsights.org/">Wildlife
 Insights</a> [Ahumada et al., 2019]) provide useful data analytics (summary tables or dashboards) for a variety of metrics (e.g., number of cameras, species richness, <a class="reference internal" href="../3_glossary/3.0_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> estimates).</p>
-<p>See <span class="xref myst">Table 1</span> for useful software platforms and
+<p>See <a class="reference internal" href="#toc-survey-guidelines-useful-websites"><span class="std std-ref">Table 1</span></a> for useful software platforms and
 tools for data analysis/ analytics, as well as data storage and <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-processing"><span class="std std-ref">image processing</span></a>.</p>
 </section>
 <section id="useful-websites">
 <span id="toc-survey-guidelines-useful-websites"></span><h2>8.5 Useful websites<a class="headerlink" href="#useful-websites" title="Permalink to this headline">#</a></h2>
 <p><strong>Table 1.</strong> A subset of software platforms and tools for data storage, <a class="reference internal" href="../3_glossary/3.0_Glossary.html#image-processing"><span class="std std-ref">image processing</span></a>, and data analysis / analytics. Refer to <a class="reference external" href="https://wildcams.ca/library/camera-trap-software-and-data-management/">https://wildcams.ca/library/camera-trap-software-and-data-management/</a> for a comprehensive comparison of commonly used software platforms.</p>
 <p><img alt="" src="1_survey-guidelines/files-1_survey-guidelines/tables/Table1-UsefulWebsites.pdf" /></p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/Useful-websites.jpg"><img alt="../_images/Useful-websites.jpg" src="../_images/Useful-websites.jpg" style="height: 1000px;" /></a>
+<figure class="align-default" id="id1">
+<img alt="../_images/Useful-websites.jpg" src="../_images/Useful-websites.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">width: 1000px
+:align: center</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
 </figure>
 <p><em>View the PDF</em></p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="1_survey-guidelines/files-1_survey-guidelines/tables/Table1-UsefulWebsites/Useful-websites.pdf"><img alt="AB Metadata Standards - Appendix A - Table A2" src="1_survey-guidelines/files-1_survey-guidelines/tables/Table1-UsefulWebsites/Useful-websites.pdf" style="width: 1000px;" /></a>
+<img alt="Remote Camera Survey Guidelines - Table 1 Useful websites" src="1_survey-guidelines/files-1_survey-guidelines/tables/Table1-UsefulWebsites/Useful-websites.pdf" />
 </figure>
 </section>
 </section>
