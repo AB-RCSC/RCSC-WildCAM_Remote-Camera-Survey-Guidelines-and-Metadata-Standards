@@ -23,12 +23,12 @@ parts:
     - file: 1_survey-guidelines/1.15_AppendixA-Field-Datasheets.md
     - file: 1_survey-guidelines/1.16_AppendixB-FigureB1.md
   - caption: AB Remote Camera Metadata Standards
-    chapters:    
+    chapters:
     - file: 2_metadata-standards/2.1_Citation-and-Info.md
     - file: 2_metadata-standards/2.2_Preface.md
     - file: 2_metadata-standards/2.3_Acknowledgments.md
     - file: 2_metadata-standards/2.4_TOC.md
-    - file: 2_metadata-standards/2.5_List-Tables-Figures.md 
+    - file: 2_metadata-standards/2.5_List-Tables-Figures.md
     - file: 2_metadata-standards/2.6_Purpose.md
     - file: 2_metadata-standards/2.7_Background.md
     - file: 2_metadata-standards/2.8_Metadata-Standards.md
