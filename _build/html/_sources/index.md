@@ -21,7 +21,7 @@ editor_options:
 
 **Download the files & Access the templates**  
 
-[Download everything](./1_survey-guidelines/files-1_survey-guidelines/downloadable/RC-Survey-Guidelines-v1_AB-Metadata-Standards-v2_2023-08-23.zip)
+[Download everything](./1_survey-guidelines/files-1_survey-guidelines/downloadable/RC-Survey-Guidelines-v1_AB-Metadata-Standards-v1_2023-08-23.zip)
 
 :::{dropdown} Remote Camera Survey Guidelines: Guidelines for Western Canada
 
