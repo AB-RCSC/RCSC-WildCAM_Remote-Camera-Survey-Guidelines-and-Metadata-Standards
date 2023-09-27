@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>7.0 Camera deployment &#8212; Remote Camera Survey Guidelines - Guidelines for Western Canada</title>
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -66,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="8.0 Data management and processing" href="1_8.0_Data-management-and-processing.html" />
     <link rel="prev" title="6.0 Study design" href="1_6.0_Study-design.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -75,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -354,10 +365,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -365,7 +376,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -434,11 +445,11 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="camera-deployment">
-<span id="toc-survey-guidelines-camera-deployment"></span><h1>7.0 Camera deployment<a class="headerlink" href="#camera-deployment" title="Permalink to this headline">#</a></h1>
+<span id="toc-survey-guidelines-camera-deployment"></span><h1>7.0 Camera deployment<a class="headerlink" href="#camera-deployment" title="Permalink to this heading">#</a></h1>
 <p>Once the <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-project"><span class="std std-ref">project</span></a>-level aspects of a <a class="reference internal" href="../3_glossary/3_Glossary.html#hierarch-survey"><span class="std std-ref">survey</span></a> have been decided, the next step is to consider the camera hardware options (e.g., <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-make"><span class="std std-ref">Camera Make</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Model</span></a>), camera settings, field equipment, whether to use attractants (<a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-bait"><span class="std std-ref">bait</span></a> or
 <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-lure"><span class="std std-ref">lure</span></a>), camera placement considerations, and 1 collect.</p>
 <section id="camera-hardware-options">
-<span id="toc-survey-guidelines-camera-hardware-options"></span><h2>7.1 Camera hardware options<a class="headerlink" href="#camera-hardware-options" title="Permalink to this headline">#</a></h2>
+<span id="toc-survey-guidelines-camera-hardware-options"></span><h2>7.1 Camera hardware options<a class="headerlink" href="#camera-hardware-options" title="Permalink to this heading">#</a></h2>
 <p>Remote cameras consist of a digital camera with a lens, external flash, and a passive infrared and/or motion detector (among other features; <a class="reference internal" href="#survey-guidelines-figure-4"><span class="std std-ref">Figure 4</span></a>.</p>
 <figure class="align-center" id="survey-guidelines-figure-4">
 <a class="reference internal image-reference" href="../_images/Survey-guidelines_CamFeatures.png"><img alt="../_images/Survey-guidelines_CamFeatures.png" src="../_images/Survey-guidelines_CamFeatures.png" style="height: 600px;" /></a>
@@ -470,13 +481,13 @@ reduce the number of recaptures (Sequin et al., 2003; Wegge et al., 2004).</p></
 <p><em>Figure 5.</em> The ability to detect an animal will vary according to the camera specifications (and settings). Important specifications include the camera’s detection zone (here termed “trigger area”), Field of View (FOV; “viewable area’), and”registration area” (the area in which an animal entering
 has at least some probability of being captured on the image) (Moeller et al., 2023).</p>
 <section id="battery-type">
-<span id="toc-survey-guidelines-battery-type"></span><h3>7.1.1 Battery type<a class="headerlink" href="#battery-type" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-battery-type"></span><h3>7.1.1 Battery type<a class="headerlink" href="#battery-type" title="Permalink to this heading">#</a></h3>
 <p>Most remote cameras require AA batteries. It is recommended to use <strong>lithium batteries,</strong> as opposed to alkaline or nickel metal hydride, because they are less affected by cold temperature. Battery life will be affected not only by the type of batteries but also by the camera settings, temperature,
 and number of images or videos taken (which are dependent on the camera settings, placement, and level of activity in front of the camera) (Wearn &amp; Glover-Kapfer, 2017). However, some camera user manuals contain information on battery performance and the total number of images a camera can be
 expected to collect before the batteries die (based on operating temperature and battery type, e.g., <a class="reference external" href="https://images.reconyx.com/file/HyperFireManual.pdf">Reconyx HyperFire Instruction Manual</a> [Reconyx Inc., 2017]).</p>
 </section>
 <section id="sd-cards">
-<span id="toc-survey-guidelines-sd-cards"></span><h3>7.1.2 SD cards<a class="headerlink" href="#sd-cards" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-sd-cards"></span><h3>7.1.2 SD cards<a class="headerlink" href="#sd-cards" title="Permalink to this heading">#</a></h3>
 <p>It is important to consider the <strong>size</strong>, <strong>type</strong>, and <strong>class</strong> of <strong>SD (Secure Digital) card</strong> since the available options vary in storage capacity, compatibility, and write-speed (Wearn &amp; Glover-Kapfer, 2017).</p>
 <p>The <strong>size of the SD card</strong> (i.e., storage capacity) should be considered in relation to the expected duration of <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a>, the deployment area, and the level of activity expected to occur in front of the camera. For example, a camera placed in a grassy area might be expected
 to produce more <a class="reference internal" href="../3_glossary/3_Glossary.html#false-triggers"><span class="std std-ref">false triggers</span></a> due to grass waving in front of the camera. While a camera placed near a den might be expected to have higher animal activity. Both situations might warrant using a larger SD card. A 4 GB SD card is capable of storing ~8,000-20,000 images (400-900
@@ -491,13 +502,13 @@ information on choosing and maintaining (i.e., regularly formatting) SD cards.</
 </section>
 </section>
 <section id="camera-settings">
-<span id="toc-survey-guidelines-camera-settings"></span><h2>7.2 Camera settings<a class="headerlink" href="#camera-settings" title="Permalink to this headline">#</a></h2>
+<span id="toc-survey-guidelines-camera-settings"></span><h2>7.2 Camera settings<a class="headerlink" href="#camera-settings" title="Permalink to this heading">#</a></h2>
 <p>As mentioned above, in <a class="reference internal" href="#toc-survey-guidelines-camera-hardware-options"><span class="std std-ref">camera hardware options</span></a>, it is important to distinguish between camera specifications (features) versus settings (user-defined options). Important settings often include <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a> (which may affect
 <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a>), <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-motion-image-interval"><span class="std std-ref">Motion Image Interval</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-quiet-period"><span class="std std-ref">Quiet Period</span></a>. The setting option selected may vary according to the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">Survey Objectives</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling
 approach</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#target-species"><span class="std std-ref">Target Species</span></a>, and use (or not) of attractants. Consideration of the camera settings is an important step when designing a <a class="reference internal" href="../3_glossary/3_Glossary.html#hierarch-survey"><span class="std std-ref">survey</span></a> and in the interpretation of the resulting images.</p>
 <p>An example of the settings available in a Reconyx camera is included in <a class="reference internal" href="1_10.1_AppendixA-Tables.html#survey-guidelines-appendix-a-table-a-3"><span class="std std-ref">Appendix A - Table A3</span></a>.</p>
 <section id="photos-vs-video">
-<span id="toc-survey-guidelines-photos-vs-video"></span><h3>7.2.1 Photos vs video<a class="headerlink" href="#photos-vs-video" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-photos-vs-video"></span><h3>7.2.1 Photos vs video<a class="headerlink" href="#photos-vs-video" title="Permalink to this heading">#</a></h3>
 <p>Some <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Models</span></a> allow the user to record video as well as photos. Videos typically use more memory on SD cards, drain camera batteries sooner and are more difficult to process (i.e., extract data) than images. Limiting the length of video taken when the camera is
 <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggered</span></a> (possible for most <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Models</span></a>) could help slow how quickly an SD card becomes full. Some <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Models</span></a> have hybrid settings, which lets you capture photos and videos for each animal detection.</p>
 <p>It is generally recommended that cameras are set to capture images rather than videos unless the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">objective</span></a> is related to monitoring animal behaviours, understanding group size and/or determining recruitment (e.g. calves per female), in which case continuous observation may be
@@ -505,7 +516,7 @@ important. Video is also useful when individual identification is needed, such a
 <p>By default, cameras are set to record images when an animal is detected by the motion and/or infrared detector(s).</p>
 </section>
 <section id="trigger-mode-s-time-lapse-vs-motion-detector">
-<span id="toc-survey-guidelines-trigger-modes-timelapse-vs-motion-detector"></span><h3>7.2.2 Trigger Mode(s) - Time-lapse vs motion detector<a class="headerlink" href="#trigger-mode-s-time-lapse-vs-motion-detector" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-trigger-modes-timelapse-vs-motion-detector"></span><h3>7.2.2 Trigger Mode(s) - Time-lapse vs motion detector<a class="headerlink" href="#trigger-mode-s-time-lapse-vs-motion-detector" title="Permalink to this heading">#</a></h3>
 <p>By default, remote cameras are <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggered</span></a> to take photos when the motion detector detects an animal. Many <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Models</span></a> allow you to set your camera in both <a class="reference internal" href="../3_glossary/3_Glossary.html#timelapse-images"><span class="std std-ref">time-lapse</span></a> and default motion detector settings.</p>
 <p><a class="reference internal" href="../3_glossary/3_Glossary.html#timelapse-images"><span class="std std-ref">Time-lapse images</span></a> are images taken at regular intervals (e.g., hourly or daily, on the hour), regardless of whether an animal is present or not. It is critical to take a minimum of one <a class="reference internal" href="../3_glossary/3_Glossary.html#timelapse-images"><span class="std std-ref">time-lapse image</span></a> per day at a consistent time (e.g., 12:00 pm [noon]) to
 create a record of camera functionality. <a class="reference internal" href="../3_glossary/3_Glossary.html#timelapse-images"><span class="std std-ref">Time-lapse images</span></a> can also be used to monitor vegetation phenology and productivity, and they may be useful in measuring wildfire and snow regimes (Sun et al., 2021).</p>
@@ -513,7 +524,7 @@ create a record of camera functionality. <a class="reference internal" href="../
 (TTE)</span></a> models; see Moeller et al., [2018] for advantages and disadvantages).</p>
 </section>
 <section id="trigger-sensitivity-photos-per-trigger-motion-image-interval-and-quiet-period">
-<span id="toc-survey-guidelines-trigger-sensitivity-photos-per-trigger-motion-image-interval-and-quiet-period"></span><h3>7.2.3 Trigger Sensitivity, Photos Per Trigger, Motion Image Interval and Quiet Period<a class="headerlink" href="#trigger-sensitivity-photos-per-trigger-motion-image-interval-and-quiet-period" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-trigger-sensitivity-photos-per-trigger-motion-image-interval-and-quiet-period"></span><h3>7.2.3 Trigger Sensitivity, Photos Per Trigger, Motion Image Interval and Quiet Period<a class="headerlink" href="#trigger-sensitivity-photos-per-trigger-motion-image-interval-and-quiet-period" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-sensitivity"><span class="std std-ref"><strong>Trigger Sensitivity</strong></span></a> determines how easily the camera is activated (”<a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggered</span></a>”) via the passive infrared (PIR) detector (sensors) once the animal enters the <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-zone"><span class="std std-ref">detection zone</span></a>. A high <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-sensitivity"><span class="std std-ref">Trigger
 Sensitivity</span></a> is ideal when estimating <a class="reference internal" href="../3_glossary/3_Glossary.html#density"><span class="std std-ref">density</span></a> or abundance using mark-recapture or <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-occupancy-model"><span class="std std-ref">occupancy modelling</span></a> (Rovero et al., 2013). The more easily (and faster) the camera is <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggered</span></a>, the more likely it is to
 photograph approaching animals as they enter the area (Apps &amp; McNutt, 2018). High <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a> (and fast <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-motion-image-interval"><span class="std std-ref">Motion Image Intervals</span></a>) are less necessary if attractants are present (Rovero et al., 2013). Refer to <a class="reference internal" href="1_6.0_Study-design.html#toc-survey-guidelines-site-selection-and-camera-arrangement"><span class="std std-ref">section
@@ -528,7 +539,7 @@ A3</span></a>).</p>
 </section>
 </section>
 <section id="attractants-vs-no-attractants">
-<span id="toc-survey-guidelines-attractants-vs-no-attractants"></span><h2>7.3 Attractants <em>vs.</em> no attractants<a class="headerlink" href="#attractants-vs-no-attractants" title="Permalink to this headline">#</a></h2>
+<span id="toc-survey-guidelines-attractants-vs-no-attractants"></span><h2>7.3 Attractants <em>vs.</em> no attractants<a class="headerlink" href="#attractants-vs-no-attractants" title="Permalink to this heading">#</a></h2>
 <p>Attractants (i.e., <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-bait"><span class="std std-ref">bait</span></a> or <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-lure"><span class="std std-ref">lure</span></a>) can increase the <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> by drawing animals into the camera’s <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-zone"><span class="std std-ref">detection zone</span></a> , thereby effectively increasing the sampled area.</p>
 <p><a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-bait"><span class="std std-ref">Bait</span></a> is a food item (or other substance) that is placed to attract animals via the sense of taste and olfactory cues (Schlexer, 2008). <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-lure"><span class="std std-ref">Lure</span></a> is any substance that draws animals closer; <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-lure"><span class="std std-ref">lures</span></a> include <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-scent-lure"><span class="std std-ref">scent (olfactory) lure</span></a>,
 <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-visual-lure"><span class="std std-ref">visual lure</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-audible-lure"><span class="std std-ref">audible lure</span></a> (Schlexer, 2008).</p>
@@ -557,11 +568,11 @@ Act</a> and <a class="reference external" href="https://open.alberta.ca/publicat
 provide an official list of First Nations and Metis settlements to consult if consultation is required since “LAIRT will report on where government ordinarily considers requiring consultation with a particular First Nation or Metis Settlement, which is subject to be revised at any time” (Government of Alberta, 2023a).</p>
 </section>
 <section id="camera-placement">
-<span id="toc-survey-guidelines-camera-placement"></span><h2>7.4 Camera placement<a class="headerlink" href="#camera-placement" title="Permalink to this headline">#</a></h2>
+<span id="toc-survey-guidelines-camera-placement"></span><h2>7.4 Camera placement<a class="headerlink" href="#camera-placement" title="Permalink to this heading">#</a></h2>
 <p>When deploying a remote camera, important considerations include whether to place cameras on or aim cameras towards specific features, as well as the Camera Attachment point, <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-height"><span class="std std-ref">height</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-angle"><span class="std std-ref">angle</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-direction"><span class="std std-ref">direction</span></a>.</p>
 <p>The information in this section is also included in a step-by-step description of the <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a> process (<a class="reference internal" href="1_10.1_AppendixA-Tables.html#survey-guidelines-appendix-a-table-a-5"><span class="std std-ref">Appendix A - Table A5</span></a>).</p>
 <section id="fov-target-feature">
-<span id="toc-survey-guidelines-fov-target-feature"></span><h3>7.4.1 FOV Target Feature<a class="headerlink" href="#fov-target-feature" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-fov-target-feature"></span><h3>7.4.1 FOV Target Feature<a class="headerlink" href="#fov-target-feature" title="Permalink to this heading">#</a></h3>
 <p>Remote cameras may be deployed to capture detections on specific man-made or natural features (i.e., “<a class="reference internal" href="../3_glossary/3_Glossary.html#fov-target"><span class="std std-ref"><strong>FOV Target Feature</strong></span></a>”) to maximize the detection of uncommon wildlife species or to measure the use of that feature. <a class="reference internal" href="../3_glossary/3_Glossary.html#fov-target"><span class="std std-ref">FOV Target Features</span></a> may include, for example, game trails, human trails, watering holes, mineral licks, rub trees, nest sites etc.</p>
 <p><a class="reference internal" href="../3_glossary/3_Glossary.html#fov-target"><span class="std std-ref">FOV Target Features</span></a> differ from <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location-characteristics"><span class="std std-ref">Camera Location Characteristics</span></a> (see below) in that <a class="reference internal" href="../3_glossary/3_Glossary.html#fov-target"><span class="std std-ref">FOV Target Features</span></a> are features the camera is aimed towards (e.g., a seismic line). In contrast, a <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location-characteristics"><span class="std std-ref">Camera Location Characteristics</span></a> may include features outside of the camera’s <a class="reference internal" href="../3_glossary/3_Glossary.html#field-of-view"><span class="std std-ref">FOV</span></a> (e.g., meadow habitat).</p>
 <p>The decision of where exactly to place the camera will be influenced by the feature to target, the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">Survey Objectives</span></a> and the number of <a class="reference internal" href="../3_glossary/3_Glossary.html#target-species"><span class="std std-ref">Target Species</span></a>, and, importantly, the sampling design, intended analysis and associated statistical <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-assumption"><span class="std std-ref">assumptions</span></a>.</p>
@@ -582,7 +593,7 @@ the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-hei
 </div>
 </section>
 <section id="camera-height">
-<span id="toc-survey-guidelines-camera-height"></span><h3>7.4.2 Camera Height<a class="headerlink" href="#camera-height" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-camera-height"></span><h3>7.4.2 Camera Height<a class="headerlink" href="#camera-height" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-height"><span class="std std-ref"><strong>Camera Height</strong></span></a> is the height from the ground (below snow) to the bottom of the lens (recorded in metres to the nearest 0.05 m). Cameras should be positioned and secured to an attachment point at <strong>~0.5–1 m height</strong> (from the ground to the bottom of the lens; Meek et al.,
 2014). The most appropriate <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-height"><span class="std std-ref">Camera Height</span></a> will be influenced by the terrain (e.g., slope), the angle of the tree, as well as the <a class="reference internal" href="../3_glossary/3_Glossary.html#target-species"><span class="std std-ref">Target Species</span></a>. Cameras placed closer to the ground reduce the probability that large animals (e.g., moose) will be fully in the frame
 in the photos. Similarly, if the camera is placed too high, only larger animals will activate the motion detector, and smaller species may be missed (e.g., hares, squirrels, marten) (Meek et al., 2016). The user should ensure that the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-height"><span class="std std-ref">Camera Height</span></a> adequately detects motion at a
@@ -590,7 +601,7 @@ specified <a class="reference internal" href="../3_glossary/3_Glossary.html#depl
 probability</span></a>.</p>
 </section>
 <section id="camera-angle">
-<span id="toc-survey-guidelines-camera-angle"></span><h3>7.4.3 Camera angle<a class="headerlink" href="#camera-angle" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-camera-angle"></span><h3>7.4.3 Camera angle<a class="headerlink" href="#camera-angle" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-angle"><span class="std std-ref"><strong>camera angle</strong></span></a> is the degree to which the camera is pointed towards the <a class="reference internal" href="../3_glossary/3_Glossary.html#fov-target"><span class="std std-ref">FOV Target Feature</span></a> relative to the horizontal ground surface (with respect to slope, if applicable). The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-angle"><span class="std std-ref">camera angle</span></a> differs from the camera <a class="reference internal" href="../3_glossary/3_Glossary.html#fov-viewshed"><span class="std std-ref">viewshed</span></a>
 angle, which is the area visible to the camera as determined by its camera lens angle and trigger distance (Moeller et al., 2023).</p>
 <p>Cameras should be <strong>angled slightly downward</strong>, such that they should be able to detect both small and large species at a target distance of approximately <strong>3–5 m</strong> from the camera and/or the user ensures that the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-angle"><span class="std std-ref">angle</span></a> adequately detects motion at a specified <a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest-distance"><span class="std std-ref">Walktest Distance
@@ -598,7 +609,7 @@ angle, which is the area visible to the camera as determined by its camera lens 
 plan to revisit seasonally to adjust as needed, being sure to record adjustments that could affect <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a>.</p>
 </section>
 <section id="camera-direction">
-<span id="toc-survey-guidelines-camera-direction"></span><h3>7.4.4 Camera Direction<a class="headerlink" href="#camera-direction" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-camera-direction"></span><h3>7.4.4 Camera Direction<a class="headerlink" href="#camera-direction" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-direction"><span class="std std-ref">Camera Direction</span></a> is the cardinal direction that a camera faces. Cameras are usually positioned to maximize detections of the <a class="reference internal" href="../3_glossary/3_Glossary.html#target-species"><span class="std std-ref">Target Species</span></a> (except when <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-random"><span class="std std-ref">random</span></a> placement is required).</p>
 <p>The direction a camera faces is an important consideration because it affects the amount of light that reaches the area, which has implications for both <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> and image quality (reduced quality via sun glare). Ideally, cameras should face north (N; i.e. “0”
 degrees), or south (S; i.e. “180” degrees) if north is not possible. Sun glare is the most problematic for cameras that face east or west by causing <a class="reference internal" href="../3_glossary/3_Glossary.html#false-triggers"><span class="std std-ref">false triggers</span></a> unless there is thick tree cover blocking the sun (standing water may also produce similar problems with sun glare).</p>
@@ -607,7 +618,7 @@ the camera’s <a class="reference internal" href="../3_glossary/3_Glossary.html
 <a class="reference internal" href="../3_glossary/3_Glossary.html#equip-trigger-speed"><span class="std std-ref">trigger speed</span></a> for a particular camera and the settings applied. The size of the <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-zone"><span class="std std-ref">detection zone</span></a> will depend on the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-make"><span class="std std-ref">Camera Make</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Model</span></a>.</p>
 </section>
 <section id="field-of-view-fov-and-walktest">
-<span id="toc-survey-guidelines-fov-and-walktest"></span><h3>7.4.5 Field of View (FOV) and Walktest<a class="headerlink" href="#field-of-view-fov-and-walktest" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-fov-and-walktest"></span><h3>7.4.5 Field of View (FOV) and Walktest<a class="headerlink" href="#field-of-view-fov-and-walktest" title="Permalink to this heading">#</a></h3>
 <p>It is important to try to ensure an unobstructed <a class="reference internal" href="../3_glossary/3_Glossary.html#field-of-view"><span class="std std-ref">Field of View (FOV)</span></a> from the camera to avoid impairing the <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-rate"><span class="std std-ref">detection rates</span></a> of wildlife (or humans). Moll et al. (2019) reported decreased <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-rate"><span class="std std-ref">detection rates</span></a> with increasing obstruction for most
 mammals in their study and two- to three-fold decreases in detections per week per camera. They concluded that it was critical to account for <a class="reference internal" href="../3_glossary/3_Glossary.html#fov-viewshed"><span class="std std-ref">viewshed</span></a> obstruction when interpreting <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-rate"><span class="std std-ref">detection rates</span></a> as indices of abundance and habitat use.</p>
 <p>To determine a camera’s <a class="reference internal" href="../3_glossary/3_Glossary.html#field-of-view"><span class="std std-ref">FOV</span></a>, a <a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest"><span class="std std-ref">walktest</span></a> should be performed every time a camera is deployed or re-positioned. See the camera’s user manual for instructions on how to perform the <a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest"><span class="std std-ref">walktest</span></a> for your particular <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-make"><span class="std std-ref">Camera Make</span></a> and
@@ -630,14 +641,14 @@ drain batteries and fill SD cards and increase the time to process images.</p>
 away from the camera, at both 0 m (ground) and 0.5–1 m heights.</p>
 </section>
 <section id="test-image">
-<span id="toc-survey-guidelines-test-image"></span><h3>7.4.6 Test image<a class="headerlink" href="#test-image" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-test-image"></span><h3>7.4.6 Test image<a class="headerlink" href="#test-image" title="Permalink to this heading">#</a></h3>
 <p>A <a class="reference internal" href="../3_glossary/3_Glossary.html#test-image"><span class="std std-ref"><strong>test image</strong></span></a> should be taken from the camera after the <a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest"><span class="std std-ref">walktest</span></a> is complete to provide a permanent record of the <a class="reference internal" href="../3_glossary/3_Glossary.html#metadata-service-retrieval"><span class="std std-ref">service/ retrieval metadata</span></a>. A <a class="reference internal" href="../3_glossary/3_Glossary.html#test-image"><span class="std std-ref">test image</span></a> should each include a <a class="reference internal" href="../index.html#test-image-sheet"><span class="std std-ref">Test Image Sheet</span></a>
 or whiteboard with information on the <a class="reference internal" href="../3_glossary/3_Glossary.html#id-sample-station-id"><span class="std std-ref">Sample Station ID</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">Camera Location ID</span></a>, crew, and <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment-start-date-time"><span class="std std-ref">Deployment Start Date Time (DD-MMM-YYYY HH:MM:SS)</span></a>. Taking a <a class="reference internal" href="../3_glossary/3_Glossary.html#test-image"><span class="std std-ref">test image</span></a> can be useful to compare the information
 from the <a class="reference internal" href="../3_glossary/3_Glossary.html#test-image"><span class="std std-ref">test image</span></a> to that which was collected on the <a class="reference internal" href="../index.html#camera-service-retrieval-field-datasheet"><span class="std std-ref">Camera Service/Retrieval Field Datasheet</span></a> after retrieval, which can help in reducing recording errors.</p>
 <p>See <a class="reference internal" href="1_10.1_AppendixA-Tables.html#survey-guidelines-appendix-a-table-a-5"><span class="std std-ref">Appendix A - Table A5</span></a> for details on how to capture a <a class="reference internal" href="../3_glossary/3_Glossary.html#test-image"><span class="std std-ref">test image</span></a>, and to the provided <a class="reference internal" href="../index.html#test-image-sheet"><span class="std std-ref">Test Image Sheet</span></a>.</p>
 </section>
 <section id="deployment-area-photos-optional">
-<span id="toc-survey-guidelines-deployment-area-photos-optional"></span><h3>7.4.7 Deployment Area Photos (optional)<a class="headerlink" href="#deployment-area-photos-optional" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-deployment-area-photos-optional"></span><h3>7.4.7 Deployment Area Photos (optional)<a class="headerlink" href="#deployment-area-photos-optional" title="Permalink to this heading">#</a></h3>
 <p>It is useful to collect photos of the area around the <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a> (i.e., <a class="reference internal" href="../3_glossary/3_Glossary.html#deploymnet-area-photos"><span class="std std-ref"><strong>deployment area photos</strong></span></a>) as a permanent, visual record of the <a class="reference internal" href="../3_glossary/3_Glossary.html#fov-target"><span class="std std-ref">FOV Target Features</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location-characteristics"><span class="std std-ref">Camera Location Characteristics</span></a>,
 environmental conditions (e.g., vegetation, ecosite, or weather),or other variables of interest.</p>
 <p>Take <a class="reference internal" href="../3_glossary/3_Glossary.html#deploymnet-area-photos"><span class="std std-ref">deployment area photos</span></a> with a handheld digital camera or phone at each <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a> at deployment, service and retrieval. The recommendation includes collecting four photos taken from the centre of the target detection zone (<a class="reference internal" href="#survey-guidelines-figure-5"><span class="std std-ref">Figure
@@ -645,7 +656,7 @@ environmental conditions (e.g., vegetation, ecosite, or weather),or other variab
 <p>Record the image numbers (e.g., DSC100; “<a class="reference internal" href="../3_glossary/3_Glossary.html#deploymnet-area-photo-numbers"><span class="std std-ref">Deployment Area Photo Numbers</span></a>”) for each set of camera <a class="reference internal" href="../3_glossary/3_Glossary.html#deploymnet-area-photos"><span class="std std-ref">deployment area photos</span></a> on a <a class="reference internal" href="../index.html#camera-deployment-field-datasheet"><span class="std std-ref">Camera Deployment Field Datasheet</span></a>.</p>
 </section>
 <section id="camera-location-characteristics">
-<span id="toc-survey-guidelines-camera-location-characteristics"></span><h3>7.4.8 Camera Location Characteristics<a class="headerlink" href="#camera-location-characteristics" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-camera-location-characteristics"></span><h3>7.4.8 Camera Location Characteristics<a class="headerlink" href="#camera-location-characteristics" title="Permalink to this heading">#</a></h3>
 <p><a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location-characteristics"><span class="std std-ref"><strong>Camera Location Characteristics</strong></span></a> are any significant characteristics (human-made or natural, e.g., game trail, seismic line, culvert, burn, etc.), habitat types (e.g., forest - conifer, agricultural field, etc.), animal-made structures (e.g., beaver dam, den,
 burrow, etc.), attractants (e.g., carcass, mineral licks, etc.) in front of, or around the <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a> at the time of the visit. <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location-characteristics"><span class="std std-ref">Camera Location Characteristics</span></a> can include those outside the camera’s <a class="reference internal" href="../3_glossary/3_Glossary.html#field-of-view"><span class="std std-ref">FOV</span></a>.</p>
 <p>Researchers typically record information about the environment at <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera locations</span></a> to better understand how this might affect animal occurrence or behaviour. It is recommended to record all <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location-characteristics"><span class="std std-ref">Camera Location Characteristics</span></a> and upload
@@ -654,12 +665,12 @@ models to an open-source platform like <a class="reference external" href="https
 <a class="reference external" href="https://www.alberta.ca/fisheries-and-wildlife-management-information-system-overview.aspx">FWMIS</a>.</p>
 </section>
 <section id="field-equipment">
-<span id="toc-survey-guidelines-field-equipment"></span><h3>7.4.9 Field equipment<a class="headerlink" href="#field-equipment" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-field-equipment"></span><h3>7.4.9 Field equipment<a class="headerlink" href="#field-equipment" title="Permalink to this heading">#</a></h3>
 <p>Refer to <a class="reference internal" href="1_10.1_AppendixA-Tables.html#survey-guidelines-appendix-a-table-a-4"><span class="std std-ref">Appendix A - Table A4</span></a> for a recommended list of field equipment for remote camera studies.</p>
 </section>
 </section>
 <section id="metadata">
-<span id="toc-survey-guidelines-metadata"></span><h2>7.5 Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">#</a></h2>
+<span id="toc-survey-guidelines-metadata"></span><h2>7.5 Metadata<a class="headerlink" href="#metadata" title="Permalink to this heading">#</a></h2>
 <p><a class="reference internal" href="../3_glossary/3_Glossary.html#metadata"><span class="std std-ref">Metadata</span></a> (i.e., data that provides information about other data) is critical to any scientific study or monitoring program. It helps to ensure that data are consistent and accurate and facilitates data sharing across <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-project"><span class="std std-ref">projects</span></a>. Alberta and British Columbia have established <a class="reference internal" href="../3_glossary/3_Glossary.html#metadata"><span class="std std-ref">metadata</span></a> standards (AB Metadata Standards [RCSC, 2023] and the [B.C. Metadata Standards <a class="reference external" href="https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/wcmp_v1.pdf">RISC, 2019</a>]) that all camera <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-project"><span class="std std-ref">projects</span></a> in the provinces should follow. In these guidelines, we focus on the metadata fields that pertain to the deployment of cameras, that should be collected when the user “visits” the location.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -668,7 +679,7 @@ additional/alternative fields required by the Alberta Government’s <a class="r
 has been made to align the various sources where possible.</p>
 </div>
 <section id="metadata-deployment-service-and-retrieval">
-<span id="toc-survey-guidelines-metadata-deployment-service-and-retrieval"></span><h3>7.5.1 Metadata - Deployment, Service and Retrieval<a class="headerlink" href="#metadata-deployment-service-and-retrieval" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-metadata-deployment-service-and-retrieval"></span><h3>7.5.1 Metadata - Deployment, Service and Retrieval<a class="headerlink" href="#metadata-deployment-service-and-retrieval" title="Permalink to this heading">#</a></h3>
 <p>A <strong>visit</strong> is when a <a class="reference internal" href="../3_glossary/3_Glossary.html#crew-members"><span class="std std-ref">crew</span></a> has gone to a location to deploy (”<a class="reference internal" href="../3_glossary/3_Glossary.html#visit-deployment"><span class="std std-ref">deployment visit</span></a>”), service, or retrieve (”<a class="reference internal" href="../3_glossary/3_Glossary.html#visit-service-retrieval"><span class="std std-ref">service/retrieval visit</span></a>”) a remote camera.</p>
 <p>A “<strong>deployment visit</strong>” is when a <a class="reference internal" href="../3_glossary/3_Glossary.html#crew-deployment"><span class="std std-ref">Deployment Crew</span></a> has gone to a location to deploy a remote camera. Relevant <a class="reference internal" href="../3_glossary/3_Glossary.html#metadata"><span class="std std-ref">metadata</span></a> should be recorded when a camera is initially set up (deployed) using the <a class="reference internal" href="../index.html#camera-deployment-field-datasheet"><span class="std std-ref">Camera Deployment Field Datasheet</span></a>.
 Each event should have its own <a class="reference internal" href="../index.html#camera-deployment-field-datasheet"><span class="std std-ref">Camera Deployment Field Datasheet</span></a>.</p>
@@ -691,11 +702,11 @@ Each event should have its own <a class="reference internal" href="../index.html
 <p>Refer to <a class="reference internal" href="1_10.1_AppendixA-Tables.html#survey-guidelines-appendix-a-table-a-5"><span class="std std-ref">Appendix A - Table A5</span></a> for a detailed step-by-step and full lists of metadata fields and to the <a class="reference internal" href="../index.html#camera-deployment-field-datasheet"><span class="std std-ref">Camera Deployment Field Datasheet</span></a>, and the <a class="reference internal" href="1_11.0_AppendixB-FigureB1.html#toc-survey-guidelines-appendix-b"><span class="std std-ref">Camera Service/Retrieval Field Datasheet</span></a>.</p>
 </section>
 <section id="spatial-information">
-<span id="toc-survey-guidelines-metadata-spatial-information"></span><h3>7.5.2 Spatial information<a class="headerlink" href="#spatial-information" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-metadata-spatial-information"></span><h3>7.5.2 Spatial information<a class="headerlink" href="#spatial-information" title="Permalink to this heading">#</a></h3>
 <p>Coordinates collected in the field are often used to obtain land cover information via GIS and can be imperative to finding <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera locations</span></a> later. A large margin of error in collecting coordinates may result in the misclassification of land cover (Robinson et al., 2020) or increase the difficulty of another field <a class="reference internal" href="../3_glossary/3_Glossary.html#crew-members"><span class="std std-ref">crew</span></a> finding a camera. It is important to record the accuracy (margin of error) of the GPS unit used to record spatial information (coordinates) (i.e., the <a class="reference internal" href="../3_glossary/3_Glossary.html#gps-unit-accuracy"><span class="std std-ref">GPS unit accuracy</span></a>, e.g., Garmin GPS devices are accurate to within +/- 15 metres 95% of the time). <a class="reference internal" href="../3_glossary/3_Glossary.html#gps-unit-accuracy"><span class="std std-ref">GPS unit accuracy</span></a> may vary by the make and model of the GPS unit (Hall et al., 2008), but it also may be affected by nearby vegetation, infrastructure, atmospheric interference, etc. (Ganskopp &amp; Johnson, 2007).</p>
 </section>
 <section id="sd-card-retrieval">
-<span id="toc-survey-guidelines-metadata-sd-card-retrieval"></span><h3>7.5.3 SD card retrieval<a class="headerlink" href="#sd-card-retrieval" title="Permalink to this headline">#</a></h3>
+<span id="toc-survey-guidelines-metadata-sd-card-retrieval"></span><h3>7.5.3 SD card retrieval<a class="headerlink" href="#sd-card-retrieval" title="Permalink to this heading">#</a></h3>
 <p>When retrieving camera SD cards, remove the SD card from the camera and place it into a SD card case, a 2.25” x 3.5”-coin envelope, or a similar pouch labelled with the <a class="reference internal" href="../3_glossary/3_Glossary.html#id-deployment-id"><span class="std std-ref">Deployment ID</span></a> and SD card number. If certain camera units are part of a larger <a class="reference internal" href="../3_glossary/3_Glossary.html#hierarch-survey"><span class="std std-ref">survey</span></a> area, group
 these pouches into a larger envelope and mark it with the <a class="reference internal" href="../3_glossary/3_Glossary.html#id-project"><span class="std std-ref">Project ID</span></a>/<a class="reference internal" href="../3_glossary/3_Glossary.html#id-survey"><span class="std std-ref">Survey ID</span></a>.</p>
 </section>
@@ -727,11 +738,10 @@ these pouches into a larger envelope and mark it with the <a class="reference in
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="1_6.0_Study-design.html"
@@ -751,10 +761,7 @@ these pouches into a larger envelope and mark it with the <a class="reference in
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -846,8 +853,8 @@ By Alberta Remote Camera Steering Committee (RCSC), Stevenson, C., Hubbs, A., & 
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>2.0 Background &#8212; Remote Camera Survey Guidelines - Guidelines for Western Canada</title>
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -66,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="3.0 Metadata Standards" href="2_3.0_Metadata-Standards.html" />
     <link rel="prev" title="1.0 Purpose" href="2_1.0_Purpose.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -75,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -354,10 +365,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -365,7 +376,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -395,7 +406,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="background">
-<span id="toc-metadata-standards-background"></span><h1>2.0 Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h1>
+<span id="toc-metadata-standards-background"></span><h1>2.0 Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h1>
 <p>Remote cameras (or “wildlife cameras” or “camera traps”) are a valuable tool for detecting a wide range of wildlife species (Burton et al., 2015; Lahoz-Monfort &amp; Magrath, 2021; O’Connell et al., 2010). Remote cameras consist of a digital camera with an external flash and/or passive infrared detector (sensor; see Lahoz-Monfort &amp; Magrath, 2021; Rovero et al., 2013 for detailed reviews). When animals pass in front of a camera, the sensor is <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggered</span></a>, and the resulting images are stamped with the date and time. Date and time stamps are valuable because combining image data with data from Global Positioning Systems (GPS) provides a permanent spatial and temporal record of wildlife occurrences. Although remote cameras are primarily used to detect medium to large-sized mammals, they have also been used to detect small mammals (e.g., [Lazenby et al., 2015; Mills et al., 2016; Tschumi et al., 2018) and birds (e.g., Kruger et al., 2018; Lynch et al., 2015; Suwanrat et al., 2015).</p>
 <p>Remote cameras have been used to measure presence / absence (e.g., Kucera &amp; Barrett, 2011), <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-relative-abundance"><span class="std std-ref">relative abundance</span></a> (e.g., Carbone et al., 2001), <a class="reference internal" href="../3_glossary/3_Glossary.html#density"><span class="std std-ref">density</span></a> of <a class="reference internal" href="../3_glossary/3_Glossary.html#typeid-marked"><span class="std std-ref">marked</span></a> (e.g., Karanth et al., 2006) and <a class="reference internal" href="../3_glossary/3_Glossary.html#typeid-unmarked"><span class="std std-ref">unmarked</span></a> (e.g., Becker et al., 2022) animals, population composition (age/sex ratios; e.g., Duquette et al., 2014), species richness / diversity (e.g., Ahumada et al., 2011), habitat use / distribution (e.g., Bowkett et al., 2008; O’Connell et al., 2006; Whittington et al., 2019), diel / seasonal activity patterns (e.g., Frey et al., 2017), individual breeding status (e.g., Fisher et al., 2014; Muhly et al., 2011), and behaviour (e.g., Holinda et al., 2020; Murray et al., 2016).</p>
 <p>There has been a global push to standardize the collection of remote camera data (Fegraus et al., 2011; McShea et al., 2020; Meek et al., 2014; Steenweg et al., 2017). Here, we developed a Remote Camera Metadata Standards for Alberta based on the <a class="reference external" href="https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/wcmp_v1.pdf">B.C. Metadata Standards (RISC, 2019)</a>, the Open Camera Trap Metadata Standard (CTMS; Forrester et al. 2016) and <a class="reference external" href="https://docs.google.com/spreadsheets/d/1Jg-WybmVeGlWGrbPpwuwJCgranOV1r3M_LrzELttfK0/edit#gid=412365965">Wildlife Insights Minimum Metadata Standards (Ahumada et al., 2019)</a>. The Alberta Remote Camera Metadata Standards also builds on the experience of remote camera users in Alberta, British Columbia and other jurisdictions and creates the opportunity for data from Alberta to be integrated with regional, national and global remote camera datasets.</p>
@@ -426,11 +437,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="2_1.0_Purpose.html"
@@ -450,10 +460,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -502,8 +509,8 @@ By Alberta Remote Camera Steering Committee (RCSC), Stevenson, C., Hubbs, A., & 
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

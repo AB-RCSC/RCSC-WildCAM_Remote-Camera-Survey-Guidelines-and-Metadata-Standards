@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>8.0 Deployment &#8212; Remote Camera Survey Guidelines - Guidelines for Western Canada</title>
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -66,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="9.0 Image/Sequence" href="2_9.0_Image_Sequence.html" />
     <link rel="prev" title="7.0 Sample Station/Camera Location" href="2_7.0_Sample-Station_Camera-Location.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -75,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -354,10 +365,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -365,7 +376,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -448,7 +459,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="deployment">
-<span id="toc-metadata-standards-deployment"></span><h1>8.0 Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">#</a></h1>
+<span id="toc-metadata-standards-deployment"></span><h1>8.0 Deployment<a class="headerlink" href="#deployment" title="Permalink to this heading">#</a></h1>
 <p>A <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a> is a unique placement of a camera in space and time. There may be multiple <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployments</span></a> for one <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a>. <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">Deployments</span></a> are often considered as the time between <a class="reference internal" href="../3_glossary/3_Glossary.html#visit"><span class="std std-ref">visits</span></a> to a <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a> (i.e., <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a> to service, service to service, and service to retrieval). Any change to <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a>, sampling period, camera equipment (e.g., <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-sensitivity"><span class="std std-ref">Trigger Sensitivity setting</span></a>, becomes non-functioning), and/or conditions (e.g., not <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-bait"><span class="std std-ref">baited</span></a> then not <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-bait"><span class="std std-ref">baited</span></a> later; camera SD card replaced) should be documented as a unique <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a>.</p>
 <p><a class="reference internal" href="../3_glossary/3_Glossary.html#metadata"><span class="std std-ref">Metadata</span></a> information associated with the <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a> level of the hierarchy (<a class="reference internal" href="2_3.0_Metadata-Standards.html#metadata-standards-figure-1"><span class="std std-ref">Figure 1</span></a>) can be grouped into the following subsections:</p>
 <ul class="simple">
@@ -461,60 +472,60 @@ document.write(`
 <li><p><strong>Image Set Information</strong> (collected as a combination of information from <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment-metadata"><span class="std std-ref">deployment metadata</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#metadata-service-retrieval"><span class="std std-ref">service/retrieval metadata</span></a>)</p></li>
 </ul>
 <section id="deployment-visit-metadata">
-<span id="toc-metadata-standards-deployment-visit-metadata"></span><h2>8.1 Deployment - Visit Metadata<a class="headerlink" href="#deployment-visit-metadata" title="Permalink to this headline">#</a></h2>
+<span id="toc-metadata-standards-deployment-visit-metadata"></span><h2>8.1 Deployment - Visit Metadata<a class="headerlink" href="#deployment-visit-metadata" title="Permalink to this heading">#</a></h2>
 <p><a class="reference internal" href="../3_glossary/3_Glossary.html#visit-metadata"><span class="std std-ref">Visit metadata</span></a> that should be collected each time a <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a> is <a class="reference internal" href="../3_glossary/3_Glossary.html#visit"><span class="std std-ref">visited</span></a> to deploy, service or retrieve a camera. The relevant data that should be collected may differ depending on the type of <a class="reference internal" href="../3_glossary/3_Glossary.html#visit"><span class="std std-ref">visit</span></a>.</p>
 <section id="deployment-id">
-<span id="toc-metadata-standards-deployment-id"></span><h3>8.1.1 Deployment ID<a class="headerlink" href="#deployment-id" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-deployment-id"></span><h3>8.1.1 Deployment ID<a class="headerlink" href="#deployment-id" title="Permalink to this heading">#</a></h3>
 <p>A unique alphanumeric identifier for a unique camera deployed during a specific <a class="reference internal" href="../3_glossary/3_Glossary.html#hierarch-survey"><span class="std std-ref">survey</span></a> period (ideally recorded as: “<a class="reference internal" href="../3_glossary/3_Glossary.html#id-camera-location"><span class="std std-ref">Camera Location ID</span></a>”<em>”Deployment Start Date” (or …</em>”Deployment End Date”) (e.g., “BH1_17-JUL-2018” or “BH1_17-JUL-2018_21-JAN-2019”). Alternative naming conventions may be used, but the goal should be to minimize duplicate image names.</p>
 </section>
 <section id="deployment-crew-and-service-retrieval-crew">
-<span id="toc-metadata-standards-deployment-crew-and-serviceretrieval-crew"></span><h3>8.1.2 Deployment Crew and Service/Retrieval Crew<a class="headerlink" href="#deployment-crew-and-service-retrieval-crew" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-deployment-crew-and-serviceretrieval-crew"></span><h3>8.1.2 Deployment Crew and Service/Retrieval Crew<a class="headerlink" href="#deployment-crew-and-service-retrieval-crew" title="Permalink to this heading">#</a></h3>
 <p>The first and last names of all the individuals who collected data during deployment (”<a class="reference internal" href="../3_glossary/3_Glossary.html#crew-deployment"><span class="std std-ref">Deployment Crew</span></a>”), and/or <a class="reference internal" href="../3_glossary/3_Glossary.html#visit-service-retrieval"><span class="std std-ref">service/retrieval visits</span></a> (”<a class="reference internal" href="../3_glossary/3_Glossary.html#crew-service-retrieval"><span class="std std-ref">Service/Retrieval Crew</span></a>”).</p>
 <p>Some platforms (e.g., FWMIS) collect this information in one field (e.g., “Crew Names”) rather than two. In this case, enter the data in a single data row (each row represents a <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a>) and in a format that will make it easy to distinguish between the <a class="reference internal" href="../3_glossary/3_Glossary.html#crew-deployment"><span class="std std-ref">Deployment Crew</span></a> and the <a class="reference internal" href="../3_glossary/3_Glossary.html#crew-service-retrieval"><span class="std std-ref">Service/Retrieval Crew</span></a> (e.g., “<a class="reference internal" href="../3_glossary/3_Glossary.html#crew-deployment"><span class="std std-ref">Deployment Crew</span></a>[John Smith, Jimmy Smith], <a class="reference internal" href="../3_glossary/3_Glossary.html#crew-service-retrieval"><span class="std std-ref">Service/Retrieval Crew</span></a>[Susie Smith]”).</p>
 </section>
 <section id="deployment-start-date-time-dd-mmm-yyyy-hh-mm-ss">
-<span id="toc-metadata-standards-deployment-start-date-time-dd-mmm-yyyy-hhmmss"></span><h3>8.1.3 Deployment Start Date Time (DD-MMM-YYYY HH:MM:SS)<a class="headerlink" href="#deployment-start-date-time-dd-mmm-yyyy-hh-mm-ss" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-deployment-start-date-time-dd-mmm-yyyy-hhmmss"></span><h3>8.1.3 Deployment Start Date Time (DD-MMM-YYYY HH:MM:SS)<a class="headerlink" href="#deployment-start-date-time-dd-mmm-yyyy-hh-mm-ss" title="Permalink to this heading">#</a></h3>
 <p>The date and time that a camera was placed for a specific <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a> (e.g., 17-JUL-2018 10:34:22). The <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment-start-date-time"><span class="std std-ref">Deployment Start Date Time</span></a> may not coincide with when the first image or video was collected (i.e., the <a class="reference internal" href="../3_glossary/3_Glossary.html#image-set-start-date-time"><span class="std std-ref">Image Set Start Date Time</span></a>). Recording this field allows users to account for <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployments</span></a> where no images were captured and to confirm the first date and time a camera was active.</p>
 </section>
 <section id="deployment-end-date-time-dd-mmm-yyyy-hh-mm-ss">
-<span id="toc-metadata-standards-deployment-end-date-time-dd-mmm-yyyy-hhmmss"></span><h3>8.1.4 Deployment End Date Time (DD-MMM-YYYY HH:MM:SS)<a class="headerlink" href="#deployment-end-date-time-dd-mmm-yyyy-hh-mm-ss" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-deployment-end-date-time-dd-mmm-yyyy-hhmmss"></span><h3>8.1.4 Deployment End Date Time (DD-MMM-YYYY HH:MM:SS)<a class="headerlink" href="#deployment-end-date-time-dd-mmm-yyyy-hh-mm-ss" title="Permalink to this heading">#</a></h3>
 <p>The date and time that the data was retrieved for a specific <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a> (e.g., 27-JUL-2019 23:00:00). The <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment-end-date-time"><span class="std std-ref">Deployment End Date Time</span></a> may not coincide with when the last image or video was collected (i.e., the <a class="reference internal" href="../3_glossary/3_Glossary.html#image-set-start-end-time"><span class="std std-ref">Image Set End Date Time</span></a>). Recording this field allows users to account for <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployments</span></a> where no images were captured and to confirm the last date and time that the camera was active.</p>
 <p>If a camera fails (stops functioning), the <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment-end-date-time"><span class="std std-ref">Deployment End Date Time</span></a> should be the date the camera was last known to be operational. For example, if a camera was not operational when it was retrieved on May 5th, the <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment-end-date-time"><span class="std std-ref">Deployment End Date Time</span></a> should be reported as the date and time that the last image or video was captured (e.g., 28-APR-2023 12:36:27).</p>
 <p>On rare occasions, a camera may be non-functioning in the middle of a <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a> period but functioning at the start and end of the <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a> period (e.g., snow covered for a few days). In this case, two unique <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployments</span></a> should be entered for periods before and after the period the camera was not functioning and with unique <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment-start-date-time"><span class="std std-ref">start</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment-end-date-time"><span class="std std-ref">end dates times</span></a>.</p>
 <p>To accurately measure <a class="reference internal" href="../3_glossary/3_Glossary.html#hierarch-survey"><span class="std std-ref">survey</span></a> effort in the event of camera failure, we recommend that users set the camera’s <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-modes"><span class="std std-ref">Trigger Mode(s)</span></a> field to “<a class="reference internal" href="../3_glossary/3_Glossary.html#timelapse-images"><span class="std std-ref">Time-lapse Image</span></a>” to capture at least one image at a consistent time each day. This will allow users to more accurately determine failure dates. For example, it may be difficult to determine a failure date for a camera that is only occasionally <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggered</span></a> by animals (e.g., on a weekly basis). Taking an image at a prescribed interval also provides a consistent record of site conditions over time (e.g., snow cover, vegetation growth).</p>
 </section>
 <section id="visit-comments-optional">
-<span id="toc-metadata-standards-visit-comments-optional"></span><h3>8.1.5 Visit Comments (optional)<a class="headerlink" href="#visit-comments-optional" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-visit-comments-optional"></span><h3>8.1.5 Visit Comments (optional)<a class="headerlink" href="#visit-comments-optional" title="Permalink to this heading">#</a></h3>
 <p>Describe any additional details about a <a class="reference internal" href="../3_glossary/3_Glossary.html#visit"><span class="std std-ref">visit</span></a> to a <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a> (e.g., camera snow-covered; <a class="reference internal" href="../3_glossary/3_Glossary.html#remaining-battery-percent"><span class="std std-ref">Remaining Battery (%)</span></a>; brand of <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-lure"><span class="std std-ref">lure</span></a> reapplied during a <a class="reference internal" href="../3_glossary/3_Glossary.html#visit-service-retrieval"><span class="std std-ref">service/retrieval visit</span></a>).</p>
 </section>
 </section>
 <section id="deployment-equipment-information">
-<span id="toc-metadata-standards-deployment-equipment-information"></span><h2>8.2 Deployment - Equipment Information<a class="headerlink" href="#deployment-equipment-information" title="Permalink to this headline">#</a></h2>
+<span id="toc-metadata-standards-deployment-equipment-information"></span><h2>8.2 Deployment - Equipment Information<a class="headerlink" href="#deployment-equipment-information" title="Permalink to this heading">#</a></h2>
 <section id="camera-id">
-<span id="toc-metadata-standards-camera-id"></span><h3>8.2.1 Camera ID<a class="headerlink" href="#camera-id" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-camera-id"></span><h3>8.2.1 Camera ID<a class="headerlink" href="#camera-id" title="Permalink to this heading">#</a></h3>
 <p>A unique alphanumeric ID (e.g., “RECONPC900-1”) for the camera that distinguishes it from other cameras of the same <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-make"><span class="std std-ref">Camera Make</span></a> or <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Model</span></a>.</p>
 <p>Referred to as “New <a class="reference internal" href="../3_glossary/3_Glossary.html#id-camera-id"><span class="std std-ref">Camera ID</span></a>” on the <a class="reference internal" href="../index.html#camera-service-retrieval-field-datasheet"><span class="std std-ref">Service/Retrieval Field Datasheet</span></a> when a camera is replaced. Record “NULL” if the camera was not replaced.</p>
 </section>
 <section id="camera-make">
-<span id="toc-metadata-standards-camera-make"></span><h3>8.2.2 Camera Make<a class="headerlink" href="#camera-make" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-camera-make"></span><h3>8.2.2 Camera Make<a class="headerlink" href="#camera-make" title="Permalink to this heading">#</a></h3>
 <p>The make (i.e., the manufacturer; e.g., “Reconyx” or “Bushnell’) of a particular camera. The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-make"><span class="std std-ref">Camera Make</span></a> is particularly important information for analyses where different types of cameras may result in variable detection probabilities.</p>
 <p>Referred to as “New <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-make"><span class="std std-ref">Camera Make</span></a>” on the <a class="reference internal" href="../index.html#camera-service-retrieval-field-datasheet"><span class="std std-ref">Service/Retrieval Field Datasheet</span></a> when a camera is replaced at a <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-sample-station"><span class="std std-ref">sample station</span></a>/<a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a>. Record “NULL” for these fields if the camera is not replaced.</p>
 </section>
 <section id="camera-model">
-<span id="toc-metadata-standards-camera-model"></span><h3>8.2.3 Camera Model<a class="headerlink" href="#camera-model" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-camera-model"></span><h3>8.2.3 Camera Model<a class="headerlink" href="#camera-model" title="Permalink to this heading">#</a></h3>
 <p>The model number or name (e.g., “PC900” or “Trophy Cam HD”) of a particular camera. The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Model</span></a> is particularly important information for analyses where different types of cameras may result in variable <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probabilities</span></a>.</p>
 <p>Referred to as “New <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Model</span></a>” on the <a class="reference internal" href="../index.html#camera-service-retrieval-field-datasheet"><span class="std std-ref">Service/Retrieval Field Datasheet</span></a> when a camera is replaced at a <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-sample-station"><span class="std std-ref">sample station</span></a>/<a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a>. Record “NULL” for these fields if the camera is not replaced.</p>
 </section>
 <section id="camera-serial-number">
-<span id="toc-metadata-standards-camera-serial-number"></span><h3>8.2.4 Camera Serial Number<a class="headerlink" href="#camera-serial-number" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-camera-serial-number"></span><h3>8.2.4 Camera Serial Number<a class="headerlink" href="#camera-serial-number" title="Permalink to this heading">#</a></h3>
 <p>The serial number of a particular camera, which is usually found inside the camera cover (e.g., “P900FF04152022”). The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-serial-number"><span class="std std-ref">Camera Serial Number</span></a> helps in differentiating cameras placed on the same <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-attachment"><span class="std std-ref">camera attachment</span></a> point (e.g., tree) and in identifying when cameras are replaced at an existing <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a>.</p>
 <p>Referred to as “New <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-serial-number"><span class="std std-ref">Camera Serial Number</span></a>” on the <a class="reference internal" href="../index.html#camera-service-retrieval-field-datasheet"><span class="std std-ref">Service/Retrieval Field Datasheet</span></a> when a camera is replaced at a <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-sample-station"><span class="std std-ref">sample station</span></a>/<a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a>. Record “NULL” for this field if the camera is not replaced.</p>
 </section>
 </section>
 <section id="deployment-camera-settings">
-<span id="toc-metadata-standards-deployment-camera-settings"></span><h2>8.3 Deployment - Camera Settings<a class="headerlink" href="#deployment-camera-settings" title="Permalink to this headline">#</a></h2>
+<span id="toc-metadata-standards-deployment-camera-settings"></span><h2>8.3 Deployment - Camera Settings<a class="headerlink" href="#deployment-camera-settings" title="Permalink to this heading">#</a></h2>
 <section id="trigger-mode-s">
-<span id="toc-metadata-standards-trigger-modes"></span><h3>8.3.1 Trigger Mode(s)<a class="headerlink" href="#trigger-mode-s" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-trigger-modes"></span><h3>8.3.1 Trigger Mode(s)<a class="headerlink" href="#trigger-mode-s" title="Permalink to this heading">#</a></h3>
 <p>The camera setting(s) that determine how the camera will <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">trigger</span></a>: by motion (“Motion Image”), at set intervals (”<a class="reference internal" href="../3_glossary/3_Glossary.html#timelapse-images"><span class="std std-ref">Time-lapse Image</span></a>”), and/or by video (“Video”; possible with newer <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Models</span></a>, such as Reconyx HP2X).</p>
 <p>Select one of the options from the list provided:</p>
 <ul class="simple">
@@ -528,42 +539,42 @@ document.write(`
 </ul>
 </section>
 <section id="video-length-seconds">
-<span id="toc-metadata-standards-video-length-seconds"></span><h3>8.3.2 Video Length (seconds)<a class="headerlink" href="#video-length-seconds" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-video-length-seconds"></span><h3>8.3.2 Video Length (seconds)<a class="headerlink" href="#video-length-seconds" title="Permalink to this heading">#</a></h3>
 <p>The minimum video duration (in seconds) that the camera will record when <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggered</span></a> (if applicable). Report the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-video-length"><span class="std std-ref">Video Length</span></a> as “NULL” when the video setting is not used.</p>
 </section>
 <section id="trigger-sensitivity">
-<span id="toc-metadata-standards-trigger-sensitivity"></span><h3>8.3.3 Trigger Sensitivity<a class="headerlink" href="#trigger-sensitivity" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-trigger-sensitivity"></span><h3>8.3.3 Trigger Sensitivity<a class="headerlink" href="#trigger-sensitivity" title="Permalink to this heading">#</a></h3>
 <p>The camera setting responsible for how sensitive a camera is to activation (to “<a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggering</span></a>”) via the infrared and/or heat detectors (if applicable). Select one of the following <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-sensitivity"><span class="std std-ref">Trigger Sensitivity settings</span></a> common to most cameras (e.g., Reconyx HyperFire): “Low,” “Low/Med,” “Med,” “Med/High,” “High,” “Very high”. Enter “NULL” if the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-modes"><span class="std std-ref">Trigger Mode</span></a> is set to a timer (see the <a class="reference internal" href="#toc-metadata-standards-motion-image-interval-seconds"><span class="std std-ref">Motion Image Interval (seconds) section</span></a>) or if the camera does not have a <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a> setting option.</p>
 </section>
 <section id="photos-per-trigger">
-<span id="toc-metadata-standards-photos-per-trigger"></span><h3>8.3.4 Photos Per Trigger<a class="headerlink" href="#photos-per-trigger" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-photos-per-trigger"></span><h3>8.3.4 Photos Per Trigger<a class="headerlink" href="#photos-per-trigger" title="Permalink to this heading">#</a></h3>
 <p>The number of photos taken each time the camera is <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggered</span></a> (numeric, e.g., “1”, “2”, “3” etc.).</p>
 </section>
 <section id="motion-image-interval-seconds">
-<span id="toc-metadata-standards-motion-image-interval-seconds"></span><h3>8.3.5 Motion Image Interval (seconds)<a class="headerlink" href="#motion-image-interval-seconds" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-motion-image-interval-seconds"></span><h3>8.3.5 Motion Image Interval (seconds)<a class="headerlink" href="#motion-image-interval-seconds" title="Permalink to this heading">#</a></h3>
 <p>The time (in seconds) between images within a multi-image <a class="reference internal" href="../3_glossary/3_Glossary.html#heirarch-sequence"><span class="std std-ref">sequence</span></a> that occur due to motion, heat, or activation of external detector devices. The <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-motion-image-interval"><span class="std std-ref">Motion Image Interval</span></a> is pre-set in the camera’s settings by the user, but the time at which the camera collects images because of this setting is influenced by the presence of movement or heat. For example, if the camera was set to take three images per event at a <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-motion-image-interval"><span class="std std-ref">Motion Image Interval</span></a> of three seconds when the camera detects motion or heat, the first image will be collected (e.g., at 09:00:00), the second image will be collected three seconds later (09:00:03), and the third will be collected three seconds after that (09:00:06). This setting differs from the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-quiet-period"><span class="std std-ref">Quiet Period</span></a> in that the delay occurs between images contained within a multi-image <a class="reference internal" href="../3_glossary/3_Glossary.html#heirarch-sequence"><span class="std std-ref">sequence</span></a>, rather than between multi-image <a class="reference internal" href="../3_glossary/3_Glossary.html#heirarch-sequence"><span class="std std-ref">sequence</span></a> (as in <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-quiet-period"><span class="std std-ref">Quiet Period</span></a>). If a <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-motion-image-interval"><span class="std std-ref">Motion Image Interval</span></a> was not set, enter “0” seconds (i.e., instantaneous).</p>
 </section>
 <section id="quiet-period-seconds">
-<span id="toc-metadata-standards-quiet-period-seconds"></span><h3>8.3.6 Quiet Period (seconds)<a class="headerlink" href="#quiet-period-seconds" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-quiet-period-seconds"></span><h3>8.3.6 Quiet Period (seconds)<a class="headerlink" href="#quiet-period-seconds" title="Permalink to this heading">#</a></h3>
 <p>The user-defined camera setting which provides the time (in seconds) between shutter “<a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggers</span></a>” if the camera was programmed to pause between firing initially and firing a second time. Also known as “time lag” (depending on the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-make"><span class="std std-ref">Camera Make</span></a>/<a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Model</span></a>; Palmer et al., 2018). Report as “0” if a <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-quiet-period"><span class="std std-ref">Quiet Period</span></a> was not set. The <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-quiet-period"><span class="std std-ref">Quiet Period</span></a> differs from the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-motion-image-interval"><span class="std std-ref">Motion Image Interval</span></a> in that the delay occurs between multi-image <a class="reference internal" href="../3_glossary/3_Glossary.html#heirarch-sequence"><span class="std std-ref">sequences</span></a> rather than between the images contained within multi-image <a class="reference internal" href="../3_glossary/3_Glossary.html#heirarch-sequence"><span class="std std-ref">sequences</span></a> (as in the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-motion-image-interval"><span class="std std-ref">Motion Image Interval</span></a>).</p>
 </section>
 <section id="deployment-camera-placement">
-<span id="toc-metadata-standards-deployment-camera-placement"></span><h3>8.4 Deployment - Camera Placement<a class="headerlink" href="#deployment-camera-placement" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-deployment-camera-placement"></span><h3>8.4 Deployment - Camera Placement<a class="headerlink" href="#deployment-camera-placement" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="camera-height-m">
-<span id="toc-metadata-standards-camera-height-m"></span><h3>8.4.1 Camera Height (m)<a class="headerlink" href="#camera-height-m" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-camera-height-m"></span><h3>8.4.1 Camera Height (m)<a class="headerlink" href="#camera-height-m" title="Permalink to this heading">#</a></h3>
 <p>This is the height from the ground (below snow) to the bottom of the lens (recorded in metres to the nearest 0.05 m).</p>
 </section>
 <section id="camera-direction-degrees-optional">
-<span id="toc-metadata-standards-camera-direction-degrees-optional"></span><h3>8.4.2 Camera Direction (degrees) (optional)<a class="headerlink" href="#camera-direction-degrees-optional" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-camera-direction-degrees-optional"></span><h3>8.4.2 Camera Direction (degrees) (optional)<a class="headerlink" href="#camera-direction-degrees-optional" title="Permalink to this heading">#</a></h3>
 <p>The cardinal direction that a camera faces. Ideally, cameras should face north (N; i.e. “0” degrees), or south (S; i.e., “180” degrees) if north is not possible. The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-direction"><span class="std std-ref">Camera Direction</span></a> should be chosen to ensure the <a class="reference internal" href="../3_glossary/3_Glossary.html#field-of-view"><span class="std std-ref">Field of View (FOV)</span></a> is of the original <a class="reference internal" href="../3_glossary/3_Glossary.html#fov-target"><span class="std std-ref">FOV Target Feature</span></a>.</p>
 </section>
 <section id="stake-distance-m-optional">
-<span id="toc-metadata-standards-stake-distance-m-optional"></span><h3>8.4.3 Stake Distance (m) (optional)<a class="headerlink" href="#stake-distance-m-optional" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-stake-distance-m-optional"></span><h3>8.4.3 Stake Distance (m) (optional)<a class="headerlink" href="#stake-distance-m-optional" title="Permalink to this heading">#</a></h3>
 <p>The distance from the camera to a stake (if applicable; in metres to the nearest 0.05 m). If not applicable, enter “NULL.”</p>
 </section>
 <section id="fov-target-feature">
-<span id="toc-metadata-standards-fov-target-feature"></span><h3>8.4.4 FOV Target Feature<a class="headerlink" href="#fov-target-feature" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-fov-target-feature"></span><h3>8.4.4 FOV Target Feature<a class="headerlink" href="#fov-target-feature" title="Permalink to this heading">#</a></h3>
 <p>A specific man-made or natural feature at which the camera is aimed to maximize the detection of wildlife species or to measure the use of that feature. <a class="reference internal" href="../3_glossary/3_Glossary.html#fov-target"><span class="std std-ref">FOV Target Features</span></a> are important to document in case they result in detection biases.</p>
 <p>Select one of the options from the list provided:</p>
 <ul class="simple">
@@ -591,11 +602,11 @@ document.write(`
 </ul>
 </section>
 <section id="fov-target-feature-distance-m-optional">
-<span id="toc-metadata-standards-fov-target-feature-distance-m-optional"></span><h3>8.4.5 FOV Target Feature Distance (m) (optional)<a class="headerlink" href="#fov-target-feature-distance-m-optional" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-fov-target-feature-distance-m-optional"></span><h3>8.4.5 FOV Target Feature Distance (m) (optional)<a class="headerlink" href="#fov-target-feature-distance-m-optional" title="Permalink to this heading">#</a></h3>
 <p>The distance (in metres) from the camera to the <a class="reference internal" href="../3_glossary/3_Glossary.html#fov-target"><span class="std std-ref">FOV Target Feature</span></a> (recorded to the nearest 0.05 m). If not applicable, enter “NULL.”</p>
 </section>
 <section id="bait-lure-type">
-<span id="toc-metadata-standards-baitlure-type"></span><h3>8.4.6 Bait/Lure Type<a class="headerlink" href="#bait-lure-type" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-baitlure-type"></span><h3>8.4.6 Bait/Lure Type<a class="headerlink" href="#bait-lure-type" title="Permalink to this heading">#</a></h3>
 <p>The type of <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-bait"><span class="std std-ref">bait</span></a> or <a class="reference internal" href="../3_glossary/3_Glossary.html#baitlure-lure"><span class="std std-ref">lure</span></a> used at a <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a>. Select one of the options from the list provided:</p>
 <ul class="simple">
 <li><p><strong>“Scent”</strong></p></li>
@@ -610,9 +621,9 @@ document.write(`
 </section>
 </section>
 <section id="deployment-site-characteristics">
-<span id="toc-metadata-standards-deployment-site-characteristics"></span><h2>8.5 Deployment - Site Characteristics<a class="headerlink" href="#deployment-site-characteristics" title="Permalink to this headline">#</a></h2>
+<span id="toc-metadata-standards-deployment-site-characteristics"></span><h2>8.5 Deployment - Site Characteristics<a class="headerlink" href="#deployment-site-characteristics" title="Permalink to this heading">#</a></h2>
 <section id="camera-location-characteristic-s-optional">
-<span id="toc-metadata-standards-camera-location-characteristics-optional"></span><h3>8.5.1 Camera Location Characteristic(s) (optional)<a class="headerlink" href="#camera-location-characteristic-s-optional" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-camera-location-characteristics-optional"></span><h3>8.5.1 Camera Location Characteristic(s) (optional)<a class="headerlink" href="#camera-location-characteristic-s-optional" title="Permalink to this heading">#</a></h3>
 <p>Record any significant features around the camera at the time of the <a class="reference internal" href="../3_glossary/3_Glossary.html#visit"><span class="std std-ref">visit</span></a>. This may include for example, manmade or natural linear features (e.g., trails), habitat types (e.g., wetlands), wildlife structure (e.g., beaver dam). <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location-characteristics"><span class="std std-ref">Camera Location Characteristic(s)</span></a> differ from <a class="reference internal" href="../3_glossary/3_Glossary.html#fov-target"><span class="std std-ref">FOV Target Features</span></a> in that <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location-characteristics"><span class="std std-ref">Camera Location Characteristic(s)</span></a> could include those not in the camera’s field of view. Researchers typically record information about the environment at <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera locations</span></a> to better understand how this might affect animal occurrence or behaviour.</p>
 <p>List all the characteristics that apply to the <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-camera-location"><span class="std std-ref">camera location</span></a> from the list provided below. List the values alphabetically and separate each entry by a comma and space; e.g., “Building, Forest - Mixedwood, Road, Trail”):</p>
 <ul class="simple">
@@ -640,30 +651,30 @@ document.write(`
 </ul>
 </section>
 <section id="deployment-equipment-checks">
-<span id="toc-metadata-standards-deployment-equipment-checks"></span><h3>8.6 Deployment - Equipment Checks<a class="headerlink" href="#deployment-equipment-checks" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-deployment-equipment-checks"></span><h3>8.6 Deployment - Equipment Checks<a class="headerlink" href="#deployment-equipment-checks" title="Permalink to this heading">#</a></h3>
 <p>A <a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest"><span class="std std-ref"><strong>walktest</strong></span></a> is conducted to ensure the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-height"><span class="std std-ref">Camera Height</span></a>, tilt, etc., adequately captures the desired detection zone (i.e., the area (conical in shape) in which a remote camera can detect the heat signature and motion of an object (Rovero &amp; Zimmermann, 2016). To learn more about <a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest"><span class="std std-ref">walktests</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-zone"><span class="std std-ref">detection zones</span></a>, refer to the <a class="reference internal" href="../index.html#remote-cam-survey-guidelines"><span class="std std-ref">Remote Camera Survey Guidelines (RCSC et al., 2023)</span></a>.</p>
 </section>
 <section id="walktest-distance-m-optional">
-<span id="toc-metadata-standards-walktest-distance-m-optional"></span><h3>8.6.1 Walktest Distance (m) (optional)<a class="headerlink" href="#walktest-distance-m-optional" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-walktest-distance-m-optional"></span><h3>8.6.1 Walktest Distance (m) (optional)<a class="headerlink" href="#walktest-distance-m-optional" title="Permalink to this heading">#</a></h3>
 <p>The **<a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest-distance"><span class="std std-ref">Walktest Distance (m)</span></a>**is the horizontal distance (recorded in metres to the nearest 0.05 m) from the camera at which the <a class="reference internal" href="../3_glossary/3_Glossary.html#crew-members"><span class="std std-ref">crew</span></a> performs the <a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest"><span class="std std-ref">walktest</span></a>. Record as “NULL’’ if no <a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest"><span class="std std-ref">walktest</span></a> was performed.</p>
 </section>
 <section id="walktest-height-m-optional">
-<span id="toc-metadata-standards-walktest-height-m-optional"></span><h3>8.6.2 Walktest Height (m) (optional)<a class="headerlink" href="#walktest-height-m-optional" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-walktest-height-m-optional"></span><h3>8.6.2 Walktest Height (m) (optional)<a class="headerlink" href="#walktest-height-m-optional" title="Permalink to this heading">#</a></h3>
 <p>The **<a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest-height"><span class="std std-ref">Walktest Height (m)</span></a>**is the vertical distance (recorded in metres to the nearest 0.05 m) from the camera at which the <a class="reference internal" href="../3_glossary/3_Glossary.html#crew-members"><span class="std std-ref">crew</span></a> performs the <a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest"><span class="std std-ref">walktest</span></a>. Record as “NULL’’ if no <a class="reference internal" href="../3_glossary/3_Glossary.html#deploy-walktest"><span class="std std-ref">walktest</span></a> was performed.</p>
 </section>
 </section>
 <section id="deployment-image-set-information">
-<span id="toc-metadata-standards-deployment-image-set-information"></span><h2>Deployment - Image Set Information<a class="headerlink" href="#deployment-image-set-information" title="Permalink to this headline">#</a></h2>
+<span id="toc-metadata-standards-deployment-image-set-information"></span><h2>Deployment - Image Set Information<a class="headerlink" href="#deployment-image-set-information" title="Permalink to this heading">#</a></h2>
 <section id="image-set-start-date-time-dd-mmm-yyyy-hh-mm-ss">
-<span id="toc-metadata-standards-image-set-start-date-time-dd-mmm-yyyy-hhmmss"></span><h3>8.7.1 Image Set Start Date Time (DD-MMM-YYYY HH:MM:SS)<a class="headerlink" href="#image-set-start-date-time-dd-mmm-yyyy-hh-mm-ss" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-image-set-start-date-time-dd-mmm-yyyy-hhmmss"></span><h3>8.7.1 Image Set Start Date Time (DD-MMM-YYYY HH:MM:SS)<a class="headerlink" href="#image-set-start-date-time-dd-mmm-yyyy-hh-mm-ss" title="Permalink to this heading">#</a></h3>
 <p>The date and time of the first image or video collected during a specific <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a> (e.g., “17-JUL-2018 12:00:02”). The <a class="reference internal" href="../3_glossary/3_Glossary.html#image-set-start-date-time"><span class="std std-ref">Image Set Start Date Time</span></a> may not coincide with the <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment-start-date-time"><span class="std std-ref">Deployment Start Date Time</span></a>. Recording this field allows users to confirm the first date and time a camera was active (reliable if <a class="reference internal" href="../3_glossary/3_Glossary.html#timelapse-images"><span class="std std-ref">time-lapse images</span></a> were collected; especially valuable if the user scheduled a start delay).</p>
 </section>
 <section id="image-set-end-date-time-dd-mmm-yyyy-hh-mm-ss">
-<span id="toc-metadata-standards-image-set-end-date-time-dd-mmm-yyyy-hhmmss"></span><h3>8.7.2 Image Set End Date Time (DD-MMM-YYYY HH:MM:SS)<a class="headerlink" href="#image-set-end-date-time-dd-mmm-yyyy-hh-mm-ss" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-image-set-end-date-time-dd-mmm-yyyy-hhmmss"></span><h3>8.7.2 Image Set End Date Time (DD-MMM-YYYY HH:MM:SS)<a class="headerlink" href="#image-set-end-date-time-dd-mmm-yyyy-hh-mm-ss" title="Permalink to this heading">#</a></h3>
 <p>The date and time of the last image or video collected during a specific <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a> (e.g., “27-JUL-2019 22:10:05”). The <a class="reference internal" href="../3_glossary/3_Glossary.html#image-set-start-date-time"><span class="std std-ref">Image Set Start Date Time</span></a> may not coincide with the <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment-end-date-time"><span class="std std-ref">Deployment End Date Time</span></a>. Recording this field allows users to account for <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployments</span></a> that were conducted but for which no data was found, and to confirm the last date and time a camera was active (if functioning) if no images or videos were captured prior to service/retrieval (especially valuable if users did not collect <a class="reference internal" href="../3_glossary/3_Glossary.html#timelapse-images"><span class="std std-ref">time-lapse images</span></a> or if the camera malfunctioned).</p>
 </section>
 <section id="deployment-image-count-optional">
-<span id="toc-metadata-standards-deployment-image-count-optional"></span><h3>8.7.3 Deployment Image Count (optional)<a class="headerlink" href="#deployment-image-count-optional" title="Permalink to this headline">#</a></h3>
+<span id="toc-metadata-standards-deployment-image-count-optional"></span><h3>8.7.3 Deployment Image Count (optional)<a class="headerlink" href="#deployment-image-count-optional" title="Permalink to this heading">#</a></h3>
 <p>The total number of images collected during the <a class="reference internal" href="../3_glossary/3_Glossary.html#heirch-deployment"><span class="std std-ref">deployment</span></a>, including <a class="reference internal" href="../3_glossary/3_Glossary.html#false-triggers"><span class="std std-ref">false triggers</span></a> (i.e., empty images with no Species) and those <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggered</span></a> by a <a class="reference internal" href="../3_glossary/3_Glossary.html#timelapse-images"><span class="std std-ref">Time-lapse Image</span></a> <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-modes"><span class="std std-ref">Trigger Mode</span></a> setting. This field is important to record to confirm that no data has been lost during file transfers etc.</p>
 </section>
 </section>
@@ -694,11 +705,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="2_7.0_Sample-Station_Camera-Location.html"
@@ -718,10 +728,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -827,8 +834,8 @@ By Alberta Remote Camera Steering Committee (RCSC), Stevenson, C., Hubbs, A., & 
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
