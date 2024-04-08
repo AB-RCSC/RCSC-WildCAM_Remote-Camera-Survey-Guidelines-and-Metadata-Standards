@@ -51,7 +51,7 @@ editor_options:
 :::{dropdown} Remote Camera Metadata Standards: Standards for Alberta
 
 (#FILES_md_standards_ab_metadata_standards)=
-[Remote Camera Metadata Standards: Standards for Alberta v2 (RCSC, 2024)](./2_metadata-standards/downloadable/AB-Remote-Camera-Metadata-Standards-v3_(RCSC,-2023)_2024-04-01.pdf)
+[Remote Camera Metadata Standards: Standards for Alberta v3 (RCSC, 2024)](./2_metadata-standards/downloadable/AB-Remote-Camera-Metadata-Standards-v3_(RCSC,-2023)_2024-04-01.pdf)
 
 (#FILES_md_standards_metadata_template)=
 [Alberta Remote Camera Metadata Standards: Metadata Template (RCSC, 2024)](./2_metadata-standards/downloadable/Remote-Camera-Metadata-Template-v3-(RCSC,-2024)_2024-04-01.xlsm)
