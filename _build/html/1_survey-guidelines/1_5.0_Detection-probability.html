@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>5.0 Detection probability &#8212; Remote Camera Survey Guidelines - Guidelines for Western Canada</title>
   
@@ -19,49 +18,58 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-C74BERTX94"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-C74BERTX94');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-C74BERTX94');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1_survey-guidelines/1_5.0_Detection-probability';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -76,10 +84,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -120,11 +127,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -139,9 +149,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../index.html">
+  
   
   
   
@@ -151,12 +163,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Remote Camera Survey Guidelines - Guidelines for Western Canada - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Remote Camera Survey Guidelines - Guidelines for Western Canada - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -264,7 +287,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/CassStevenson/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards" target="_blank"
+      <li><a href="https://github.com/AB-RCSC/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -281,7 +304,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/CassStevenson/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/issues/new?title=Issue%20on%20page%20%2F1_survey-guidelines/1_5.0_Detection-probability.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/AB-RCSC/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/issues/new?title=Issue%20on%20page%20%2F1_survey-guidelines/1_5.0_Detection-probability.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -363,6 +386,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -372,6 +396,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -403,35 +428,35 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="detection-probability">
-<span id="toc-survey-guidelines-detection-probability"></span><h1>5.0 Detection probability<a class="headerlink" href="#detection-probability" title="Permalink to this heading">#</a></h1>
-<p>Before study design choices are made, there is one critical concept to understand in remote camera research, which may impact study design choices at all levels of the data hierarchy. Reliable use of remote cameras to detect wildlife species hinges on the <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-assumption"><span class="std std-ref">assumption</span></a> that what is captured on the cameras accurately reflects what is present on the landscape. However, species are often detected “imperfectly,” meaning that they are not always detected when they are present (i.e., <a class="reference internal" href="../3_glossary/3_Glossary.html#imperfect-detection"><span class="std std-ref">imperfect detection</span></a>; MacKenzie et al., 2004). <a class="reference internal" href="../3_glossary/3_Glossary.html#imperfect-detection"><span class="std std-ref">Imperfect detection</span></a> can occur because the camera failed to capture an individual present at the site or because the animal was simply not present during the <a class="reference internal" href="../3_glossary/3_Glossary.html#hierarch-survey"><span class="std std-ref">survey</span></a> period (Martin et al., 2005). <a class="reference internal" href="../3_glossary/3_Glossary.html#imperfect-detection"><span class="std std-ref">Imperfect detection</span></a> results in “false absences” and may lead to incorrect conclusions from the data. Understanding and correcting for sources of “false absences” is often thought of in terms of probabilities. <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">Detection probability</span></a> is the probability (likelihood) that an individual of the population of interest is included in the count at time or location i (MacKenzie &amp; Kendall, 2002). <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">Detection probability</span></a> can be influenced through multiple processes and at multiple scales. Understanding the sources of “false absences” and factors that affect <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probabilities</span></a> is an essential step when designing a study, deploying cameras and analyzing camera data.</p>
-<p>Detection probability of an animal by a camera depends on three <strong>conditional probabilities (Pr)</strong> <strong>of detection</strong> that may operate alone or potentially, in combination (<a class="reference internal" href="#survey-guidelines-figure-1"><span class="std std-ref">Figure 1</span></a>).</p>
-<figure class="align-center" id="survey-guidelines-figure-1">
-<a class="reference internal image-reference" href="../_images/SurveyGuidelines_Detection-probability-2023-05-04.jpg"><img alt="../_images/SurveyGuidelines_Detection-probability-2023-05-04.jpg" src="../_images/SurveyGuidelines_Detection-probability-2023-05-04.jpg" style="height: 700px;" /></a>
+<span id="toc-surv-guidelines-detection-probability"></span><h1>5.0 Detection probability<a class="headerlink" href="#detection-probability" title="Link to this heading">#</a></h1>
+<p>Before study design choices are made, there is one critical concept to understand in remote camera research, which may impact study design choices at all levels of the data hierarchy. Reliable use of remote cameras to detect wildlife species hinges on the <a class="reference internal" href="../3_glossary/3_Glossary.html#mods_modelling_assumption"><span class="std std-ref">assumption</span></a> that what is captured on the cameras accurately reflects what is present on the landscape. However, species are often detected “imperfectly,” meaning that they are not always detected when they are present (i.e., <a class="reference internal" href="../3_glossary/3_Glossary.html#imperfect_detection"><span class="std std-ref">imperfect detection</span></a>; e.g., due to cover of vegetation, cryptic nature or small size) (MacKenzie et al., 2004). <a class="reference internal" href="../3_glossary/3_Glossary.html#imperfect_detection"><span class="std std-ref">Imperfect detection</span></a> can occur because the camera failed to capture an individual present at the site or because the animal was simply not present during the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> period (Martin et al., 2005).</p>
+<p><a class="reference internal" href="../3_glossary/3_Glossary.html#imperfect_detection"><span class="std std-ref">Imperfect detection</span></a> results in “false absences” and may lead to incorrect conclusions from the data. Understanding and correcting for sources of “false absences” is often thought of in terms of probabilities. <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">Detection probability</span></a> is the probability (likelihood) that an individual from the population of interest is included in the count at time or location <em>i</em> (MacKenzie &amp; Kendall, 2002). <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">Detection probability</span></a> can be influenced through multiple processes and at multiple scales. Understanding the sources of “false absences” and factors that affect <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probabilities</span></a> is an essential step when designing a study, deploying cameras and analyzing camera data.</p>
+<p>The detection probability of an animal by a camera depends on three <strong>conditional probabilities (Pr)</strong> <strong>of detection</strong> that may operate alone or potentially in combination (<a class="reference internal" href="#TOC_surv_guidelines_fig_1"><span class="std std-ref">Figure 1</span></a>).</p>
+<figure class="align-center" id="toc-surv-guidelines-fig-1">
+<a class="reference internal image-reference" href="../_images/SurveyGuidelines_detection_probability-2023-05-04.jpg"><img alt="../_images/SurveyGuidelines_detection_probability-2023-05-04.jpg" src="../_images/SurveyGuidelines_detection_probability-2023-05-04.jpg" style="height: 700px;" /></a>
 </figure>
-<p><strong>Figure 1.</strong> Three conditional probabilities (Pr) of detection that may impact detection probability of an animal (or species) by a camera (adapted from Moeller et al. [2023], Hofmeester et al. [2019], and Findlay et al. [2020]).</p>
-<p>Detection probability can be affected by species-specific characteristics, <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref">Camera Model</span></a> specifications and set-up, and environmental variables (Hofmeester et al., 2019). For example, <strong>species-specific characteristics</strong> (individuals or populations), such as body size (e.g., O’Brien et al., 2011), behaviour (e.g., Caravaggi et al., 2020; Rowcliffe et al., 2011), and rarity can influence <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a>, with larger, bolder and more common species generally having higher <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-rate"><span class="std std-ref">detection rates</span></a>. <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-model"><span class="std std-ref"><strong>Camera Model</strong></span></a>, specifications and set-up, such as the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-height"><span class="std std-ref"><strong>Camera Height</strong></span></a>, or <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-angle"><span class="std std-ref"><strong>angle</strong></span></a> may affect <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> in that smaller species might not be detected or identifiable if the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings-trigger-sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a> is low, or the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-height"><span class="std std-ref">Camera Height</span></a> or <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-angle"><span class="std std-ref">angle</span></a> is too high. The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-direction"><span class="std std-ref"><strong>Camera Direction</strong></span></a> could impact the probability of an animal triggering a camera if it is directed towards an object that impedes the <a class="reference internal" href="../3_glossary/3_Glossary.html#field-of-view"><span class="std std-ref">Field of View (FOV)</span></a> or image quality (e.g. due to sun glare). <strong>Environmental factors</strong> (e.g., vegetation cover, snow depth) may affect <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> and occurrence (e.g., Becker et al., 2022; Hofmeester et al., 2019; Iknayan et al., 2014; Steenweg et al., 2019). For example, a low number of detections in a densely vegetated site might be because of poor camera visibility or avoidance of this habitat by the species of interest.</p>
-<p>Hofmeester et al. (2019) suggested there are <strong>six scales (orders) that may impact</strong> <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> and that should be considered within an explicit time period (adapted from Hofmeester et al. [2019]; <a class="reference internal" href="#survey-guidelines-figure-2"><span class="std std-ref">Figure 2</span></a>):</p>
+<p><strong>Figure 1.</strong> Three conditional probabilities (Pr) of detection that may impact the <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> of an animal (or species) by a camera (adapted from Moeller et al. [2023], Hofmeester et al. [2019], and Findlay et al. [2020]).</p>
+<p>Detection probability can be affected by species-specific characteristics, <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_model"><span class="std std-ref">Camera Model</span></a> specifications and set-up, and environmental variables (Hofmeester et al., 2019). For example, <strong>species-specific characteristics</strong> (individuals or populations), such as body size (e.g., O’Brien et al., 2011), behaviour (e.g., Caravaggi et al., 2020; Rowcliffe et al., 2011), and rarity can influence <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a>, with larger, bolder and more common species generally having higher <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_rate"><span class="std std-ref">detection rates</span></a>. <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_model"><span class="std std-ref"><strong>Camera Model</strong></span></a>, specifications and set-up, such as the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings_trigger_sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_height"><span class="std std-ref"><strong>Camera Height</strong></span></a>, or <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_angle"><span class="std std-ref"><strong>angle</strong></span></a> may affect <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> in that smaller species might not be detected or identifiable if the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings_trigger_sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a> is low, or the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_height"><span class="std std-ref">Camera Height</span></a> or <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_angle"><span class="std std-ref">angle</span></a> is too high. The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_direction"><span class="std std-ref"><strong>Camera Direction</strong></span></a> could impact the probability of an animal triggering a camera if it is directed towards an object that impedes the <a class="reference internal" href="../3_glossary/3_Glossary.html#field_of_view"><span class="std std-ref">Field of View (FOV)</span></a> or image quality (e.g. due to sun glare). <strong>Environmental factors</strong> (e.g., vegetation cover, snow depth) may affect <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> and occurrence (e.g., Becker et al., 2022; Hofmeester et al., 2019; Iknayan et al., 2014; Steenweg et al., 2019). For example, a low number of detections in a densely vegetated site might be because of poor camera visibility or avoidance of this habitat by the species of interest.</p>
+<p>Hofmeester et al. (2019) suggested there are <strong>six scales (orders) that may impact</strong> <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> and that should be considered within an explicit time period (adapted from Hofmeester et al. [2019]; <a class="reference internal" href="#TOC_surv_guidelines_fig_2"><span class="std std-ref">Figure 2</span></a>):</p>
+<p><a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">Detection probability</span></a> can be affected by species-specific characteristics, <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_model"><span class="std std-ref">Camera Model</span></a> specifications and set-up, and environmental variables (Hofmeester et al., 2019). For example, <strong>species-specific characteristics</strong> (individuals or populations), such as body size (e.g., O’Brien et al., 2011), behaviour (e.g., Caravaggi et al., 2020; Rowcliffe et al., 2011), and rarity can influence <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a>, with larger, bolder and more common species generally having higher <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_rate"><span class="std std-ref">detection rates</span></a>. <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_model"><span class="std std-ref"><strong>Camera Model</strong></span></a> <strong>specifications and set-up</strong>, such as the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings_trigger_sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_height"><span class="std std-ref">Camera Height</span></a>, or <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_angle"><span class="std std-ref">angle</span></a> may affect <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> in that smaller species might not be detected or identifiable if the <a class="reference internal" href="../3_glossary/3_Glossary.html#settings_trigger_sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a> is low, or the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_height"><span class="std std-ref">Camera Height</span></a> or <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_angle"><span class="std std-ref">angle</span></a> is too high. The <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_direction"><span class="std std-ref">Camera Direction</span></a> could impact the probability of an animal triggering a camera if it is directed towards an object that impedes the <a class="reference internal" href="../3_glossary/3_Glossary.html#field_of_view"><span class="std std-ref">Field of View (FOV)</span></a> or image quality (e.g. due to sun glare). <strong>Environmental factors</strong> (e.g., vegetation cover, snow depth) may affect <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> and occurrence (e.g., Becker et al., 2022; Hofmeester et al., 2019; Iknayan et al., 2014; Steenweg et al., 2019). For example, a low number of detections in a densely vegetated site might be because of poor camera visibility or avoidance of this habitat by the species of interest.</p>
+<p>Hofmeester et al. (2019) suggested there are <strong>six scales (orders) that may impact</strong> <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> and that should be considered within an explicit time period (adapted from Hofmeester et al. [2019]; <a class="reference internal" href="#TOC_surv_guidelines_fig_2"><span class="std std-ref">Figure 2</span></a>):</p>
 <ol class="arabic simple">
 <li><p><strong>Distribution range</strong> (1st order; i.e., the physical or geographical range of a species)</p></li>
 <li><p><strong>Landscape</strong> (2nd order; i.e., the location of an individual’s home range within the geographic range)</p></li>
 <li><p><strong>Habitat patch</strong> (3rd order; i.e., usage of habitat components within an individual’s home range)</p></li>
 <li><p><strong>Microsite</strong> (4th order; usage of microhabitats such as food items/feeding patches/nest sites/movement trails, etc. within a habitat)</p></li>
-<li><p><strong>Camera specification / set-up</strong> (5th order; i.e., factors that affect the probability that an animal <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger-event"><span class="std std-ref">triggers</span></a> the camera if present)</p></li>
+<li><p><strong>Camera specification / set-up</strong> (5th order; i.e., factors that affect the probability that an animal <a class="reference internal" href="../3_glossary/3_Glossary.html#trigger_event"><span class="std std-ref">triggers</span></a> the camera if present)</p></li>
 <li><p><strong>Image</strong> (6th order; i.e., factors that affect correct identification of animals or individuals)</p></li>
 </ol>
-<figure class="align-center" id="survey-guidelines-figure-2">
-<a class="reference internal image-reference" href="../_images/Survey-guidelines_DetectionProb_SCALE_Hofmeester-et-al.,-2019.png"><img alt="../_images/Survey-guidelines_DetectionProb_SCALE_Hofmeester-et-al.,-2019.png" src="../_images/Survey-guidelines_DetectionProb_SCALE_Hofmeester-et-al.,-2019.png" style="height: 600px;" /></a>
+<figure class="align-center" id="toc-surv-guidelines-fig-2">
+<a class="reference internal image-reference" href="../_images/Survey-guidelines_DetectionProb_SCALE_Hofmeester-et-al.,-2019.png"><img alt="../_images/Survey-guidelines_DetectionProb_SCALE_Hofmeester-et-al.%2C-2019.png" src="../_images/Survey-guidelines_DetectionProb_SCALE_Hofmeester-et-al.%2C-2019.png" style="width: 710.5px; height: 536.9px;" /></a>
 </figure>
-<p><strong>Figure 2.</strong> Spatial scales (1-6) and processes that determine the probability of detection (Hofmeester et al., 2019; abbreviated figure caption).</p>
-<p>It is important to consider how all these factors and scales will impact study design.</p>
-<p>Unmeasured variation in <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> can result in the inability to differentiate the effects of <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> <em>vs.</em> habitat preference (Jennelle et al., 2002) and, in turn, cause erroneous estimates of occurrence and abundance
-(Burton et al., 2015; Dénes et al., 2015; Kays et al., 2021).</p>
-<p>Factors that influence <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> at the microsite and camera specification / set-up scales are likely to result in the largest biases and thus warrant the most consideration (see Hofmeester et al. [2019] for details). Therefore, it is particularly important to
-consider <em>how</em> to place cameras to avoid such biases. Deploying cameras in a consistent fashion (e.g., carefully ensuring that cameras are always set at the same <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-height"><span class="std std-ref">Camera Height</span></a>, orientation (direction), and <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-angle"><span class="std std-ref">angle</span></a>) is essential.</p>
+<p><strong>Figure 2.</strong> Spatial scales (1-6) and processes that determine the <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> (Hofmeester et al., 2019; abbreviated figure caption).</p>
+<p>It is important to consider how all these factors and scales will impact study design. Unmeasured variation in <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> can result in the inability to differentiate the effects of <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> <em>vs.</em> habitat preference (Jennelle et al., 2002) and, in turn, cause erroneous estimates of occurrence and abundance (Burton et al., 2015; Dénes et al., 2015; Kays et al., 2021).</p>
+<p>Factors that influence <a class="reference internal" href="../3_glossary/3_Glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> at the microsite and camera specification / set-up scales are likely to result in the largest biases and thus warrant the most consideration (see Hofmeester et al. [2019] for details). Therefore, it is particularly important to consider <em>how</em> to place cameras to avoid such biases. Deploying cameras in a consistent fashion (e.g., carefully ensuring that cameras are always set at the same <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_height"><span class="std std-ref">Camera Height</span></a>, orientation (<a class="reference internal" href="../3_glossary/3_Glossary.html#camera_direction"><span class="std std-ref">direction</span></a>), and <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_angle"><span class="std std-ref">angle</span></a>) is essential.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -462,7 +487,7 @@ consider <em>how</em> to place cameras to avoid such biases. Deploying cameras i
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="1_4.0_Objectives.html"
@@ -489,6 +514,8 @@ consider <em>how</em> to place cameras to avoid such biases. Deploying cameras i
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -505,9 +532,10 @@ By Alberta Remote Camera Steering Committee (RCSC), Stevenson, C., Hubbs, A., & 
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2024.
       <br/>
     
   </p>
@@ -531,8 +559,8 @@ By Alberta Remote Camera Steering Committee (RCSC), Stevenson, C., Hubbs, A., & 
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
