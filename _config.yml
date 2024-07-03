@@ -72,7 +72,9 @@ parse:
 bibtex_bibfiles:
   - references.bib
 
-
+extensions:
+    - myst_parser
+    - sphinx_design
 #######################################################################################
 # Launch button settings
 
@@ -103,7 +105,6 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  google_analytics_id: G-C74BERTX94
 
 #html:
 #  favicon                   : ""  # A path to a favicon image

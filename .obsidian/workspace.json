@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_survey-guidelines/1_0.4_List-Tables-Figures.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_survey-guidelines/1_0.4_List-Tables-Figures.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_survey-guidelines/1_0.4_List-Tables-Figures.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_survey-guidelines/1_0.4_List-Tables-Figures.md"
+                "file": "index.md"
               }
             }
           }
@@ -149,6 +149,25 @@
   },
   "active": "57c3958a974c05ff",
   "lastOpenFiles": [
+    "_build/jupyter_execute/2_metadata-standards/2_9.0_Image_Sequence.ipynb",
+    "_build/jupyter_execute/2_metadata-standards/2_8.0_Deployment.ipynb",
+    "docs/_sources/index.md",
+    "2_metadata-standards/downloadable/RCSC_AB-RC-Metadata-Standards-v3_Metadata-Template_2024-04-01.xlsm",
+    "2_metadata-standards/downloadable/Remote-Camera-Metadata-Template-v3-(RCSC,-2024)_2024-04-01.xlsm",
+    "index.md",
+    "_build/html/_sources/index.md",
+    "2_metadata-standards/downloadable/RCSC_AB-RC-Metadata-Standards-v3_2024-04-01.pdf",
+    "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
+    "1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_AB-Metadata-Standards-v3_2024-04-01",
+    "docs/_sources/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
+    "_build/html/_sources/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
+    "1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf",
+    "1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf",
+    "1_survey-guidelines/downloadable/RCSC_RC-Survey-Guidelines-v2_2024-04-01.pdf",
+    "1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2-(RCSC-et-al.,-2023)_2024-04-01.pdf",
+    "2_metadata-standards/downloadable/AB-Remote-Camera-Metadata-Standards-v3_(RCSC-2024)_2024-04-01.pdf",
+    "_build/html/_sources/1_survey-guidelines/1_0.3_TOC.md",
+    "1_survey-guidelines/1_0.4_List-Tables-Figures.md",
     "1_survey-guidelines/1_2.0_Intended-Audience-and-How-to-use-this-document.md",
     "1_survey-guidelines/1_7.0_Camera-deployment.md",
     "docs/_sources/1_survey-guidelines/1_0.4_List-Tables-Figures.md",
@@ -165,10 +184,6 @@
     "_build/html/_sources/1_survey-guidelines/1_11.0_AppendixB-FigureB1.md",
     "_build/html/_sources/1_survey-guidelines/1_6.0_Study-design.md",
     "2_metadata-standards/2_0.4_TOC.md",
-    "_build/html/_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css",
-    "_build/html/objects.inv",
-    "_build/html/searchindex.js",
-    "_build/html/searchindex.js.tmp",
     "_build/html/_images/SurveyGuidelines_detection_probability-2023-05-04.jpg",
     "_build/html/_images/Survey-guidelines_WildCAM-FOV.png",
     "_build/html/_images/Survey-guidelines_walktest-height.png",
@@ -179,21 +194,6 @@
     "_build/html/_images/Survey-guidelines_CamConfig.png",
     "_build/html/_images/Metadata_Links_CSV_Heirarchy_2024-01-22.png",
     "_build/html/_images/Metadata_Heirarchy_2024-01-22.png",
-    "_build/html/_images",
-    "_build/html/search.html",
-    "_build/html/genindex.html",
-    "_build/html/_sources/index.md",
-    "_build/html/index.html",
-    "_build/html/_sources/3_glossary/3_Glossary.md",
-    "_build/html/_sources/3_glossary",
-    "_build/html/3_glossary/3_Glossary.html",
-    "_build/html/_sources/2_metadata-standards/2_9.0_Image_Sequence.md",
-    "_build/html/_sources/2_metadata-standards/2_8.0_Deployment.md",
-    "_build/html/_sources/2_metadata-standards/2_7.0_Sample-Station_Camera-Location.md",
-    "_build/html/_sources/2_metadata-standards/2_6.0_Survey.md",
-    "_build/html/_sources/2_metadata-standards/2_5.0_Study-Area.md",
-    "_build/html/_sources/2_metadata-standards/2_4.0_Project.md",
-    "_build/html/_sources/2_metadata-standards/2_2.0_Background.md",
-    "_build/html/_sources/2_metadata-standards/2_13.0_AppendixA.md"
+    "_build/html/_sources/3_glossary/3_Glossary.md"
   ]
 }

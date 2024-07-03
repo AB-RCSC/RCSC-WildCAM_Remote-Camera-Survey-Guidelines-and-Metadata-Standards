@@ -27,16 +27,16 @@ editor_options:
 :::{dropdown} Remote Camera Survey Guidelines: Guidelines for Western Canada
 
 (#FILES_surv_guidelines_remote_cam_survey_guidelines)=
-[Remote Camera Survey Guidelines: Guidelines for Western Canada v1 (RCSC et al., 2024)](./1_survey-guidelines/downloadable/Remote-Camera-Survey-Guidelines-v2-(RCSC-et-al.,-2023)_2024-04-01.pdf)
+[Remote Camera Survey Guidelines: Guidelines for Western Canada v1 (RCSC et al., 2024)](./1_survey-guidelines/downloadable/RCSC_RC-Survey-Guidelines-v2_2024-04-01.pdf)
 
 (#FILES_surv_guidelines_datasheet_deployment)=
-[Remote Camera Survey Guidelines: Camera Deployment Field Datasheet (RCSC et al., 2024)](./1_survey-guidelines/downloadable/Deployment-Field-Datasheet_RC-Survey-Guidelines-v2_2024-04-01.pdf)
+[Remote Camera Survey Guidelines: Camera Deployment Field Datasheet (RCSC et al., 2024)](./1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf)
 
 (#FILES_surv_guidelines_datasheet_test_image_sheet)=
-[Remote Camera Survey Guidelines: Test Image Sheet (RCSC et al., 2024)](./1_survey-guidelines/downloadable/Test-Image-Sheet_RC-Survey-Guidelines-v2_2024-04-01.pdf)
+[Remote Camera Survey Guidelines: Test Image Sheet (RCSC et al., 2024)](./1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_Test-Image-Sheet_2024-04-01.pdf)
 
 (#FILES_surv_guidelines_datasheet_service_retrieval)=
-[Remote Camera Survey Guidelines: Camera Service/Retrieval Field Datasheet (RCSC et al., 2024)](./1_survey-guidelines/downloadable/ServiceRetrieval-Field-Datasheet_RC-Survey-Guidelines-v2_2024-04-01.pdf)
+[Remote Camera Survey Guidelines: Camera Service/Retrieval Field Datasheet (RCSC et al., 2024)](./1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf)
 
 (#FILES_surv_guidelines_epicollect_template)=
 [Remote Camera Survey Guidelines: EpiCollect Template (RCSC et al., 2024)](https://five.epicollect.net/project/rcsc-and-wildcam-remote-camera-survey-guidelines)
@@ -51,10 +51,10 @@ editor_options:
 :::{dropdown} Remote Camera Metadata Standards: Standards for Alberta
 
 (#FILES_md_standards_ab_metadata_standards)=
-[Remote Camera Metadata Standards: Standards for Alberta v3 (RCSC, 2024)](./2_metadata-standards/downloadable/AB-Remote-Camera-Metadata-Standards-v3_(RCSC,-2023)_2024-04-01.pdf)
+[Remote Camera Metadata Standards: Standards for Alberta v3 (RCSC, 2024)](./2_metadata-standards/downloadable/RCSC_AB-RC-Metadata-Standards-v3_2024-04-01.pdf)
 
 (#FILES_md_standards_metadata_template)=
-[Alberta Remote Camera Metadata Standards: Metadata Template (RCSC, 2024)](./2_metadata-standards/downloadable/Remote-Camera-Metadata-Template-v3-(RCSC,-2024)_2024-04-01.xlsm)
+[Alberta Remote Camera Metadata Standards: Metadata Template (RCSC, 2024)](./2_metadata-standards/downloadable/RCSC_AB-RC-Metadata-Standards-v3_Metadata-Template_2024-04-01.xlsm)
 
 :::
 
