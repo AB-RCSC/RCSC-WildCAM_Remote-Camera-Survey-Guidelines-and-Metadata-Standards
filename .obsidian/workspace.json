@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md"
               }
             }
           }
@@ -149,23 +149,23 @@
   },
   "active": "57c3958a974c05ff",
   "lastOpenFiles": [
-    "_build/jupyter_execute/2_metadata-standards/2_9.0_Image_Sequence.ipynb",
-    "_build/jupyter_execute/2_metadata-standards/2_8.0_Deployment.ipynb",
-    "docs/_sources/index.md",
-    "2_metadata-standards/downloadable/RCSC_AB-RC-Metadata-Standards-v3_Metadata-Template_2024-04-01.xlsm",
-    "2_metadata-standards/downloadable/Remote-Camera-Metadata-Template-v3-(RCSC,-2024)_2024-04-01.xlsm",
-    "index.md",
-    "_build/html/_sources/index.md",
-    "2_metadata-standards/downloadable/RCSC_AB-RC-Metadata-Standards-v3_2024-04-01.pdf",
-    "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
-    "1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_AB-Metadata-Standards-v3_2024-04-01",
+    "1_survey-guidelines/downloadable/RCSC_AB-RC-Metadata-Standards-v3_EpiCollect-Template_2024-07-04.json",
+    "1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_AB-Metadata-Standards-v3_2024-07-04.zip",
+    "1_survey-guidelines/downloadable/RCSC-WildCAM_RC-Survey-Guidelines-v2_Test-Image-Sheet_2024-04-01.pdf",
     "docs/_sources/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
     "_build/html/_sources/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
-    "1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf",
-    "1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf",
-    "1_survey-guidelines/downloadable/RCSC_RC-Survey-Guidelines-v2_2024-04-01.pdf",
-    "1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2-(RCSC-et-al.,-2023)_2024-04-01.pdf",
-    "2_metadata-standards/downloadable/AB-Remote-Camera-Metadata-Standards-v3_(RCSC-2024)_2024-04-01.pdf",
+    "docs/_sources/index.md",
+    "index.md",
+    "_build/html/_sources/index.md",
+    "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
+    "1_survey-guidelines/downloadable/RCSC-WildCAM_RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf",
+    "1_survey-guidelines/downloadable/RCSC-WildCAM_RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf",
+    "1_survey-guidelines/downloadable/RCSC-WildCAM_RC-Survey-Guidelines-v2_2024-04-01.pdf",
+    "1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_Test-Image-Sheet_2024-04-01.pdf",
+    "1_survey-guidelines/downloadable - Shortcut.lnk",
+    "1_survey-guidelines - Shortcut.lnk",
+    "python-build-jupyter-book-ref.txt",
+    "2_metadata-standards/2_metadata-standards_downloadable.lnk",
     "_build/html/_sources/1_survey-guidelines/1_0.3_TOC.md",
     "1_survey-guidelines/1_0.4_List-Tables-Figures.md",
     "1_survey-guidelines/1_2.0_Intended-Audience-and-How-to-use-this-document.md",

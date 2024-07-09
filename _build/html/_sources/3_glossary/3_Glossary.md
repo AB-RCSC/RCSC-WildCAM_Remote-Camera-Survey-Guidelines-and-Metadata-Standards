@@ -1,21 +1,23 @@
 ---
 jupytext:
-  formatsmd:myst
+  formats: md:myst
   text_representation:
-    extension.md
-    format_namemyst
-    format_version'1.16'
-    jupytext_version1.16.1
+    extension: .md
+    format_name: myst
+    format_version: '1.16'
+    jupytext_version: 1.16.1
 kernelspec:
-  display_namePython 3
-  languagepython
-  namepython3
-editor_options:
-  markdown:
-    wrapnone
+  display_name: Python 3
+  language: python
+  name: python3
+  
+editor_options: 
+  markdown: 
+    wrap: none
 ---
 
 (#glossary)=
+
 # Glossary
 
 (#number_of_images)=
