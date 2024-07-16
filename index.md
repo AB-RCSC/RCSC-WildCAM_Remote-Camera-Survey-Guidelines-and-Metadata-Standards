@@ -55,7 +55,7 @@ editor_options:
 [Remote Camera Survey Guidelines: Guidelines for Western Canada v1 (RCSC et al., 2024)](./1_survey-guidelines/downloadable/RCSC-WildCAM_RC-Survey-Guidelines-v2_2024-04-01.pdf)
 
 (#FILES_surv_guidelines_datasheet_deployment)=
-[Remote Camera Survey Guidelines: Camera Deployment Field Datasheet (RCSC et al., 2024)](./1_survey-guidelines/downloadable/RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf)
+[Remote Camera Survey Guidelines: Camera Deployment Field Datasheet (RCSC et al., 2024)](./1_survey-guidelines/downloadable/RCSC-WildCAM_RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf)
 
 (#FILES_surv_guidelines_datasheet_test_image_sheet)=
 [Remote Camera Survey Guidelines: Test Image Sheet (RCSC et al., 2024)](./1_survey-guidelines/downloadable/RCSC-WildCAM_RC-Survey-Guidelines-v2_Test-Image-Sheet_2024-04-01.pdf)
