@@ -1,5 +1,3 @@
 {
-  "nativeMenus": true,
-  "baseFontSize": 15,
-  "theme": "moonstone"
+  "accentColor": ""
 }

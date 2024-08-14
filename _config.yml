@@ -53,7 +53,7 @@ parse:
   myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
     # - amsmath
     - colon_fence
-    - deflist
+    # - deflist
     - dollarmath
     # - html_admonition
     # - html_image
@@ -63,7 +63,7 @@ parse:
     - substitution
     - tasklist
   myst:
-    myst_heading_anchors = 3
+    myst_heading_anchors = 1
     
 #  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
 #  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context

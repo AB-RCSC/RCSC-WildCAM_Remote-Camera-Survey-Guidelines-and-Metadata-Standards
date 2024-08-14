@@ -1,22 +1,21 @@
 {
   "main": {
-    "id": "61d76fc330639bf1",
+    "id": "8941646c5acbe607",
     "type": "split",
     "children": [
       {
-        "id": "2d36ae77c70338f0",
+        "id": "49e1ffad80476121",
         "type": "tabs",
         "children": [
           {
-            "id": "9b36c225839b37c0",
+            "id": "57c3958a974c05ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2_metadata-standards/2_9.0_Image_Sequence.md",
+                "file": "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
                 "mode": "source",
-                "backlinks": true,
-                "source": true
+                "source": false
               }
             }
           }
@@ -26,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "78dca09e0a8d8f9a",
+    "id": "1e2a66f341ea2e50",
     "type": "split",
     "children": [
       {
-        "id": "0cbe4b084001686a",
+        "id": "d574fb4ebef1e74e",
         "type": "tabs",
         "children": [
           {
-            "id": "9fa1879249e40a18",
+            "id": "a6291f72b00938d8",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,49 +43,50 @@
             }
           },
           {
-            "id": "9a895ece6f9067ca",
+            "id": "ed01c1447bcbd4b3",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Figure",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
           },
           {
-            "id": "c45bca509fa0f38c",
+            "id": "f6062c6f926a183a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 287.50110626220703
   },
   "right": {
-    "id": "8b52e0d41eec0f11",
+    "id": "b541e60b856fbbd8",
     "type": "split",
     "children": [
       {
-        "id": "0a2b00436afe215b",
+        "id": "a0b950530936223c",
         "type": "tabs",
         "children": [
           {
-            "id": "b9dc5448bede3fbe",
+            "id": "2e9368a9c559f2de",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2_metadata-standards/2_9.0_Image_Sequence.md",
+                "file": "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,19 +98,19 @@
             }
           },
           {
-            "id": "ae727b8df159d216",
+            "id": "32be5ca89a14ca32",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2_metadata-standards/2_9.0_Image_Sequence.md",
+                "file": "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "59da9bdd06011fa3",
+            "id": "4ee8d5f76d7f8d1c",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -121,12 +121,12 @@
             }
           },
           {
-            "id": "bd72f5813d59de58",
+            "id": "7981ea925d22b619",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "2_metadata-standards/2_9.0_Image_Sequence.md"
+                "file": "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md"
               }
             }
           }
@@ -140,60 +140,60 @@
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
-      "graph:Open graph view": true,
-      "canvas:Create new canvas": true,
-      "daily-notes:Open today's daily note": true,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b36c225839b37c0",
+  "active": "57c3958a974c05ff",
   "lastOpenFiles": [
-    "3_glossary/3_Glossary.md",
-    "_build/html/_sources/2_metadata-standards/2_9.0_Image_Sequence.md",
-    "_build/html/_sources/3_glossary/3_Glossary.md",
-    "1_survey-guidelines/1_8.0_Data-management-and-processing.md",
-    "_build/html/_sources/1_survey-guidelines/1_10.1_AppendixA-Tables.md",
-    "_build/html/_sources/1_survey-guidelines/1_8.0_Data-management-and-processing.md",
-    "_build/html/_sources/2_metadata-standards/2_13.0_AppendixA.md",
-    "1_survey-guidelines/1_10.1_AppendixA-Tables.md",
-    "_build/html/_sources/1_survey-guidelines/1_5.0_Detection-probability.md",
-    "_build/html/_sources/1_survey-guidelines/1_6.0_Study-design.md",
-    "_build/html/_sources/1_survey-guidelines/1_7.0_Camera-deployment.md",
-    "_build/html/_sources/2_metadata-standards/2_10.0_Data-Management.md",
-    "_build/html/_sources/2_metadata-standards/2_3.0_Metadata-Standards.md",
-    "1_survey-guidelines/1_11.0_AppendixB-FigureB1.md",
-    "1_survey-guidelines/1_5.0_Detection-probability.md",
-    "1_survey-guidelines/1_6.0_Study-design.md",
-    "1_survey-guidelines/1_7.0_Camera-deployment.md",
-    "2_metadata-standards/2_10.0_Data-Management.md",
-    "2_metadata-standards/2_3.0_Metadata-Standards.md",
-    "_build/html/_sources/1_survey-guidelines/1_11.0_AppendixB-FigureB1.md",
+    "_build/html/_sources/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
+    "1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
     "index.md",
     "_build/html/_sources/index.md",
-    "_build/jupyter_execute/3_glossary/3_Glossary.ipynb",
-    "_build/jupyter_execute/2_metadata-standards/2_9.0_Image_Sequence.ipynb",
-    "_build/jupyter_execute/2_metadata-standards/2_8.0_Deployment.ipynb",
-    "_build/jupyter_execute/2_metadata-standards/2_7.0_Sample-Station_Camera-Location.ipynb",
-    "_build/jupyter_execute/2_metadata-standards/2_6.0_Survey.ipynb",
-    "_build/jupyter_execute/2_metadata-standards/2_5.0_Study-Area.ipynb",
-    "_build/jupyter_execute/2_metadata-standards/2_4.0_Project.ipynb",
-    "_build/jupyter_execute/2_metadata-standards/2_2.0_Background.ipynb",
-    "_build/jupyter_execute/2_metadata-standards/2_3.0_Metadata-Standards.ipynb",
-    "_build/jupyter_execute/2_metadata-standards/2_13.0_AppendixA.ipynb",
-    "_build/html/_static/images/logo_jupyterhub.svg",
-    "_build/html/_static/images/logo_deepnote.svg",
-    "_build/html/_static/images/logo_colab.png",
-    "_build/html/_static/images/logo_binder.svg",
-    "_build/html/_static/plus.png",
-    "_build/html/_static/play-solid.svg",
-    "_build/html/_static/minus.png",
-    "_build/html/_static/logo.png",
-    "_build/html/_static/file.png",
-    "_build/html/_static/copy-button.svg",
-    "_build/html/_sources/2_metadata-standards/2_8.0_Deployment.md",
-    "_build/html/_sources/2_metadata-standards/2_7.0_Sample-Station_Camera-Location.md",
-    "_build/html/_sources/2_metadata-standards/2_6.0_Survey.md",
-    "_build/html/_sources/2_metadata-standards/2_5.0_Study-Area.md"
+    "2_metadata-standards/2_13.0_AppendixA.md",
+    "_build/html/_sources/2_metadata-standards/2_13.0_AppendixA.md",
+    "1_survey-guidelines/1_8.0_Data-management-and-processing.md",
+    "_build/html/_sources/1_survey-guidelines/1_8.0_Data-management-and-processing.md",
+    "1_survey-guidelines/1_10.1_AppendixA-Tables.md",
+    "_build/html/_sources/1_survey-guidelines/1_10.1_AppendixA-Tables.md",
+    "docs/_sources/2_metadata-standards/2_13.0_AppendixA.md",
+    "2_metadata-standards/tables/Md_Standards_Appendix-A-Table-A1_v3.pdf",
+    "2_metadata-standards/tables/MD_Standards_Appendix-A-Table-A1_v3.pdf",
+    "2_metadata-standards/tables/Md_Standards_Appendix-A-Table-A2_v3_2.pdf",
+    "2_metadata-standards/tables/Md_Standards_Appendix-A-Table-A2_v3.pdf",
+    "docs/_sources/1_survey-guidelines/1_8.0_Data-management-and-processing.md",
+    "docs/_sources/1_survey-guidelines/1_10.1_AppendixA-Tables.md",
+    "1_survey-guidelines/tables/Surv_Guidelines_Table1-UsefulWebsites_v2.pdf",
+    "1_survey-guidelines/tables/Surv_Guidelines_AppendixA-Table-A5_v2.pdf",
+    "1_survey-guidelines/tables/Surv_Guidelines_AppendixA-Table-A4_v2.pdf",
+    "1_survey-guidelines/tables/Surv_Guidelines_AppendixA-Table-A3_v2.pdf",
+    "1_survey-guidelines/tables/Surv_Guidelines_AppendixA-Table-A2_v2.pdf",
+    "1_survey-guidelines/tables/Surv_Guidelines_AppendixA-Table-A1_v2.pdf",
+    "docs/_sources/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md",
+    "docs/_sources/index.md",
+    "_build/html/_sources/1_survey-guidelines/1_0.3_TOC.md",
+    "1_survey-guidelines/1_0.4_List-Tables-Figures.md",
+    "1_survey-guidelines/1_2.0_Intended-Audience-and-How-to-use-this-document.md",
+    "1_survey-guidelines/1_7.0_Camera-deployment.md",
+    "docs/_sources/1_survey-guidelines/1_0.4_List-Tables-Figures.md",
+    "docs/_sources/1_survey-guidelines/1_2.0_Intended-Audience-and-How-to-use-this-document.md",
+    "docs/_sources/1_survey-guidelines/1_7.0_Camera-deployment.md",
+    "_build/html/_sources/1_survey-guidelines/1_0.4_List-Tables-Figures.md",
+    "_build/html/_sources/1_survey-guidelines/1_2.0_Intended-Audience-and-How-to-use-this-document.md",
+    "_build/html/_sources/1_survey-guidelines/1_7.0_Camera-deployment.md",
+    "2_metadata-standards/2_10.0_Data-Management.md",
+    "_build/html/_images/SurveyGuidelines_detection_probability-2023-05-04.jpg",
+    "_build/html/_images/Survey-guidelines_WildCAM-FOV.png",
+    "_build/html/_images/Survey-guidelines_walktest-height.png",
+    "_build/html/_images/Survey-guidelines_FOV_DetZone.png",
+    "_build/html/_images/Survey-guidelines_DensityModels.jpg",
+    "_build/html/_images/Survey-guidelines_DetectionProb_SCALE_Hofmeester-et-al.,-2019.png",
+    "_build/html/_images/Survey-guidelines_CamFeatures.png",
+    "_build/html/_images/Survey-guidelines_CamConfig.png",
+    "_build/html/_images/Metadata_Links_CSV_Heirarchy_2024-01-22.png",
+    "_build/html/_images/Metadata_Heirarchy_2024-01-22.png"
   ]
 }
