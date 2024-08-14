@@ -1,1 +1,5 @@
-{}
+{
+  "useMarkdownLinks": true,
+  "readableLineLength": false,
+  "propertiesInDocument": "hidden"
+}
