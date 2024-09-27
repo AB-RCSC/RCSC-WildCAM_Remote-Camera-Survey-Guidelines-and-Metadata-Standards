@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=d953ec74" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -53,9 +54,22 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-C74BERTX94"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-C74BERTX94');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-C74BERTX94');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets';</script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -220,7 +234,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../2_metadata-standards/2_12.0_References.html">13.0 References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_metadata-standards/2_13.0_AppendixA.html">Appendix A</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../3_glossary/3_Glossary.html">Glossary</a></li>
 </ul>
@@ -395,7 +408,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -411,6 +426,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#camera-deployment-field-datasheet">Camera Deployment Field Datasheet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-image-sheet">Test Image Sheet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#camera-service-retrieval-field-datasheet">Camera Service/Retrieval Field Datasheet</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -420,10 +445,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="appendix-a-field-datasheets">
+  <style>
+  .bd-main .bd-content .bd-article-container {
+      max-width: 80%;  /* default is 60em */
+    }
+</style>
+<section class="tex2jax_ignore mathjax_ignore" id="appendix-a-field-datasheets">
 <span id="toc-surv-guidelines-appendix-a-field-datasheets"></span><h1>Appendix A - Field Datasheets<a class="headerlink" href="#appendix-a-field-datasheets" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
-<p id="files-surv-guidelines-datasheet-deployment"><strong>Camera Deployment Field Datasheet</strong></p>
+<section id="camera-deployment-field-datasheet">
+<span id="tables-surv-guidelines-datasheet-deployment"></span><h2>Camera Deployment Field Datasheet<a class="headerlink" href="#camera-deployment-field-datasheet" title="Link to this heading">#</a></h2>
 <object data="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/b174248ec4623c88d02c345f16a74681/RCSC-WildCAM_RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf" type="application/pdf" width="880px" height="1130px">
     <embed src="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/b174248ec4623c88d02c345f16a74681/RCSC-WildCAM_RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/b174248ec4623c88d02c345f16a74681/RCSC-WildCAM_RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf">Download PDF</a>.</p>
@@ -433,7 +464,9 @@ document.write(`
 <p><em>Download the PDF</em>
 <a class="reference download internal" download="" href="../_downloads/b174248ec4623c88d02c345f16a74681/RCSC-WildCAM_RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf"><span class="xref download myst">Remote Camera Survey Guidelines: Camera Deployment Field Datasheet (RCSC et al., 2024)</span></a></p>
 <hr class="docutils" />
-<p id="files-surv-guidelines-datasheet-test-image-sheet"><strong>Test Image Sheet</strong></p>
+</section>
+<section id="test-image-sheet">
+<span id="tables-surv-guidelines-datasheet-test-image-sheet"></span><h2>Test Image Sheet<a class="headerlink" href="#test-image-sheet" title="Link to this heading">#</a></h2>
 <object data="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/5ad3ba013a47b9356a97613a6fb7e88b/RCSC-WildCAM_RC-Survey-Guidelines-v2_Test-Image-Sheet_2024-04-01.pdf" type="application/pdf" width="1000px" height="820px">
     <embed src="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/5ad3ba013a47b9356a97613a6fb7e88b/RCSC-WildCAM_RC-Survey-Guidelines-v2_Test-Image-Sheet_2024-04-01.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/5ad3ba013a47b9356a97613a6fb7e88b/RCSC-WildCAM_RC-Survey-Guidelines-v2_Test-Image-Sheet_2024-04-01.pdf">Download PDF</a>.</p>
@@ -443,16 +476,25 @@ document.write(`
 <p><em>Download the PDF</em>
 <a class="reference download internal" download="" href="../_downloads/5ad3ba013a47b9356a97613a6fb7e88b/RCSC-WildCAM_RC-Survey-Guidelines-v2_Test-Image-Sheet_2024-04-01.pdf"><span class="xref download myst">Remote Camera Survey Guidelines: Test Image Sheet (RCSC et al., 2024)</span></a></p>
 <hr class="docutils" />
-<p id="files-surv-guidelines-datasheet-service-retrieval"><strong>Camera Service/Retrieval Field Datasheet</strong></p>
+</section>
+<section id="camera-service-retrieval-field-datasheet">
+<span id="tables-surv-guidelines-datasheet-service-retrieval"></span><h2>Camera Service/Retrieval Field Datasheet<a class="headerlink" href="#camera-service-retrieval-field-datasheet" title="Link to this heading">#</a></h2>
 <object data="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/93877de72e7891567471b13959d60a2c/RCSC-WildCAM_RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf" type="application/pdf" width="880px" height="1130px">
     <embed src="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/93877de72e7891567471b13959d60a2c/RCSC-WildCAM_RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/93877de72e7891567471b13959d60a2c/RCSC-WildCAM_RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf">Download PDF</a>.</p>
     </embed>
 </object> 
 <br/><br/>
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/93877de72e7891567471b13959d60a2c/RCSC-WildCAM_RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div>
 <p><em>Download the PDF</em>
 <a class="reference download internal" download="" href="../_downloads/93877de72e7891567471b13959d60a2c/RCSC-WildCAM_RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf"><span class="xref download myst">Remote Camera Survey Guidelines: Camera Service/Retrieval Field Datasheet (RCSC et al., 2024)</span></a></p>
 <hr class="docutils" />
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -509,6 +551,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#camera-deployment-field-datasheet">Camera Deployment Field Datasheet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-image-sheet">Test Image Sheet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#camera-service-retrieval-field-datasheet">Camera Service/Retrieval Field Datasheet</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -4,22 +4,21 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: '1.16'
-    jupytext_version: 1.16.1
+    format_version: 0.17.2 <!--0.13-->
+    jupytext_version: 6.5.4 <!-- 1.16.4-->
 kernelspec:
   display_name: Python 3
   language: python
   name: python3
-editor_options:
-  markdown:
-    wrap: none
+editor_options: 
+  markdown: 
+  wrap: none
 ---
-
 # Remote Camera Survey Guidelines & AB Metadata Standards
 
 ## Updates
 
-:::{admonition} **July 4, 2024**
+:::{admonition} July 4, 2024
 :class: dropdown
 
 - **July 4, 2024**
@@ -35,16 +34,14 @@ editor_options:
   - **Version crosswalk**
      - You can now find a crosswalk of the data fields in the current and previous versions of the Metadata Template.
      
-  - See ["Downloads & Links"](downloads_links) section below for all updated files/links.
+  - See ["Downloads & Links"](#download_links) section below for all updated files/links.
   
 :::
 
 ***
 
-(#downloads_links)=
+(download_links)=
 ## Download files / Access templates
-
-(#FILES_download_all)=
 
 :::{seealso}
 :class: dropdown 
@@ -93,4 +90,4 @@ editor_options:
 ```{tableofcontents}
 ```
 
-*** 
+***

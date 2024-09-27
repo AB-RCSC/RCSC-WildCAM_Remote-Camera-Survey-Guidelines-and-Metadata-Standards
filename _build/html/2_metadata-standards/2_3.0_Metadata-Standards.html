@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=d953ec74" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -53,9 +54,22 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-C74BERTX94"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-C74BERTX94');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-C74BERTX94');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '2_metadata-standards/2_3.0_Metadata-Standards';</script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -220,7 +234,6 @@
 <li class="toctree-l1"><a class="reference internal" href="2_12.0_References.html">13.0 References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_13.0_AppendixA.html">Appendix A</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../3_glossary/3_Glossary.html">Glossary</a></li>
 </ul>
@@ -420,9 +433,14 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="metadata-standards">
+  <style>
+  .bd-main .bd-content .bd-article-container {
+      max-width: 80%;  /* default is 60em */
+    }
+</style>
+<section class="tex2jax_ignore mathjax_ignore" id="metadata-standards">
 <span id="toc-md-standards-metadata-standards"></span><h1>3.0 Metadata Standards<a class="headerlink" href="#metadata-standards" title="Link to this heading">#</a></h1>
-<p>These Remote Camera Metadata Standards propose that remote camera data should be organized according to a hierarchical structure consisting of six levels: (<a class="reference internal" href="../3_glossary/3_Glossary.html#project"><span class="std std-ref">project</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#study_area"><span class="std std-ref">study area</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#sample_station"><span class="std std-ref">sample station</span></a> / <a class="reference internal" href="../3_glossary/3_Glossary.html#camera_location"><span class="std std-ref">camera location</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment"><span class="std std-ref">deployment</span></a>, and image/<a class="reference internal" href="../3_glossary/3_Glossary.html#sequence"><span class="std std-ref">sequence</span></a>) (<a class="reference internal" href="#toc-md-standards-fig-1"><span class="std std-ref">Figure 1</span></a>).</p>
+<p>These Remote Camera Metadata Standards propose that remote camera data should be organized according to a hierarchical structure consisting of six levels: (<a class="reference internal" href="../3_glossary/3_Glossary.html#project"><span class="std std-ref">project</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#study-area"><span class="std std-ref">study area</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#sample-station"><span class="std std-ref">sample station</span></a> / <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location"><span class="std std-ref">camera location</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment"><span class="std std-ref">deployment</span></a>, and image/<a class="reference internal" href="../3_glossary/3_Glossary.html#sequence"><span class="std std-ref">sequence</span></a>) (<a class="reference internal" href="#toc-md-standards-fig-1"><span class="std std-ref">Figure 1</span></a>).</p>
 <p>This hierarchy was adapted from the Camera Trap Metadata Standards (CTMS; Forrester et al. 2016), the <a class="reference external" href="https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/wcmp_v1.pdf">B.C. Metadata Standards</a> (RISC, 2019), and <a class="reference external" href="https://docs.google.com/spreadsheets/d/1Jg-WybmVeGlWGrbPpwuwJCgranOV1r3M_LrzELttfK0/edit#gid=412365965">Wildlife Insights Minimum Metadata Standards (Ahumada et al., 2019).</a></p>
 <p>These standards describe the minimum <a class="reference internal" href="../3_glossary/3_Glossary.html#metadata"><span class="std std-ref">metadata</span></a> that should be documented for each of the six levels, as well as how to include optional data fields. Equivalent data fields may appear under different names in different protocols / repositories. To provide user-friendly terminology, a crosswalk table is included (<a class="reference internal" href="2_13.0_AppendixA.html#TOC_md_standards_table_a1"><span class="std std-ref">Appendix A - Table A1</span></a>) that can be used to match data fields to commonly used protocol/repositories, to further the potential amalgamation of data from Alberta with global remote camera datasets.</p>
 <p>The process for recording and submitting data involves entering deployment and image/sequence information into a standardized data repository to facilitate long-term storage, prevent data loss and enhance the comparability of remote camera data in Alberta.</p>

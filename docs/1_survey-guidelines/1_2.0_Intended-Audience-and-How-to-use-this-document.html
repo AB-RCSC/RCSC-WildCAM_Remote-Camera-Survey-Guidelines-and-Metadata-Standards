@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=d953ec74" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -53,9 +54,22 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-C74BERTX94"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-C74BERTX94');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-C74BERTX94');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1_survey-guidelines/1_2.0_Intended-Audience-and-How-to-use-this-document';</script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -220,7 +234,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../2_metadata-standards/2_12.0_References.html">13.0 References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_metadata-standards/2_13.0_AppendixA.html">Appendix A</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../3_glossary/3_Glossary.html">Glossary</a></li>
 </ul>
@@ -433,7 +446,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="intended-audience-and-how-to-use-this-document">
 <span id="toc-surv-guidelines-intended-audience-and-how-to-use-this-document"></span><h1>2.0 Intended Audience and How to use this document<a class="headerlink" href="#intended-audience-and-how-to-use-this-document" title="Link to this heading">#</a></h1>
 <p>The purpose of the Remote Camera Survey Guidelines is to provide recommendations on study design and implementation (including equipment and deployment recommendations) for novice to advanced users of remote cameras in Western Canada in a format aligned with standardized methods for <a class="reference internal" href="../3_glossary/3_Glossary.html#metadata"><span class="std std-ref">metadata</span></a> reporting. The intended audience for this document includes consultants, researchers, and wildlife biologists working for government, non-government agencies and industry.</p>
-<p>Summary tables, step-by-step procedures, and field data sheets have been provided in <a class="reference internal" href="1_10.2_AppendixA-Field-Datasheets.html#TOC_surv_guidelines_appendix_a_field_datasheets"><span class="std std-ref">Appendix A</span></a> to help readers quickly locate and distill key information. There is also a useful decision tree for selecting <a class="reference internal" href="../3_glossary/3_Glossary.html#density"><span class="std std-ref">density</span></a> models for remote camera data in <a class="reference internal" href="1_11.0_AppendixB-FigureB1.html#TOC_surv_guidelines_appendix_b"><span class="std std-ref">Appendix B - Figure B1</span></a> (Clarke et al. [2022] adapted from Gilbert et al. [2021] and Sun [unpublished]). This document addresses the more common <a class="reference internal" href="../3_glossary/3_Glossary.html#mods_modelling_approach"><span class="std std-ref">modelling approaches</span></a> (e.g., species diversity and richness, <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a>, relative abundance, and <a class="reference internal" href="../3_glossary/3_Glossary.html#density"><span class="std std-ref">density</span></a>). Research is ongoing to test the different approaches and to develop new methods. Refer to <a class="reference external" href="https://wildcams.ca/library/camera-trapping-papers-directory/">WildCAM’s resource library</a> and the sources provided for more information on the different approaches. For information on other methods, please refer to the literature (e.g., <a class="reference internal" href="../3_glossary/3_Glossary.html#intensity_of_use"><span class="std std-ref">intensity of use</span></a> [Keim et al., 2019, 2021]; resource selection functions [Manly et al., 1993] etc.).</p>
+<p>Summary tables, step-by-step procedures, and field data sheets have been provided in <a class="reference internal" href="1_10.2_AppendixA-Field-Datasheets.html#TOC_surv_guidelines_appendix_a_field_datasheets"><span class="std std-ref">Appendix A</span></a> to help readers quickly locate and distill key information. There is also a useful decision tree for selecting <a class="reference internal" href="../3_glossary/3_Glossary.html#density"><span class="std std-ref">density</span></a> models for remote camera data in <a class="reference internal" href="1_11.0_AppendixB-FigureB1.html#TOC_surv_guidelines_appendix_b"><span class="std std-ref">Appendix B - Figure B1</span></a> (Clarke et al. [2022] adapted from Gilbert et al. [2021] and Sun [unpublished]). This document addresses the more common <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> (e.g., species diversity and richness, <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a>, relative abundance, and <a class="reference internal" href="../3_glossary/3_Glossary.html#density"><span class="std std-ref">density</span></a>). Research is ongoing to test the different approaches and to develop new methods. Refer to <a class="reference external" href="https://wildcams.ca/library/camera-trapping-papers-directory/">WildCAM’s resource library</a> and the sources provided for more information on the different approaches. For information on other methods, please refer to the literature (e.g., <a class="reference internal" href="../3_glossary/3_Glossary.html#intensity-of-use"><span class="std std-ref">intensity of use</span></a> [Keim et al., 2019, 2021]; resource selection functions [Manly et al., 1993] etc.).</p>
 <p>The goal of this document is to support consistency in the collection of remote camera data across western Canada by offering guidance on the appropriate study design, camera <a class="reference internal" href="../3_glossary/3_Glossary.html#deployment"><span class="std std-ref">deployment</span></a> methods and data management.</p>
 <p>There are several benefits to having standardized methods for remote cameras, including:</p>
 <ul class="simple">

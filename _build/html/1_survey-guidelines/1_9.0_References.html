@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=d953ec74" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -53,9 +54,22 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-C74BERTX94"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-C74BERTX94');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-C74BERTX94');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1_survey-guidelines/1_9.0_References';</script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -220,7 +234,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../2_metadata-standards/2_12.0_References.html">13.0 References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_metadata-standards/2_13.0_AppendixA.html">Appendix A</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../3_glossary/3_Glossary.html">Glossary</a></li>
 </ul>
@@ -420,7 +433,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="references">
+  <style>
+.bd-main .bd-content .bd-article-container {
+    max-width: 85%;  /* default is 60em */
+  }
+</style>
+<section class="tex2jax_ignore mathjax_ignore" id="references">
 <span id="toc-surv-guidelines-references"></span><h1>9.0 References<a class="headerlink" href="#references" title="Link to this heading">#</a></h1>
 <p>Ahumada, J. A., Fegraus, E., Birch, T., Flores, N., Kays, R., O’Brien, T. G., Palmer, J., Schuttler, S., Zhao, J. Y., Jetz, W., Kinnaird, M., Kulkarni, S., Lyet, A., Thau, D., Duong, M., Oliver, R., &amp; Dancer, A. (2019). Wildlife Insights: A Platform to Maximize the Potential of Camera Trap and Other Passive Sensor Wildlife Data for the Planet. <em>Environmental Conservation, 47</em>(1), 1–6. <a class="reference external" href="https://doi.org/10.1017/s0376892919000298">https://doi.org/10.1017/s0376892919000298</a></p>
 <p>Ahumada, J. A., Silva, C. E. F., Gajapersad, K., Hallam, C., Hurtado, J., Martin, E., McWilliam, A., Mugerwa, B., O’Brien, T., Rovero, F., Sheil, D., Spironello, W. R., Winarni, N., &amp; Andelman, S. J. (2011). Community Structure and Diversity of Tropical Forest Mammals: Data from a Global Camera Trap Network. <em>Philosophical Transactions: Biological Sciences, 366</em>(1578), 2703–2711. <a class="reference external" href="https://doi.org/10.1098/rstb.2011.0115">https://doi.org/10.1098/rstb.2011.0115</a></p>
@@ -503,10 +521,10 @@ document.write(`
 <p>Howe, E. J., Buckland, S. T., Després-Einspenner, M.-L., &amp; Kühl, H. S. (2017). Distance sampling with camera traps. <em>Methods in Ecology and Evolution, 8</em>(11), 1558–1565. <a class="reference external" href="https://doi.org/10.1111/2041-210X.12790">https://doi.org/10.1111/2041-210X.12790</a></p>
 <p>Iknayan, K. J., Tingley, M. W., Furnas, B. J., &amp; Beissinger, S. R. (2014). Detecting Diversity: Emerging Methods to Estimate Species Diversity. <em>Trends in Ecology &amp; Evolution, 29</em>(2), 97–106. <a class="reference external" href="https://doi.org/10.1016/j.tree.2013.10.012">https://doi.org/10.1016/j.tree.2013.10.012</a></p>
 <p>Jennelle, C. S., Runge, M. C., &amp; MacKenzie, D. I. (2002). The Use of Photographic Rates to Estimate Densities of Tigers and Other Cryptic Mammals: A Comment on Misleading Conclusions. <em>Animal Conservation, 5</em>(2), 119–120. <a class="reference external" href="https://doi.org/10.1017/s1367943002002160">https://doi.org/10.1017/s1367943002002160</a></p>
-<p>Jennrich, R. I., &amp; Turner, F. B. (1969). Measurement of non-circular home range. <em>Journal of Theoretical Biology, 22</em>(2), 227–237. <a class="reference external" href="https://doi.org/10.1016/0022-5193(69)90002-2">https://doi.org/10.1016/0022-5193(69)90002-2</a>{.uri}</p>
+<p>Jennrich, R. I., &amp; Turner, F. B. (1969). Measurement of non-circular home range. <em>Journal of Theoretical Biology, 22</em>(2), 227–237. <a class="uri reference external" href="https://doi.org/10.1016/0022-5193(69)90002-2">https://doi.org/10.1016/0022-5193(69)90002-2</a></p>
 <p>Johanns, P, Haucke, T., &amp; Steinhage, V. (2022) Automated Distance Estimation and Animal Tracking for Wildlife Camera Trapping. <em>Ecological Informatics, 70,</em> arXiv:2202.04613. <a class="reference external" href="https://doi.org/10.48550/arXiv.2202.04613">https://doi.org/10.48550/arXiv.2202.04613</a></p>
 <p>Junker, J., Kühl, H., Orth, L., Smith, R., Petrovan, S., &amp; Sutherland, W. (2021). <em>7. Primate Conservation.</em> In (pp. 435–486). <a class="reference external" href="https://doi.org/10.11647/obp.0267.07">https://doi.org/10.11647/obp.0267.07</a></p>
-<p>Karanth, K. U. (1995). Estimating tiger Panthera tigris populations from camera-trap data using capture-recapture models. <em>Biological Conservation, 71</em>(3), 333–338. <a class="reference external" href="https://doi.org/10.1016/0006-3207(94)00057-W">https://doi.org/10.1016/0006-3207(94)00057-W</a>{.uri}</p>
+<p>Karanth, K. U. (1995). Estimating tiger Panthera tigris populations from camera-trap data using capture-recapture models. <em>Biological Conservation, 71</em>(3), 333–338. <a class="uri reference external" href="https://doi.org/10.1016/0006-3207(94)00057-W">https://doi.org/10.1016/0006-3207(94)00057-W</a></p>
 <p>Karanth, K. U., Nichols, J. D., &amp; Kumar, N. S. (2011). Estimating tiger abundance from camera trap data: field surveys and analytical issues. In A. F. O’Connell, J. D. Nichols, &amp; K. U. Karanth (Eds.), <em>Camera Traps In Animal Ecology: Methods and Analyses</em> (pp. 9–117). Springer. <a class="reference external" href="https://doi.org/10.1007/978-4-431-99495-4">https://doi.org/10.1007/978-4-431-99495-4</a></p>
 <p>Karanth, K. U., &amp; Nichols, J. D. (1998). Estimation of tiger densities in India using photographic captures and recaptures. <em>Ecology</em>, <em>79</em>(8), 2852–2862. <a class="reference external" href="https://doi.org/10.1890/0012-9658(1998)079%5b2852:EOTDII%5d2.0.CO;2">https://doi.org/10.1890/0012-9658(1998)079[2852:EOTDII]2.0.CO;2</a></p>
 <p>Karanth, K. U., Nichols, J. D., Kumar, N. S., &amp; Hines, J. E. (2006). Assessing Tiger Population Dynamics Using Photographic Capture–Recapture Sampling. <em>Ecology, 87</em>(11), 2925–2937. <a class="reference external" href="https://doi.org/10.1890/0012-9658(2006)87%5b2925:ATPDUP%5d2.0.CO;2">https://doi.org/10.1890/0012-9658(2006)87[2925:ATPDUP]2.0.CO;2</a></p>
@@ -554,7 +572,7 @@ document.write(`
 <p>Moqanaki, E.S., Milleret, C., Tourani, M., Dupont, P., &amp; Bischof, R. (2021). Consequences of ignoring variable and spatially autocorrelated detection probability in spatial capture- recapture. <em>Landscape Ecology, 36, 2879–2895</em>. <a class="reference external" href="https://doi.org/10.1007/s10980-021-01283-x">https://doi.org/10.1007/s10980-021-01283-x</a></p>
 <p>Morin, D. J., Boulanger, J., Bischof, R., Lee, D. C., Ngoprasert, D., Fuller, A. K., McLellan, B., Steinmetz, R., Sharma, S., Garshelis, D., Gopalaswamy, A., Nawaz, M. A., &amp; Karanth, U. (2022). Comparison of methods for estimating density and population trends for low-density Asian bears. <em>Global Ecology and Conservation, 35</em>, e02058 <a class="reference external" href="https://doi.org/10.1016/j.gecco.2022.e02058">https://doi.org/10.1016/j.gecco.2022.e02058</a></p>
 <p>Morris, D. (2022). <em>Everything I know about machine learning and camera traps.</em> <a class="reference external" href="https://agentmorris.github.io/camera-trap-ml-survey/">https://agentmorris.github.io/camera-trap-ml-survey/</a></p>
-<p>Mullahy, J. (1986). Specification and Testing of Some Modified Count Data Models. <em>Journal of Econometrics, 3</em>3(3), 341–365. <a class="reference external" href="https://doi.org/10.1016/0304-4076(86)90002-3">https://doi.org/10.1016/0304-4076(86)90002-3</a>{.uri}</p>
+<p>Mullahy, J. (1986). Specification and Testing of Some Modified Count Data Models. <em>Journal of Econometrics, 3</em>3(3), 341–365. <a class="uri reference external" href="https://doi.org/10.1016/0304-4076(86)90002-3">https://doi.org/10.1016/0304-4076(86)90002-3</a></p>
 <p>Murray, M. H., Hill J., Whyte, P., St Clair, C. C. (2016) Urban Compost Attracts Coyotes, Contains Toxins, and may Promote Disease in Urban-Adapted Wildlife. <em>EcoHealth, 13</em>(2):285–92. <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/27106524">https://www.ncbi.nlm.nih.gov/pubmed/27106524</a></p>
 <p>Nakashima, Y., Fukasawa, &amp; K., Samejima, H. (2018). Estimating Animal Density Without Individual Recognition Using Information Derivable Exclusively from Camera Traps. <em>Journal of Applied Ecology, 55</em>(2), 735–744. <a class="reference external" href="https://doi.org/10.1111/1365-2664.13059">https://doi.org/10.1111/1365-2664.13059</a></p>
 <p>Neilson, E. W., Avgar, T., Burton, A. C., Broadley, K., &amp; Boutin, S. (2018). Animal movement affects interpretation of occupancy models from camera‐trap surveys of unmarked animals. <em>Ecosphere, 9</em>(1). <a class="reference external" href="https://doi.org/10.1002/ecs2.2092">https://doi.org/10.1002/ecs2.2092</a></p>
