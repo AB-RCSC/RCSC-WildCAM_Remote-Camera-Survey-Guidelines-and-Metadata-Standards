@@ -46,7 +46,7 @@ parts:
     - file: 2_metadata-standards/2_11.0_Conclusion.md
     - file: 2_metadata-standards/2_12.0_References.md
     - file: 2_metadata-standards/2_13.0_AppendixA.md
-  - caption: 
+  - caption: Glossary
     maxdepth: 0
     titlesonly: True
     chapters:

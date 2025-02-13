@@ -17,6 +17,16 @@ editor_options:
 # Remote Camera Survey Guidelines & AB Metadata Standards
 
 ## Updates
+:::{admonition} January 20, 2025
+:class: dropdown
+
+- **January 20, 2025**
+
+  - **New links to FWMIS loadforms**
+
+:::
+https://www.alberta.ca/fwmis-loadform-check-tool
+
 
 :::{admonition} July 4, 2024
 :class: dropdown

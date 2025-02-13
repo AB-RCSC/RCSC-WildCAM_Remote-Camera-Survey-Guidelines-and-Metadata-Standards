@@ -16,31 +16,34 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=d953ec74" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=1b1c42e5" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -78,6 +81,7 @@
     <link rel="prev" title="5.0 Detection probability" href="1_5.0_Detection-probability.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -93,19 +97,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -113,7 +106,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -121,8 +113,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -138,7 +130,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -168,21 +161,17 @@
     
     
     <img src="../_static/logo.png" class="logo__image only-light" alt="Remote Camera Survey Guidelines - Guidelines for Western Canada - Home"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Remote Camera Survey Guidelines - Guidelines for Western Canada - Home"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Remote Camera Survey Guidelines - Guidelines for Western Canada - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -234,6 +223,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../2_metadata-standards/2_12.0_References.html">13.0 References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_metadata-standards/2_13.0_AppendixA.html">Appendix A</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../3_glossary/3_Glossary.html">Glossary</a></li>
 </ul>
@@ -244,9 +234,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -390,24 +385,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -491,15 +478,17 @@ document.write(`
 <section id="site-selection-and-camera-arrangement">
 <span id="toc-surv-guidelines-site-selection-and-camera-arrangement"></span><h2>6.2 Site selection and camera arrangement<a class="headerlink" href="#site-selection-and-camera-arrangement" title="Link to this heading">#</a></h2>
 <p>Remote <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location"><span class="std std-ref">camera locations</span></a> (or <a class="reference internal" href="../3_glossary/3_Glossary.html#sample-station"><span class="std std-ref">sample stations</span></a>) and their spatial arrangement are integral components of any study design; these choices will affect the user’s ability to draw inference(s) about the species or question of interest. There are many species-specific characteristics (e.g., body size, behaviour, rarity, etc.) and environmental factors (e.g., vegetation cover, snow depth) that influence the <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> and probability of occurrence of a species, as well as the size of the area that should be surveyed (e.g., Becker et al., 2022; Hofmeester et al., 2019; Iknayan et al., 2014; Steenweg et al., 2019). When there are multiple <a class="reference internal" href="../3_glossary/3_Glossary.html#target-species"><span class="std std-ref">Target Species</span></a>, a mix of study designs may be valuable (Iannarilli et al., 2021; van Wilgenburg et al., 2020).</p>
-<p>The <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">objectives</span></a> of the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> will determine the most appropriate study design (<a class="reference internal" href="1_10.1_AppendixA-Tables.html#TOC_surv_guidelines_table_a2"><span class="std std-ref">Appendix A - Table A2</span></a>). There are five commonly used study designs in camera studies: <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-random"><span class="std std-ref">simple random</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-systematic-random"><span class="std std-ref">systematic random</span></a> (grid), <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-stratified-random"><span class="std std-ref">stratified random</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-clustered"><span class="std std-ref">clustered</span></a> (including <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-paired"><span class="std std-ref">paired design</span></a>) and <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-targeted"><span class="std std-ref">targeted</span></a> (or opportunistic) (Wearn &amp; Glover-Kapfer 2017). A <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-convenience"><span class="std std-ref">convenience sampling</span></a> study design is also used when it is impractical to use another design. Sampling design can occur hierarchically, where one approach is used at a larger scale (i.e., to select grids to place cameras within), and another approach is used at a smaller scale (i.e., to select the location within each grid to place the camera). Refer to the following literature for additional recommendations on study design: Burton et al., 2015; Cusack et al., 2015; Fisher &amp; Burton, 2012; Kolowski and Forrester, 2017; Meek et al., 2014b; O’Connell et al., 2011b; Rovero et al., 2013; Steenweg et al., 2015; Wearn &amp; Glover-Kapfer, 2017 and WildCAM’s <a class="reference external" href="https://wildcams.ca/library/camera-trapping-papers-directory/">“sampling design &amp; effort section section”</a> of their resource library (<a class="reference external" href="https://wildcams.ca/library/camera-trapping-papers-directory/">https://wildcams.ca/library/camera-trapping-papers-directory/</a>).</p>
+<p>The <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">objectives</span></a> of the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> will determine the most appropriate study design (<a class="reference internal" href="#TOC_surv_guidelines_table_a2"><span class="xref myst">Appendix A - Table A2</span></a>). There are five commonly used study designs in camera studies: <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-random"><span class="std std-ref">simple random</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-systematic-random"><span class="std std-ref">systematic random</span></a> (grid), <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-stratified-random"><span class="std std-ref">stratified random</span></a>, <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-clustered"><span class="std std-ref">clustered</span></a> (including <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-paired"><span class="std std-ref">paired design</span></a>) and <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-targeted"><span class="std std-ref">targeted</span></a> (or opportunistic) (Wearn &amp; Glover-Kapfer 2017). A <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-convenience"><span class="std std-ref">convenience sampling</span></a> study design is also used when it is impractical to use another design. Sampling design can occur hierarchically, where one approach is used at a larger scale (i.e., to select grids to place cameras within), and another approach is used at a smaller scale (i.e., to select the location within each grid to place the camera). Refer to the following literature for additional recommendations on study design: Burton et al., 2015; Cusack et al., 2015; Fisher &amp; Burton, 2012; Kolowski and Forrester, 2017; Meek et al., 2014b; O’Connell et al., 2011b; Rovero et al., 2013; Steenweg et al., 2015; Wearn &amp; Glover-Kapfer, 2017 and WildCAM’s <a class="reference external" href="https://wildcams.ca/library/camera-trapping-papers-directory/">“sampling design &amp; effort section section”</a> of their resource library (<a class="reference external" href="https://wildcams.ca/library/camera-trapping-papers-directory/">https://wildcams.ca/library/camera-trapping-papers-directory/</a>).</p>
 <p>Note that we refer to different configurations of cameras more generally as study design and sampling design; however, the term “<a class="reference internal" href="../3_glossary/3_Glossary.html#survey-design"><span class="std std-ref"><strong>Survey Design</strong></span></a>“ is how the study design is referred to when it applies to an individual <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a>. There may be multiple <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-design"><span class="std std-ref">Survey Designs</span></a> for <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">surveys</span></a> within a <a class="reference internal" href="../3_glossary/3_Glossary.html#project"><span class="std std-ref">project</span></a>; the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-design"><span class="std std-ref">Survey Design</span></a> should be reported separately for each <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> within a <a class="reference internal" href="../3_glossary/3_Glossary.html#project"><span class="std std-ref">project</span></a>. When the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-design"><span class="std std-ref">Survey Design</span></a> is hierarchical, “Hierarchical (multiple)*” should be reported and additional details should be included in the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-design-description"><span class="std std-ref">Survey Design Description</span></a>. Refer to the <a class="reference external" href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2_0.1_Citation-and-Info.html">AB Metadata Standards</a> (RCSC, 2024) for more information.</p>
 <figure class="align-center" id="toc-surv-guidelines-fig-3">
 <img alt="../_images/Survey-guidelines_CamConfig.png" src="../_images/Survey-guidelines_CamConfig.png" />
 </figure>
-<p><strong>Figure 3.</strong> Examples of sampling designs: (a) simple <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-random"><span class="std std-ref">random</span></a>, (b) <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-systematic-random"><span class="std std-ref">systematic</span></a>, (c) <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-stratified"><span class="std std-ref">stratified</span></a> (each grid cell is a stratum), and (d) <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-clustered"><span class="std std-ref">clustered</span></a> (adapted from Schweiger, 2020).</p>
+<blockquote>
+<div><p><strong>Figure 3.</strong> Examples of sampling designs: (a) simple <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-random"><span class="std std-ref">random</span></a>, (b) <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-systematic-random"><span class="std std-ref">systematic</span></a>, (c) <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-stratified"><span class="std std-ref">stratified</span></a> (each grid cell is a stratum), and (d) <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-clustered"><span class="std std-ref">clustered</span></a> (adapted from Schweiger, 2020).</p>
+</div></blockquote>
 <section id="random-or-simple-random-design">
 <span id="toc-surv-guidelines-random"></span><h3>6.2.1 Random (or “simple random”) design<a class="headerlink" href="#random-or-simple-random-design" title="Link to this heading">#</a></h3>
-<p><strong>Random (or “simple random”) design</strong> (<a class="reference internal" href="#toc-surv-guidelines-fig-3"><span class="std std-ref">Figure 3a</span></a>) – cameras occur at randomized locations (or sample stations) across the <a class="reference internal" href="../3_glossary/3_Glossary.html#study-area"><span class="std std-ref">study area</span></a>, sometimes with a predetermined minimum distance between <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location"><span class="std std-ref">camera locations</span></a> (or <a class="reference internal" href="../3_glossary/3_Glossary.html#sample-station"><span class="std std-ref">sample stations</span></a>). A <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-random"><span class="std std-ref">random design</span></a> may help reduce biases that arise from selecting <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location"><span class="std std-ref">camera locations</span></a> deliberately. It may also allow the user to make inferences about areas that were not surveyed when employing use-based approaches (e.g. <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-occupancy"><span class="std std-ref">occupancy models</span></a> [MacKenzie et al., 2002]; <a class="reference internal" href="../3_glossary/3_Glossary.html#intensity-of-use"><span class="std std-ref">intensity of use</span></a> methods [Keim et al., 2019]). Some <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> (e.g., <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-rest"><span class="std std-ref">random encounter and staying time [REST]</span></a>; Nakashima et al., 2018) and [random encounter models <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-rem"><span class="std std-ref">REM</span></a>; Rowcliffe et al., 2008, 2013]) require a simple <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-random"><span class="std std-ref">random design</span></a> (<a class="reference internal" href="1_10.1_AppendixA-Tables.html#TOC_surv_guidelines_table_a2"><span class="std std-ref">Appendix A - Table A2</span></a>).</p>
+<p><strong>Random (or “simple random”) design</strong> (<a class="reference internal" href="#toc-surv-guidelines-fig-3"><span class="std std-ref">Figure 3a</span></a>) – cameras occur at randomized locations (or sample stations) across the <a class="reference internal" href="../3_glossary/3_Glossary.html#study-area"><span class="std std-ref">study area</span></a>, sometimes with a predetermined minimum distance between <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location"><span class="std std-ref">camera locations</span></a> (or <a class="reference internal" href="../3_glossary/3_Glossary.html#sample-station"><span class="std std-ref">sample stations</span></a>). A <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-random"><span class="std std-ref">random design</span></a> may help reduce biases that arise from selecting <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-location"><span class="std std-ref">camera locations</span></a> deliberately. It may also allow the user to make inferences about areas that were not surveyed when employing use-based approaches (e.g. <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-occupancy"><span class="std std-ref">occupancy models</span></a> [MacKenzie et al., 2002]; <a class="reference internal" href="../3_glossary/3_Glossary.html#intensity-of-use"><span class="std std-ref">intensity of use</span></a> methods [Keim et al., 2019]). Some <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> (e.g., <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-rest"><span class="std std-ref">random encounter and staying time [REST]</span></a>; Nakashima et al., 2018) and [random encounter models <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-rem"><span class="std std-ref">REM</span></a>; Rowcliffe et al., 2008, 2013]) require a simple <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-random"><span class="std std-ref">random design</span></a> (<a class="reference internal" href="#TOC_surv_guidelines_table_a2"><span class="xref myst">Appendix A - Table A2</span></a>).</p>
 <p>A disadvantage of using a simple random design is the tendency to see fewer animals (i.e., is less efficient) when animals are <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-clustered"><span class="std std-ref">clustered</span></a> or exhibit habitat preferences, and the possibility of missing rare habitat types. The proportion of different strata (e.g., habitat types) sampled should be the same as (or close to) the true proportion in the <a class="reference internal" href="../3_glossary/3_Glossary.html#study-area"><span class="std std-ref">study area</span></a>. For example, if the <a class="reference internal" href="../3_glossary/3_Glossary.html#study-area"><span class="std std-ref">study area</span></a> consists of 25% young deciduous forest, then 25% of randomly selected sites should be within young deciduous forest, on average.</p>
 </section>
 <section id="systematic-design">
@@ -540,7 +529,7 @@ document.write(`
 <p>The distance between cameras (the “<a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a>,” also referred to as “inter-trap distance”) is an important consideration when designing a camera <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a>. This will be influenced by the chosen sampling design, the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">Survey Objectives</span></a>, the <a class="reference internal" href="../3_glossary/3_Glossary.html#target-species"><span class="std std-ref">Target Species</span></a>, the <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approach</span></a> and data analysis.</p>
 <p>For example, if the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">objective</span></a> is to estimate grizzly bear <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> and cameras are placed close together, detections may not be statistically independent if the same individual is detected at neighbouring camera sites within a short time period. In contrast, if the objective was to estimate <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> for a different species such as marten, the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> may be statistically independent in this case.</p>
 <p>It is important that you understand how the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">Survey Objectives</span></a> influence sampling design and decisions about <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> (Wearn &amp; Glover-Kapfer, 2017). When estimating <a class="reference internal" href="../3_glossary/3_Glossary.html#density"><span class="std std-ref">density</span></a> from <a class="reference internal" href="../3_glossary/3_Glossary.html#typeid-marked"><span class="std std-ref">marked</span></a> populations using a <a class="reference internal" href="../3_glossary/3_Glossary.html#sampledesign-clustered"><span class="std std-ref">clustered design</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-scr-secr"><span class="std std-ref">SECR</span></a> <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approach</span></a> (Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008), for example, the spacing between clusters and cameras within a cluster are important considerations (Clarke et al., 2019). In this case, placing cameras in close proximity to one another can increase the <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> and in turn, increase statistical power, shorten <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> lengths, and reduce costs (WildCAM Network, 2019). However, detections from nearby cameras may not be independent and could lead to issues with <a class="reference internal" href="../3_glossary/3_Glossary.html#pseudoreplication"><span class="std std-ref">pseudoreplication</span></a> (Hurlbert, 1984) and false conclusions (Ramage et al., 2013).</p>
-<p>The spacing requirements of the different <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> (dictated by the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">objectives</span></a>) vary and should be considered carefully. The recommendations for <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> for various <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> are summarized below and in <a class="reference internal" href="1_10.1_AppendixA-Tables.html#TOC_surv_guidelines_table_a2"><span class="std std-ref">Appendix A - Table A2</span></a>.</p>
+<p>The spacing requirements of the different <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> (dictated by the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">objectives</span></a>) vary and should be considered carefully. The recommendations for <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> for various <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> are summarized below and in <a class="reference internal" href="#TOC_surv_guidelines_table_a2"><span class="xref myst">Appendix A - Table A2</span></a>.</p>
 <section id="modelling-approach">
 <span id="toc-surv-guidelines-modelling-approach"></span><h3>6.3.1 Modelling approach<a class="headerlink" href="#modelling-approach" title="Link to this heading">#</a></h3>
 <p>The spacing requirements of the different <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> (dictated by the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">objectives</span></a>) vary and should be considered carefully. The recommendations for <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> for various <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> are summarized below.</p>
@@ -552,7 +541,7 @@ document.write(`
 <li><p>For <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-scr-secr"><span class="std std-ref"><strong>spatially explicit capture-recapture</strong></span></a> <strong>(SECR</strong>; Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008) models, the optimum <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> is 0.3 times the home range diameter of the <a class="reference internal" href="../3_glossary/3_Glossary.html#target-species"><span class="std std-ref">Target Species</span></a>, with up to 0.8 times the home range diameter being acceptable (O’Brien &amp; Kinnaird, 2011; Rovero et al., 2013; Soria-Díaz et al., 2010; Wearn &amp; Glover-Kapfer, 2017). <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-scr-secr"><span class="std std-ref">SECR</span></a> models (Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008) are, however, robust to increased <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> (Sollmann et al., 2012; Zimmermann, 2013). Sampling over a larger spatial extent may be more important in some cases than preserving recommended <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> (Sollmann et al., 2012; Zimmermann et al., 2013).</p></li>
 <li><p>For <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-rem"><span class="std std-ref">random encounter models (REM</span></a>; <a class="reference internal" href="../3_glossary/3_Glossary.html#density"><span class="std std-ref">density</span></a>; Rowcliffe et al., 2008), the <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> should be large enough to avoid sampling the same individual repeatedly (i.e., observations are independent; Rovero et al., 2013; Wearn &amp; Glover-Kapfer, 2017). Cameras should be spaced farther apart than the home range diameter of the <a class="reference internal" href="../3_glossary/3_Glossary.html#target-species"><span class="std std-ref">Target Species</span></a> (Wearn &amp; Glover-Kapfer, 2017).</p></li>
 </ul>
-<p>Refer to <a class="reference internal" href="1_10.1_AppendixA-Tables.html#TOC_surv_guidelines_table_a2"><span class="std std-ref">Appendix A - Table A2</span></a> for additional recommendations on <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> for the different <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a>.</p>
+<p>Refer to <a class="reference internal" href="#TOC_surv_guidelines_table_a2"><span class="xref myst">Appendix A - Table A2</span></a> for additional recommendations on <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> for the different <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a>.</p>
 </section>
 <section id="avoidance-behaviour">
 <span id="toc-surv-guidelines-avoidance-behaviour"></span><h3>6.3.2	Avoidance behaviour<a class="headerlink" href="#avoidance-behaviour" title="Link to this heading">#</a></h3>
@@ -560,14 +549,14 @@ document.write(`
 </section>
 <section id="site-closure-assumption">
 <span id="toc-surv-guidelines-site-closure-assumption"></span><h3>6.3.3 Site closure assumption<a class="headerlink" href="#site-closure-assumption" title="Link to this heading">#</a></h3>
-<p>Many <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> (e.g. <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-occupancy"><span class="std std-ref">occupancy models</span></a> [MacKenzie et al., 2004]; <a class="reference internal" href="1_10.1_AppendixA-Tables.html#TOC_surv_guidelines_table_a1"><span class="std std-ref">Appendix A - Table A1</span></a>) assume “site closure” (i.e., that there is no change in state (e.g. species presence/ absence, immigration/ emigration, births/deaths) during the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> period (MacKenzie et al., 2004). For some approaches, violation of the site closure <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-assumption"><span class="std std-ref">assumption</span></a> can result in an underestimate of <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probabilities</span></a> and, in turn, over-estimate <a class="reference internal" href="../3_glossary/3_Glossary.html#density"><span class="std std-ref">density</span></a> (e.g., with spatial recapture models) or result in simply averaging detections over the sampling period (e.g., <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-rem"><span class="std std-ref">REM</span></a> [Rowcliffe et al., 2008, 2013], <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-rest"><span class="std std-ref">REST</span></a> [Nakashima et al., 2018] models). To meet the “site closure” <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-assumption"><span class="std std-ref">assumption</span></a>, the study design might include spacing cameras far enough apart that the same individual is not detected at multiple sites (e.g., larger than the species’ home range size). The <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> duration might also be short enough that the probability of <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> does not change (i.e., not confounded by other processes, e.g., by changes in the population since <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> is a function of abundance) (O’Connell &amp; Bailey, 2011). Refer to <a class="reference internal" href="1_10.1_AppendixA-Tables.html#TOC_surv_guidelines_table_a2"><span class="std std-ref">Appendix A - Table A2</span></a> for recommendations on how to deploy cameras to meet “site closure” <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-assumption"><span class="std std-ref">assumptions</span></a>.</p>
+<p>Many <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a> (e.g. <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-occupancy"><span class="std std-ref">occupancy models</span></a> [MacKenzie et al., 2004]; <a class="reference internal" href="#TOC_surv_guidelines_table_a1"><span class="xref myst">Appendix A - Table A1</span></a>) assume “site closure” (i.e., that there is no change in state (e.g. species presence/ absence, immigration/ emigration, births/deaths) during the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> period (MacKenzie et al., 2004). For some approaches, violation of the site closure <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-assumption"><span class="std std-ref">assumption</span></a> can result in an underestimate of <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probabilities</span></a> and, in turn, over-estimate <a class="reference internal" href="../3_glossary/3_Glossary.html#density"><span class="std std-ref">density</span></a> (e.g., with spatial recapture models) or result in simply averaging detections over the sampling period (e.g., <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-rem"><span class="std std-ref">REM</span></a> [Rowcliffe et al., 2008, 2013], <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-rest"><span class="std std-ref">REST</span></a> [Nakashima et al., 2018] models). To meet the “site closure” <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-assumption"><span class="std std-ref">assumption</span></a>, the study design might include spacing cameras far enough apart that the same individual is not detected at multiple sites (e.g., larger than the species’ home range size). The <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> duration might also be short enough that the probability of <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> does not change (i.e., not confounded by other processes, e.g., by changes in the population since <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> is a function of abundance) (O’Connell &amp; Bailey, 2011). Refer to <a class="reference internal" href="#TOC_surv_guidelines_table_a2"><span class="xref myst">Appendix A - Table A2</span></a> for recommendations on how to deploy cameras to meet “site closure” <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-assumption"><span class="std std-ref">assumptions</span></a>.</p>
 </section>
 </section>
 <section id="survey-effort-and-timing">
 <span id="toc-surv-guidelines-survey-effort-and-timing"></span><h2>6.4 Survey effort and timing<a class="headerlink" href="#survey-effort-and-timing" title="Link to this heading">#</a></h2>
 <section id="survey-effort-number-of-cameras">
 <span id="toc-surv-guidelines-survey-effort-number-of-cameras"></span><h3>6.4.1 Survey effort - Number of cameras<a class="headerlink" href="#survey-effort-number-of-cameras" title="Link to this heading">#</a></h3>
-<p><a class="reference internal" href="1_10.1_AppendixA-Tables.html#TOC_surv_guidelines_table_a2"><span class="std std-ref">Appendix A - Table A2</span></a> shows the recommended minimum number of cameras according to the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">Survey Objectives</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approach</span></a>. The optimal number of cameras required will be influenced by factors such as landscape heterogeneity, <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> duration and spatial scale, species rarity and desired level of precision (Colyn et al., 2018; Rovero et al., 2013). For example, Kays et al. (2020) found that 25–35 cameras were needed for precise estimates of species richness, depending on the spatial scale of the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> and landscape diversity. The number of cameras required for precise estimates of <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> was highly sensitive to the occurrence rate of species, with &lt;20 cameras required for common species and &gt;150 cameras required for rare species (Kays et al., 2020). In general, deploying more cameras and/or for longer durations always results in more precise estimates; however, users can consider rotating cameras across multiple sites for shorter durations (if feasible). There are several useful references and applications available to help determine the optimal number of cameras for a <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> (e.g., Efford &amp; Boulanger, 2019).</p>
+<p><a class="reference internal" href="#TOC_surv_guidelines_table_a2"><span class="xref myst">Appendix A - Table A2</span></a> shows the recommended minimum number of cameras according to the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">Survey Objectives</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approach</span></a>. The optimal number of cameras required will be influenced by factors such as landscape heterogeneity, <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> duration and spatial scale, species rarity and desired level of precision (Colyn et al., 2018; Rovero et al., 2013). For example, Kays et al. (2020) found that 25–35 cameras were needed for precise estimates of species richness, depending on the spatial scale of the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> and landscape diversity. The number of cameras required for precise estimates of <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> was highly sensitive to the occurrence rate of species, with &lt;20 cameras required for common species and &gt;150 cameras required for rare species (Kays et al., 2020). In general, deploying more cameras and/or for longer durations always results in more precise estimates; however, users can consider rotating cameras across multiple sites for shorter durations (if feasible). There are several useful references and applications available to help determine the optimal number of cameras for a <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a> (e.g., Efford &amp; Boulanger, 2019).</p>
 <p>When the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey-objectives"><span class="std std-ref">objectives</span></a> and <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approach</span></a> warrant, placing multiple cameras at a site (either on the same attachment point or nearby) can significantly increase the <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> of less common species (more than increasing the number of <a class="reference internal" href="../3_glossary/3_Glossary.html#camera-days-per-camera-location"><span class="std std-ref">camera days per camera location</span></a>; O’Connor et al., 2017; Pease &amp; Holzmueller, 2016; Stokeld et al., 2016) or be useful for individual identification.</p>
 </section>
 <section id="survey-effort-camera-days-per-camera-location">
@@ -579,7 +568,7 @@ document.write(`
 </section>
 <section id="survey-effort-total-number-of-camera-days">
 <span id="toc-surv-guidelines-survey-effort-total-number-of-camera-days"></span><h3>6.4.3 Survey effort - Total number of camera days<a class="headerlink" href="#survey-effort-total-number-of-camera-days" title="Link to this heading">#</a></h3>
-<p>The <a class="reference internal" href="../3_glossary/3_Glossary.html#total-number-of-camera-days"><span class="std std-ref"><strong>total number of camera days</strong></span></a> is the number of days that all cameras were active during the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a>. <a class="reference internal" href="1_10.1_AppendixA-Tables.html#TOC_surv_guidelines_table_a2"><span class="std std-ref">Appendix A - Table A2</span></a> provides recommendations on the minimum number of <a class="reference internal" href="../3_glossary/3_Glossary.html#total-number-of-camera-days"><span class="std std-ref">total number of camera days</span></a>.</p>
+<p>The <a class="reference internal" href="../3_glossary/3_Glossary.html#total-number-of-camera-days"><span class="std std-ref"><strong>total number of camera days</strong></span></a> is the number of days that all cameras were active during the <a class="reference internal" href="../3_glossary/3_Glossary.html#survey"><span class="std std-ref">survey</span></a>. <a class="reference internal" href="#TOC_surv_guidelines_table_a2"><span class="xref myst">Appendix A - Table A2</span></a> provides recommendations on the minimum number of <a class="reference internal" href="../3_glossary/3_Glossary.html#total-number-of-camera-days"><span class="std std-ref">total number of camera days</span></a>.</p>
 <p>An adequate sample size (in terms of the <a class="reference internal" href="../3_glossary/3_Glossary.html#total-number-of-camera-days"><span class="std std-ref">total number of camera days</span></a>) in multiple seasons is often required to capture seasonal variation in <a class="reference internal" href="../3_glossary/3_Glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> or <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-rate"><span class="std std-ref">detection rates</span></a>. As a general guideline, Kays et al. (2020) recommended that cameras run for 3-5 weeks across 40-60 sites per array and that small-scale variation in <a class="reference internal" href="../3_glossary/3_Glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> across sites (e.g., microhabitats) should be accounted for in subsequent statistical analyses.</p>
 <p>Becker et al. (2022) evaluated how the <a class="reference internal" href="../3_glossary/3_Glossary.html#effective-detection-distance"><span class="std std-ref">effective detection distance</span></a> of cameras changed across species, habitat type and season. <a class="reference internal" href="../3_glossary/3_Glossary.html#effective-detection-distance"><span class="std std-ref">Effective detection distance</span></a> refers to the distance from a camera that would give the same number of detections if all animals up to that distance are perfectly detected, and no animals that are farther away are detected; Buckland [1987], Becker et al. [2022]). In general, deploying more cameras and/or for longer durations always resulted in more precise estimates (Becker et al., 2022).</p>
 </section>
@@ -654,7 +643,8 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -737,8 +727,8 @@ By Alberta Remote Camera Steering Committee (RCSC), Stevenson, C., Hubbs, A., & 
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

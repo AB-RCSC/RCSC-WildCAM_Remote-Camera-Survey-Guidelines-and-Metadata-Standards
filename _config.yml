@@ -66,9 +66,9 @@ parse:
     - substitution
     - tasklist
 #    - strikethrough
-#  myst:
+  myst:
 #    myst_heading_anchors: 3
-#    myst_url_schemes: [mailto, http, https]
+    myst_url_schemes: [mailto, http, https]
 #myst_all_links_external: True 
 #  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
 #  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
@@ -122,7 +122,9 @@ html:
   google_analytics_id       : G-C74BERTX94  # A GA id that can be used to track book views.#  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
   analytics:
       google_analytics_id: G-C74BERTX94
-# 
+
+html_static_path: ["_static"]
+html_css_files: ["custom.css"]
 #   comments:
 #       utterances: true
 #           repo: AB-RCSC/rc-decision-support-tool_concept-library

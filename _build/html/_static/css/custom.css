@@ -24,3 +24,14 @@ h3 {
     font-weight: normal;
     line-height: 1.1;
 }
+
+/* Block Quotes*/
+blockquote {
+  color: white;
+  border-left: 100px solid  white;
+  border-right: 100px solid  white;
+  background-color: white;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 1.5;
+}
